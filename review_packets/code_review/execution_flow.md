@@ -1,6 +1,7 @@
-# Execution Flow
+# Sanskrit Execution Flow
 
-1. The runtime receives a Sanskrit query through the FastAPI endpoint.
-2. The decoder builds a canonical concept object and a deterministic pipeline over the stages śabda → dhātu → vyākaraṇa → nirukta → bīja → tattva → śakti → functional meaning.
-3. The result is emitted as a provenance-backed, replay-safe payload with a stable hash.
-4. The response is returned to the caller and optionally written to the proof log directory.
+1. A Sanskrit query enters the existing ecosystem runtime.
+2. Isha’s decoder loads and resolves the versioned Sanskar Markdown sources through `SanskritRegistry` and `SanskritConcept` validation.
+3. It emits all canonical layers, source-level provenance and `EvidenceType` classifications, cross-reference synthesis, and a graph-consistency-validated projection.
+4. The result is adapted to Vijay’s existing pipeline contract.
+5. Vijay’s runtime emits Bucket, InsightFlow, MDU/TANTRA and replay evidence; no parallel telemetry or replay mechanism is introduced.

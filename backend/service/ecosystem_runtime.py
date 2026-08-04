@@ -261,6 +261,25 @@ def _build_mdu_validation(trace_id: str, pipeline_result: Dict[str, Any], vijay_
     return local_result
 
 
+def _attach_sanskrit_decoder(query: str, pipeline_result: Dict[str, Any]) -> Dict[str, Any]:
+    """Adapt an Isha decoder result into Vijay's existing pipeline contract."""
+    from ontology.sanskrit_decoder import decode_sanskrit_concept
+
+    decoded = decode_sanskrit_concept(query)
+    if not decoded.get("canonical_concept"):
+        return pipeline_result
+    adapted = dict(pipeline_result)
+    adapted["sanskrit_decoder"] = decoded
+    adapted["answer"] = decoded["functional_meaning"]["summary"]
+    adapted["verification_status"] = "PARTIAL_VERIFIED_SAMPLE"
+    adapted["confidence"] = 0.65
+    adapted["confidence_breakdown"] = {**(pipeline_result.get("confidence_breakdown") or {}), "overall": 0.65, "sanskrit_source_scoped": True}
+    adapted["domain_resolution"] = {"domain": "sanskrit", "method": "sanskar_source_registry", "canonical_concept_id": decoded["canonical_concept"]["concept_id"]}
+    adapted["matched_signals"] = [{"signal_id": "sanskrit:" + decoded["canonical_concept"]["concept_id"], "source": decoded["provenance"]["lineage"]["source_path"], "confidence": 0.65, "content": decoded["functional_meaning"]["summary"], "tags": ["sanskrit", decoded["canonical_concept"]["canonical_name"]], "domain": "sanskrit", "trace": {"knowledge_id": decoded["canonical_concept"]["concept_id"], "source_lineage": decoded["provenance"]["lineage"]}}]
+    adapted["reasoning_path"] = list(pipeline_result.get("reasoning_path") or []) + ["isha_sanskrit_source_retrieval", "sanskar_schema_validation", "sanskrit_cross_reference_synthesis", "sanskrit_graph_navigation"]
+    return adapted
+
+
 def execute_ecosystem_runtime(
     query: str,
     proof_dir: Optional[Path | str] = None,
@@ -273,6 +292,7 @@ def execute_ecosystem_runtime(
     from kosha.deterministic_pipeline import run_deterministic_pipeline
 
     pipeline_result = run_deterministic_pipeline(query=query, trace_id=trace_id, user_id="ecosystem_runtime")
+    pipeline_result = _attach_sanskrit_decoder(query=query, pipeline_result=pipeline_result)
     vijay_validation = _build_vijay_validation(trace_id=trace_id, pipeline_result=pipeline_result, runtime_trace={})
     bucket_telemetry = _build_bucket_telemetry(trace_id=trace_id, pipeline_result=pipeline_result, proof_dir=proof_dir_path)
     tantra_contract = _build_tantra_contract(trace_id=trace_id, pipeline_result=pipeline_result, bucket_payload=bucket_telemetry)
@@ -330,6 +350,7 @@ def execute_ecosystem_runtime(
             "rejected_signals": len(pipeline_result.get("rejected_signals") or []),
             "domain": (pipeline_result.get("domain_resolution") or {}).get("domain"),
             "reasoning_path": pipeline_result.get("reasoning_path"),
+            "sanskrit_decoder": pipeline_result.get("sanskrit_decoder"),
         },
         "execution_hash": stable_hash(_deterministic),
     }
@@ -364,6 +385,8 @@ def verify_ecosystem_replay(
         == replay.get("gc_validation", {}).get("authority_enforced"),
         "mdu_lineage_hash_stable": first.get("mdu_validation", {}).get("evidence_payload", {}).get("lineage_hash")
         == replay.get("mdu_validation", {}).get("evidence_payload", {}).get("lineage_hash"),
+        "sanskrit_decoder_result_stable": (first.get("pipeline_summary", {}).get("sanskrit_decoder") or {}).get("result_hash")
+        == (replay.get("pipeline_summary", {}).get("sanskrit_decoder") or {}).get("result_hash"),
     }
     payload = {
         "schema": "UNIGURU_ECOSYSTEM_REPLAY_VERIFICATION_V1",

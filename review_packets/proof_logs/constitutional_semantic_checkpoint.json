@@ -1814,7 +1814,7 @@
       "trace_id": "constitutional_contradiction_injection"
     }
   ],
-  "event_count": 507,
+  "event_count": 514,
   "lineage": [
     {
       "classification": "transient",
@@ -5871,15 +5871,71 @@
       "previous_event_hash": "cdc633614aa556e7350235bf33b8a05f9b55263749528f971ae2e68e365174ef",
       "retrieval_truth_hash": "3b31b9fec07ebbf555242eb70f62b33320883ec4428b6b57be810fbdb65a775e",
       "trace_id": "ecosystem_replay_31fc143dd84a"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "143fbe53358f12ed732da0c27f1659b43dc577e691a2f12a4dc2aad0decc5af1",
+      "interpretation_hash": "421b044a6c68432dcc968662816d482acd778c8c863ca47a8b49ce9cc306f055",
+      "previous_event_hash": "7672804f70877bfcbef5d162fe1fc02b92ff391cfa531d19db830492f6104897",
+      "retrieval_truth_hash": "72c3316c704b63af83384d542586ce1d441e3c7dd31695809fb8dc99c6fbed98",
+      "trace_id": "ecosystem_982ff7f90a75"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c644bb4fda484fcaec02da6af272c48ffaafacef338dfecb2f92061bf71a5f63",
+      "interpretation_hash": "cccfe9aa3d4903d3b46bb6e694cf3b55b1ca23d4282e0aa7c86e4c00e042fa6c",
+      "previous_event_hash": "143fbe53358f12ed732da0c27f1659b43dc577e691a2f12a4dc2aad0decc5af1",
+      "retrieval_truth_hash": "eeb778fdf90667f2a58233a8d827d018b78e64585cfff9f3c464c306fbc1336e",
+      "trace_id": "ecosystem_23825e3978af"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "cd9426c0c1d209f9dac1c016554244340582e6967ddc7c70fbae6b5788544d1e",
+      "interpretation_hash": "017b07b92c854c75a8f0a44ef2e0952200659b253354c30150d860892604e6db",
+      "previous_event_hash": "c644bb4fda484fcaec02da6af272c48ffaafacef338dfecb2f92061bf71a5f63",
+      "retrieval_truth_hash": "c31372857ed4824a193b21aea2698806f2d177f79c906d5663a7c305de368f03",
+      "trace_id": "isha_sanskrit_dharma_v1"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0221bdd273e04d07ffaa1cd5258ef1d78dd5452a1824d647b9077ec262a33256",
+      "interpretation_hash": "83675d4cc6be6ddeefd2a0f6970665c4d0830541e6f6ba7c63b18363a8b30c6e",
+      "previous_event_hash": "cd9426c0c1d209f9dac1c016554244340582e6967ddc7c70fbae6b5788544d1e",
+      "retrieval_truth_hash": "de5eff9b5ed9d92e9a60c79e889b1e70a9746252010c5a6ce1ff59a036875bc0",
+      "trace_id": "ecosystem_f4bd6cfe660c"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "8a8294fcc7a4b5f2aa87aef320214cf0bcc8578c75147a42e7a64f8fcadd0c63",
+      "interpretation_hash": "64e10abfc4c4d3863f8e5f9ca4e93268f433f64ff013879e7061c1ef1d312413",
+      "previous_event_hash": "0221bdd273e04d07ffaa1cd5258ef1d78dd5452a1824d647b9077ec262a33256",
+      "retrieval_truth_hash": "81bf5699b86fe618686743ba95c0ded25b81b8c028233483e7e0d2f294ef7454",
+      "trace_id": "test_sanskrit_dharma"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "8fa3570ec8c6ef91b47fabee4b3d9f2f48f39baf3ddbe545e5ef0d418f561525",
+      "interpretation_hash": "b2744f9b83e0ef84285c88f2efe9a471445e493646f47aa8ffd5cd3155b19bcc",
+      "previous_event_hash": "8a8294fcc7a4b5f2aa87aef320214cf0bcc8578c75147a42e7a64f8fcadd0c63",
+      "retrieval_truth_hash": "17e134576558f4c72744fad4d39ecfca815c86d1a73321a4f3b35e1b4d1ca3e7",
+      "trace_id": "ecosystem_22c8c7433960"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "97398e4f3dd57e72fb96fde883d2806e971d8e69ba05a7702ff912cdb2ea3ef5",
+      "interpretation_hash": "2d54e670c5ca481f36a1137245ef001ee4a5ed053a87dd5c07869ffffba06faa",
+      "previous_event_hash": "8fa3570ec8c6ef91b47fabee4b3d9f2f48f39baf3ddbe545e5ef0d418f561525",
+      "retrieval_truth_hash": "89f674698d7116e11a5162b4f70096a72a3b4db3847e65244ccdd4c8b6df7883",
+      "trace_id": "ecosystem_9b8802515090"
     }
   ],
   "replay_integrity": {
     "hash_chain_ok": false,
-    "last_event_hash": "7672804f70877bfcbef5d162fe1fc02b92ff391cfa531d19db830492f6104897",
+    "last_event_hash": "97398e4f3dd57e72fb96fde883d2806e971d8e69ba05a7702ff912cdb2ea3ef5",
     "rollback_target": null
   },
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
-  "state_hash": "2ac69f067682d4820497c5ac090f58378b0e23826bde5536d6ee4288d376a368",
+  "state_hash": "625b937415fa24fe976d2b1885e6648a44db5db6a7acfac96c02a93d3d5cacd0",
   "transient_memory": [
     {
       "classification": "transient",
@@ -9836,6 +9892,76 @@
         "confidence_below_canonical_floor"
       ],
       "trace_id": "ecosystem_replay_31fc143dd84a"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "143fbe53358f12ed732da0c27f1659b43dc577e691a2f12a4dc2aad0decc5af1",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_982ff7f90a75"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c644bb4fda484fcaec02da6af272c48ffaafacef338dfecb2f92061bf71a5f63",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_23825e3978af"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "cd9426c0c1d209f9dac1c016554244340582e6967ddc7c70fbae6b5788544d1e",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "isha_sanskrit_dharma_v1"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0221bdd273e04d07ffaa1cd5258ef1d78dd5452a1824d647b9077ec262a33256",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_f4bd6cfe660c"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "8a8294fcc7a4b5f2aa87aef320214cf0bcc8578c75147a42e7a64f8fcadd0c63",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "test_sanskrit_dharma"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "8fa3570ec8c6ef91b47fabee4b3d9f2f48f39baf3ddbe545e5ef0d418f561525",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_22c8c7433960"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "97398e4f3dd57e72fb96fde883d2806e971d8e69ba05a7702ff912cdb2ea3ef5",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_9b8802515090"
     }
   ]
 }

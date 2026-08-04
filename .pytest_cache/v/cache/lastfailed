@@ -1,3 +1,10 @@
 {
-  "backend/test_queries.py": true
+  "backend/test_queries.py": true,
+  "backend/tests/test_sanskrit_decoder.py::test_decode_sanskrit_concept_builds_deterministic_pipeline": true,
+  "backend/tests/test_sanskrit_decoder.py::test_sanskrit_runtime_endpoint_returns_decoded_payload": true,
+  "backend/tests/test_constitutional_semantic_memory.py::test_canonical_mutation_is_idempotent_and_reconstructable": true,
+  "backend/tests/test_constitutional_semantic_memory.py::test_contradiction_is_quarantined_not_canonical": true,
+  "backend/tests/test_constitutional_semantic_memory.py::test_poisoning_attempt_without_retrieval_truth_stays_transient": true,
+  "backend/tests/test_constitutional_semantic_memory.py::test_rollback_and_corruption_detection": true,
+  "backend/tests/test_mdu_client.py::test_mdu_client_uses_canonical_dataset_lookup": true
 }

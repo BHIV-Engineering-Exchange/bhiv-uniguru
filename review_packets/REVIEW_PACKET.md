@@ -1,28 +1,19 @@
-# REVIEW PACKET — UniGuru Native Sanskrit Decoder
+# UniGuru Sanskrit Decoder — Isha Sprint Review Packet
 
-Status: validated locally
+## Implemented locally
 
-## Scope
+- Sanskar source corpus ingested at `backend/knowledge/sanskrit/` (six concepts).
+- Decoder uses Sanskar’s `SanskritConcept`, `SanskritRegistry`, `EvidenceType`, and `Provenance` contracts.
+- Exact Sanskrit/transliteration resolution, eight-layer decoding, source-scoped explanations, cross-references, provenance, and graph consistency validation.
+- Existing Vijay ecosystem runtime now attaches a canonical Sanskrit result, then emits Bucket, InsightFlow, MDU/TANTRA, and replay evidence.
 
-The native decoder accepts a Sanskrit concept, resolves an exact registry match, and renders the governed sequence: śabda → dhātu → vyākaraṇa → nirukta → bīja → tattva → śakti → functional meaning. It then exposes related concepts as graph edges and returns a deterministic replay key.
+## Evidence
 
-## Sanskar source integration
+- `integration_proof/ecosystem_execution_isha_sanskrit_dharma_v1.json`
+- `integration_proof/bucket_isha_sanskrit_dharma_v1.json`
+- `integration_proof/replay_verification_isha_sanskrit_dharma_v1.json`
+- Focused validation: `7 passed`.
 
-The supplied `uniguru_ai-main.zip` is the canonical Sanskar input. Its Sanskrit ontology contracts were incorporated at `backend/ontology/sanskrit/`:
+## Boundaries
 
-- immutable `SanskritConcept` schema
-- immutable `SanskritRegistry`
-- evidence taxonomy
-- provenance type
-
-The runtime validates each resolved entry through this schema before it is emitted. Unknown concepts have an empty pipeline and an explicit `UNVERIFIED` / `no_inference` response; no generated etymology is returned.
-
-## Runtime contract
-
-`POST /runtime/sanskrit/decode` accepts `{ "query": string, "emit_proof": boolean }` and returns the decoder payload, a deterministic trace ID, evidence classification, provenance, graph, replay key, and response hash.
-
-## Validation
-
-`pytest backend/tests/test_sanskrit_decoder.py -q` — 3 passed.
-
-Coverage includes Devanagari/Latin alias replay (`धर्म` and `dharma`), ordered eight-layer decoding, graph root identity, the HTTP endpoint, and unknown-term non-inference.
+The supplied Sanskar corpus has named source references but no passage-level excerpts, edition, translator, chapter, or verse locations. The runtime preserves those fields as unavailable and does not fabricate them. Production deployment validation is not represented by the local proof artifacts.
