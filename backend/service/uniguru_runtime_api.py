@@ -23,8 +23,9 @@ if str(ROOT) not in sys.path:
 
 from governance.constitutional_runtime import ConstitutionalCognitionRuntime
 from learning_runtime.learning_intelligence import build_learning_intelligence
-from retrieval.retrieval_engine import retrieve_from_masterdb
 from memory.constitutional_semantic_memory import stable_hash, utc_now_iso
+from ontology.sanskrit_decoder import decode_sanskrit_concept
+from retrieval.retrieval_engine import retrieve_from_masterdb
 from service.ecosystem_runtime import execute_ecosystem_runtime, verify_ecosystem_replay
 
 
@@ -37,6 +38,20 @@ class RuntimeRequest(BaseModel):
     medium: Optional[str] = None
     subject: Optional[str] = None
     emit_proof: bool = True
+
+
+class SanskritDecoderRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=2000)
+    emit_proof: bool = True
+    trace_id: Optional[str] = None
+
+    @field_validator("query")
+    @classmethod
+    def _normalize_query(cls, value: str) -> str:
+        normalized = value.strip()
+        if not normalized:
+            raise ValueError("query must not be empty or whitespace-only.")
+        return normalized
 
 
 app = FastAPI(
@@ -253,6 +268,29 @@ def execute_runtime(request: RuntimeRequest) -> Dict[str, Any]:
 @app.post("/runtime/execute")
 def runtime_execute(request: RuntimeRequest) -> Dict[str, Any]:
     return execute_runtime(request)
+
+
+@app.post("/runtime/sanskrit/decode")
+def runtime_sanskrit_decode(request: SanskritDecoderRequest) -> Dict[str, Any]:
+    decoder_result = decode_sanskrit_concept(request.query)
+    trace_id = f"sanskrit_{stable_hash({'result': decoder_result['result_hash']})[:16]}"
+    payload = {
+        "trace_id": trace_id,
+        "decoder_result": decoder_result,
+        "governed_response": decoder_result["governed_response"],
+        "replay": {
+            "replay_key": decoder_result["result_hash"],
+            "replay_safe": True,
+            "input_trace_id_accepted": request.trace_id is None or request.trace_id == trace_id,
+        },
+        "schema_version": "UNIGURU_SANSKRIT_DECODER_RESPONSE_V1",
+    }
+    payload["response_hash"] = stable_hash(payload)
+    if request.emit_proof:
+        PROOF_DIR.mkdir(parents=True, exist_ok=True)
+        proof_path = PROOF_DIR / f"sanskrit_decoder_{trace_id}.json"
+        proof_path.write_text(json.dumps(payload, indent=2, ensure_ascii=True, sort_keys=True), encoding="utf-8")
+    return payload
 
 
 class EcosystemRuntimeRequest(BaseModel):
