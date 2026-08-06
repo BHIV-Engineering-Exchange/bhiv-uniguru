@@ -20,8 +20,6 @@ class TantraSdkAdapter:
 
         candidates = [
             Path(os.getenv("TANTARA_ECOSYSTEM_PATH", "")) / "execution_sdk" / "v1" / "schemas" / "execution_event.v1.0.0.json",
-            Path("C:/Users/Isha Singh/Desktop/vijay/tantara_ecosystem-main/execution_sdk/v1/schemas/execution_event.v1.0.0.json"),
-            Path("C:/Users/Isha Singh/Downloads/tantara_ecosystem-main_extracted/tantara_ecosystem-main/execution_sdk/v1/schemas/execution_event.v1.0.0.json"),
             Path(__file__).resolve().parents[1] / "contracts" / "tantra_execution_event_schema.json",
         ]
         for candidate in candidates:

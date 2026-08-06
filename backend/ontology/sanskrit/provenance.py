@@ -1,4 +1,5 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import Optional
 
 
 @dataclass(frozen=True)
@@ -11,3 +12,5 @@ class Provenance:
     edition: str = ""
     translator: str = ""
     validation_status: str = "UNVERIFIED"
+    trace_id: Optional[str] = None
+    artifact_hash: Optional[str] = None

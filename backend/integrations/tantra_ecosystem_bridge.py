@@ -2,112 +2,115 @@ from __future__ import annotations
 
 import logging
 import os
-import sys
-from pathlib import Path
+import time
 from typing import Any, Dict, Optional
+
+import httpx
 
 logger = logging.getLogger("uniguru.integrations.tantra_ecosystem_bridge")
 
-# Locate brhamnda_tantara_integration repository
-BRHAMNDA_INTEGRATION_CANDIDATES = [
-    Path(os.getenv("BRHAMNDA_TANTARA_INTEGRATION_PATH", "")),
-    Path("C:/Users/Isha Singh/Downloads/brhamnda_tantara_integration-main_extracted/brhamnda_tantara_integration-main"),
-    Path(__file__).resolve().parents[3] / "Downloads" / "brhamnda_tantara_integration-main_extracted" / "brhamnda_tantara_integration-main",
-]
+# InsightCore — confirmed endpoint: POST /auth/issue
+# Swagger: https://insightcore-8tdt.onrender.com/docs#/default/issue_token_auth_issue_post
+INSIGHT_CORE_URL = os.getenv("INSIGHT_CORE_URL", "https://insightcore-8tdt.onrender.com")
+INSIGHT_CORE_CLIENT_ID = os.getenv("INSIGHT_CORE_CLIENT_ID", "")
+INSIGHT_CORE_CLIENT_SECRET = os.getenv("INSIGHT_CORE_CLIENT_SECRET", "")
 
-_integration_repo_path: Optional[Path] = None
-for candidate in BRHAMNDA_INTEGRATION_CANDIDATES:
-    if candidate and candidate.exists() and (candidate / "services").exists():
-        _integration_repo_path = candidate
-        break
+# InsightBridge
+INSIGHT_BRIDGE_URL = os.getenv("INSIGHT_BRIDGE_URL", "https://insightbridge-phase-4-2-integration-demo.onrender.com")
+INSIGHT_BRIDGE_TIMEOUT = float(os.getenv("INSIGHT_BRIDGE_TIMEOUT_SECONDS", "5.0"))
 
-if _integration_repo_path and str(_integration_repo_path) not in sys.path:
-    sys.path.insert(0, str(_integration_repo_path))
-
-# Dynamic / Fallback Imports of Canonical Integration Services
-try:
-    from contracts.schemas import GameplayEvent, CapabilityResponse
-    from services.insight_flow import InsightFlowTelemetry
-    from services.bucket_storage import BucketStorageIntegration
-    from services.replay_service import ReplayEvidenceGeneration
-    from services.prana_client import PRANATrustVerification
-    from services.karma_client import KARMACapabilityConsumption
-    from services.insight_core import InsightCoreIntegration
-    from services.insight_bridge import InsightBridgeClient
-    from adapters.brahmanda_adapter import BrahmandaRuntimeAdapter
-    CANONICAL_INTEGRATION_AVAILABLE = True
-except ImportError as exc:
-    logger.warning("Failed to import canonical TANTRA integration services: %s", exc)
-    CANONICAL_INTEGRATION_AVAILABLE = False
+# Simple in-process token cache — avoids re-issuing JWT on every request
+# Render free tier cold-starts can take 10-30s so we cache aggressively (55 min)
+_TOKEN_CACHE: Dict[str, Any] = {"token": None, "expires_at": 0.0}
+_TOKEN_TTL_SECONDS = 3300  # 55 minutes
 
 
-class UniGuruTantraAdapter:
+def _get_jwt() -> Optional[str]:
     """
-    Adapts UniGuru Educational / Curriculum Execution events to the canonical InsightBridge.
-    Ensures core UniGuru reasoning is preserved while participating in TANTRA PRANA, KARMA,
-    Replay, Bucket, and InsightFlow operational fabric.
+    Obtain a JWT from InsightCore POST /auth/issue.
+    Caches the token for _TOKEN_TTL_SECONDS to avoid hammering the endpoint.
+    Request body: { client_id, client_secret }
+    Response body: { token: <jwt> }  (sovereign-core issuer, insight-bridge audience)
     """
+    if not INSIGHT_CORE_CLIENT_ID or not INSIGHT_CORE_CLIENT_SECRET:
+        logger.warning("InsightCore credentials not configured (INSIGHT_CORE_CLIENT_ID / INSIGHT_CORE_CLIENT_SECRET)")
+        return None
 
-    def __init__(self, bridge_client: InsightBridgeClient) -> None:
-        self.bridge = bridge_client
+    now = time.monotonic()
+    if _TOKEN_CACHE["token"] and now < _TOKEN_CACHE["expires_at"]:
+        return _TOKEN_CACHE["token"]
 
-    def on_uniguru_query_event(
-        self,
-        event_type: str,
-        query: str,
-        trace_id: str,
-        verification_status: str,
-        payload: Optional[Dict[str, Any]] = None,
-    ) -> Dict[str, Any]:
-        event_payload = {
-            "query": query,
-            "verification_status": verification_status,
-            "system": "uniguru",
-        }
-        if payload:
-            event_payload.update(payload)
-
-        event = GameplayEvent(
-            event_type=event_type,
-            trace_id=trace_id,
-            payload=event_payload,
+    try:
+        resp = httpx.post(
+            f"{INSIGHT_CORE_URL}/auth/issue",
+            json={
+                "client_id": INSIGHT_CORE_CLIENT_ID,
+                "client_secret": INSIGHT_CORE_CLIENT_SECRET,
+            },
+            timeout=10.0,  # longer timeout — Render free tier cold start
         )
+        resp.raise_for_status()
+        body = resp.json()
+        # Sovereign stack returns { "token": "..." }
+        token = body.get("token") or body.get("access_token") or body.get("jwt")
+        if token:
+            _TOKEN_CACHE["token"] = token
+            _TOKEN_CACHE["expires_at"] = now + _TOKEN_TTL_SECONDS
+            logger.info("InsightCore JWT issued successfully (cached for %ds)", _TOKEN_TTL_SECONDS)
+        else:
+            logger.error("InsightCore /auth/issue returned no token field. Body keys: %s", list(body.keys()))
+        return token
+    except httpx.HTTPStatusError as exc:
+        logger.error("InsightCore /auth/issue HTTP %s: %s", exc.response.status_code, exc.response.text[:200])
+        return None
+    except Exception as exc:
+        logger.error("InsightCore JWT fetch failed: %s", exc)
+        return None
 
-        response = self.bridge.ingest_event(event)
-        return response if isinstance(response, dict) else {}
+
+def check_insightcore_health() -> Dict[str, Any]:
+    """
+    Verify InsightCore is reachable and credentials are valid.
+    Returns a structured health result — safe to call from a health endpoint.
+    """
+    token = _get_jwt()
+    return {
+        "service": "insightcore",
+        "url": INSIGHT_CORE_URL,
+        "auth_endpoint": f"{INSIGHT_CORE_URL}/auth/issue",
+        "credentials_configured": bool(INSIGHT_CORE_CLIENT_ID and INSIGHT_CORE_CLIENT_SECRET),
+        "token_obtained": bool(token),
+        "live": bool(token),
+    }
+
+
+def _ingest_to_bridge(payload: Dict[str, Any], token: Optional[str]) -> Dict[str, Any]:
+    """POST telemetry payload to InsightBridge /ingest."""
+    headers: Dict[str, str] = {"Content-Type": "application/json"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    try:
+        resp = httpx.post(
+            f"{INSIGHT_BRIDGE_URL}/ingest",
+            json=payload,
+            headers=headers,
+            timeout=INSIGHT_BRIDGE_TIMEOUT,
+        )
+        resp.raise_for_status()
+        return {"live": True, "status": "ingested", "http_status": resp.status_code, "response": resp.json()}
+    except httpx.HTTPStatusError as exc:
+        logger.error("InsightBridge /ingest HTTP %s: %s", exc.response.status_code, exc.response.text[:200])
+        return {"live": False, "status": "ingest_failed", "http_status": exc.response.status_code, "reason": exc.response.text[:200]}
+    except Exception as exc:
+        logger.error("InsightBridge ingest failed: %s", exc)
+        return {"live": False, "status": "ingest_failed", "reason": str(exc)}
 
 
 class TantraEcosystemFabric:
     """
-    Container for the complete live canonical TANTRA Operational Fabric.
+    HTTP-based TANTRA ecosystem bridge.
+    Flow: InsightCore POST /auth/issue → JWT → InsightBridge POST /ingest
     """
-
-    def __init__(self) -> None:
-        self.available = CANONICAL_INTEGRATION_AVAILABLE
-        if self.available:
-            self.flow = InsightFlowTelemetry()
-            self.bucket = BucketStorageIntegration()
-            self.replay = ReplayEvidenceGeneration()
-            self.prana = PRANATrustVerification()
-            self.karma = KARMACapabilityConsumption()
-            self.core = InsightCoreIntegration(
-                flow=self.flow,
-                bucket=self.bucket,
-                replay=self.replay,
-                prana=self.prana,
-                karma=self.karma,
-            )
-            self.bridge = InsightBridgeClient(self.core)
-            self.adapter = UniGuruTantraAdapter(self.bridge)
-        else:
-            self.flow = None
-            self.bucket = None
-            self.replay = None
-            self.prana = None
-            self.karma = None
-            self.core = None
-            self.bridge = None
-            self.adapter = None
 
     def process_uniguru_event(
         self,
@@ -117,22 +120,30 @@ class TantraEcosystemFabric:
         event_type: str = "CURRICULUM_QUERY",
         extra_payload: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
-        if not self.available or not self.adapter:
-            return {
-                "trace_id": trace_id,
-                "status": "UNAVAILABLE",
-                "prana_verified": False,
-                "karma_intelligence": {},
-                "reason": "canonical_integration_not_loaded",
-            }
+        token = _get_jwt()
 
-        return self.adapter.on_uniguru_query_event(
-            event_type=event_type,
-            query=query,
-            trace_id=trace_id,
-            verification_status=verification_status,
-            payload=extra_payload,
-        )
+        bridge_payload = {
+            "telemetry_data": {
+                "request_id": trace_id,
+                "path": "/ask",
+                "method": "POST",
+                "status_code": 200,
+                "latency_ms": 0,
+            },
+            "metadata": {
+                "user_id": "uniguru-runtime",
+                "event_type": event_type,
+                "verification_status": verification_status,
+                "system": "uniguru",
+            },
+        }
+        if extra_payload:
+            bridge_payload["metadata"].update(extra_payload)
+
+        result = _ingest_to_bridge(bridge_payload, token)
+        result["trace_id"] = trace_id
+        result["insightcore_auth"] = bool(token)
+        return result
 
 
 _fabric_instance: Optional[TantraEcosystemFabric] = None

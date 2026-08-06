@@ -1,5 +1,45 @@
-# Sanskrit Integration Summary
+# Integration Summary — Sanskrit Decoder Sprint
 
-The decoder is not only a standalone API. `backend/service/ecosystem_runtime.py` invokes it when a query has an exact Sanskar source-backed canonical match, preserves the decoder lineage in `pipeline_summary.sanskrit_decoder`, and sends the result through existing Bucket, InsightFlow, TANTRA, MDU, and replay paths.
+## What is integrated
 
-The integration remains source-scoped: the supplied Sanskar documents provide concept records and named canonical sources, but not passage-level excerpts. Cross-text output therefore records references and uncertainty rather than inventing a merged reading.
+### Sanskrit Decoder → UniGuru Pipeline
+- `decode_sanskrit_concept()` is called inside `execute_ecosystem_runtime()` via `_attach_sanskrit_decoder()`
+- When a Sanskrit concept is matched, the decoder output replaces the generic pipeline answer
+- Domain is set to `"sanskrit"`, confidence to `0.65`, verification_status to `PARTIAL_VERIFIED_SAMPLE`
+
+### Sanskrit Decoder → TANTRA Contract
+- `execution_event.v1.0.0` payload is built by `TantraSdkAdapter` and includes the Sanskrit domain
+- `result_hash` from the decoder is included in `pipeline_summary.sanskrit_decoder`
+- `sanskrit_decoder_result_stable` is one of the 8 replay verification checks
+
+### Sanskrit Decoder → InsightCore + InsightBridge
+- Every ecosystem execution calls `TantraEcosystemFabric.process_uniguru_event()`
+- JWT is obtained from InsightCore `POST /auth/issue` (cached 55 min)
+- Telemetry is posted to InsightBridge `POST /ingest` with trace_id in metadata
+
+### Sanskrit Decoder → Bucket
+- Local proof file written to `review_packets/integration_proof/bucket_{trace_id}.json`
+- Live emit via `BucketTelemetryClient.emit()` when `UNIGURU_BUCKET_TELEMETRY_ENDPOINT` is set
+
+### Sanskrit Decoder → InsightFlow
+- `_build_insightflow_observability()` emits trace + decision to `/telemetry/ingest`
+- Token: `flow_secret_789` (from Vijay's sovereign stack config)
+- Blocked: `INSIGHTFLOW_BASE_URL` not set — Vijay's service is localhost-only
+
+### Sanskrit Decoder → GC
+- `_build_gc_validation()` submits authority + hidden-state validation
+- Blocked: `GC_BASE_URL` not set
+
+### Sanskrit Decoder → MDU
+- `_build_mdu_validation()` validates schema + provenance against `BHIV-DS-UNIGURU-RUNTIME-001`
+- Blocked: `MDU_API_KEY` not set
+
+## Integration that is NOT done
+
+| Integration | Reason |
+|---|---|
+| PRANA trust verification | No deployed endpoint from Vijay |
+| KARMA capability consumption | No deployed endpoint from Vijay |
+| Sanskrit domain in `snapshot_v1.json` | Sanskar has not delivered this |
+| Live Bucket persistence | Bucket team has not provided endpoint |
+| Live MDU validation | MDU team has not provided API key |

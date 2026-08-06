@@ -876,6 +876,39 @@ async def voice_query(
 
 
 @app.get(
+    "/health/ecosystem",
+    tags=["System Health"],
+    summary="Ecosystem Integration Health",
+    description="Check live connectivity to InsightCore and other TANTRA ecosystem services"
+)
+def health_ecosystem() -> Dict[str, Any]:
+    from integrations.tantra_ecosystem_bridge import check_insightcore_health
+    insightcore = check_insightcore_health()
+    return {
+        "status": "ok" if insightcore["live"] else "degraded",
+        "services": {
+            "insightcore": insightcore,
+            "insightbridge": {
+                "url": os.getenv("INSIGHT_BRIDGE_URL", ""),
+                "configured": bool(os.getenv("INSIGHT_BRIDGE_URL", "")),
+            },
+            "insightflow": {
+                "enabled": os.getenv("INSIGHTFLOW_ENABLED", "false"),
+                "configured": bool(os.getenv("INSIGHTFLOW_BASE_URL") or os.getenv("INSIGHTFLOW_ENDPOINT")),
+            },
+            "mdu": {
+                "enabled": os.getenv("MDU_ENABLED", "false"),
+                "configured": bool(os.getenv("MDU_API_KEY")),
+            },
+            "gc": {
+                "enabled": os.getenv("GC_ENABLED", "false"),
+                "configured": bool(os.getenv("GC_BASE_URL")),
+            },
+        },
+    }
+
+
+@app.get(
     "/health",
     tags=["System Health"],
     summary="Health Check",
@@ -2361,27 +2394,18 @@ def mock_samachar_system(query: str):
     }
 
 def log_to_bucket(event_id, query, signals_used, final_answer, confidence, system_path):
-    import os, json
-    log_file = os.path.join(os.path.dirname(__file__), "..", "data", "bucket_logs.json")
-    try:
-        if not os.path.exists(log_file):
-            with open(log_file, "w") as f:
-                json.dump([], f)
-        with open(log_file, "r+") as f:
-            logs = json.load(f)
-            logs.append({
-                "event_id": event_id,
-                "query": query,
-                "signals_used": signals_used,
-                "final_answer": final_answer,
-                "confidence": float(confidence),
-                "system_path": system_path,
-                "timestamp": datetime.now(timezone.utc).isoformat()
-            })
-            f.seek(0)
-            json.dump(logs, f, indent=4)
-    except Exception as e:
-        logger.error(f"Bucket logging failed: {e}")
+    bucket_telemetry.emit(
+        TelemetryEvent(
+            event="pipeline_execution",
+            query_hash=_query_hash(str(query)),
+            route=str(system_path),
+            verification_status="UNVERIFIED",
+            latency=0.0,
+            caller=None,
+            session_id=event_id,
+            decision=None,
+        )
+    )
 
 @app.post(
     "/new_query",
