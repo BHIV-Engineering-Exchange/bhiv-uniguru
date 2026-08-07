@@ -10,3 +10,5 @@
 {"timestamp":"2026-08-07T10:16:07.127389Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"b0dd145d-8667-4bcb-b1c3-d2fb03bac84b","method":"POST","route":"/ask","status_code":200,"latency_ms":78.899}
 {"timestamp":"2026-08-07T10:17:32.268584Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"7b81e04b-8742-45dc-8456-473e8f7f5999","method":"GET","route":"/docs","status_code":200,"latency_ms":0.57}
 {"timestamp":"2026-08-07T10:17:32.661426Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"7bbbbe68-8b76-487e-8a99-b0dc170ebb0b","method":"GET","route":"/openapi.json","status_code":200,"latency_ms":1.284}
+{"timestamp":"2026-08-07T10:30:34.571204Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"786872c1-3fc9-4409-a159-8f71ffc85270","method":"GET","route":"/health","status_code":200,"latency_ms":29.49}
+{"timestamp":"2026-08-07T10:30:34.627652Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"bd7496c1-22a2-4d77-b258-e696ecc76cfe","method":"GET","route":"/ready","status_code":200,"latency_ms":8.11}
