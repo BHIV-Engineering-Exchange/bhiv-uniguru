@@ -12,3 +12,4 @@
 {"timestamp":"2026-08-07T10:17:32.661426Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"7bbbbe68-8b76-487e-8a99-b0dc170ebb0b","method":"GET","route":"/openapi.json","status_code":200,"latency_ms":1.284}
 {"timestamp":"2026-08-07T10:30:34.571204Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"786872c1-3fc9-4409-a159-8f71ffc85270","method":"GET","route":"/health","status_code":200,"latency_ms":29.49}
 {"timestamp":"2026-08-07T10:30:34.627652Z","service":"uniguru-live-reasoning","level":"INFO","request_id":"bd7496c1-22a2-4d77-b258-e696ecc76cfe","method":"GET","route":"/ready","status_code":200,"latency_ms":8.11}
+{"timestamp":"2026-08-07T10:50:31.445399Z","service":"uniguru-live-reasoning","level":"WARN","request_id":"bee35d5d-294e-4016-8ad9-95f01e5612fe","method":"GET","route":"/favicon.ico","status_code":404,"latency_ms":126.207}
