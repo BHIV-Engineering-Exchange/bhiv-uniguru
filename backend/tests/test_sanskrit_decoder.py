@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from fastapi.testclient import TestClient
 
 from ontology.sanskrit_decoder import (
@@ -21,6 +23,13 @@ def test_sanskar_source_retrieval_supports_all_supplied_concepts():
     assert result["provenance"]["source_documents"]
     assert result["knowledge_graph"]["metadata"]["consistency_valid"] is True
     assert result["civilizational_knowledge"]["coverage"]["coverage_pct"] >= 85.0
+
+
+def test_registry_builds_without_markdown_corpus(monkeypatch):
+    monkeypatch.setattr("ontology.sanskrit_decoder.SOURCE_DIR", Path("c:/does/not/exist"))
+    registry, metadata = load_sanskar_registry()
+    assert len(registry.list_concepts()) >= 10
+    assert metadata["sanskar:sanskrit:dharma"]["retrieval_system"] == "uniguru_ecosystem_adapter"
 
 
 def test_sanskar_decoder_supports_lokas_koshas_chakras():

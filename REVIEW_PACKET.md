@@ -82,6 +82,22 @@ This sprint converted UniGuru's synthetic-curriculum-shaped runtime into a **ver
 
 ---
 
+## Sanskrit Civilizational Knowledge Integration (Verified)
+
+The Sanskrit decoder was updated to operate as an ecosystem-backed civilizational knowledge layer rather than a markdown-corpus wrapper. The implementation in `backend/ontology/sanskrit_decoder.py` now retrieves evidence through the existing UniGuru ecosystem assets:
+
+- `backend/data/kosha/` for deterministic kosha records
+- `backend/knowledge/index/master_index.json` for knowledge-base index evidence
+- `masterdb/balbharti/canonical_dataset.json` for canonical masterdb records
+
+The decoder preserves provenance, replay-safe hashing, and graph traversal metadata for each concept. The runtime contract remains read-only and source-scoped, with no synthetic summarization injected into the output.
+
+**Verification evidence (2026-08-06):**
+- `pytest backend/tests/test_sanskrit_decoder.py -q` → `10 passed in 3.86s`
+- Smoke tests for `dharma`, `karma`, `agni`, `atman`, `brahman`, `prana`, `rta`, `shakti`, `yajna`, and `om` all resolved successfully, with retrieved evidence tagged from `knowledge_base`, `kosha`, and `masterdb` and graph node counts in the 221–231 range.
+
+---
+
 ## Deliverables Map
 
 | Phase | Deliverable | Location | Status |

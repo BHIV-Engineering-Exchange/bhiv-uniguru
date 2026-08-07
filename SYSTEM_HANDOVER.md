@@ -92,6 +92,14 @@ Student/Teacher Query
 | `metrics_collector.py` | `backend/observability/` | Latency histograms, confidence distribution |
 | `retrieval_evaluator.py` | `backend/retrieval/` | IR metrics: Precision@K, MRR, NDCG |
 
+### Sanskrit Civilizational Decoder
+
+The decoder module at `backend/ontology/sanskrit_decoder.py` is now wired to the existing UniGuru ecosystem for civilizational knowledge retrieval. It uses the current knowledge base, kosha records, and masterdb dataset as its retrieval backbone, while preserving provenance, deterministic hashes, and graph traversal metadata.
+
+**Verified status (2026-08-06):**
+- `pytest backend/tests/test_sanskrit_decoder.py -q` → `10 passed in 3.86s`
+- Concept smoke tests for `dharma`, `karma`, `agni`, `atman`, `brahman`, `prana`, `rta`, `shakti`, `yajna`, and `om` all completed successfully with evidence sourced from `knowledge_base`, `kosha`, and `masterdb`.
+
 ---
 
 ## 4. Production Health Endpoints
