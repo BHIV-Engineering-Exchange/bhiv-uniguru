@@ -1,69 +1,41 @@
-# Changed File Map — UniGuru Sanskrit Knowledge Decoder Phase 2
+# Changed Files Map — Sanskrit Knowledge Enrichment Engine (Phases 1–6)
 
-This document maps all files modified or added in Phase 2, explaining their responsibilities and system connections.
+## Overview of Changed & Created Files
 
-## Core Ontology & Decoder Engine
+The repository changed files are organized by component responsibility:
 
-### `backend/ontology/sanskrit_decoder.py` (MODIFIED)
-- **Role**: Central Sanskrit Civilizational Knowledge Decoder.
-- **Key Changes**:
-  - Enhanced `_resolve()` for alias matching (Devanagari, IAST, English transliteration, diacritic removal, singular/plural forms).
-  - Expanded `_kosha_records()` multi-source retrieval engine across Kosha JSON/JSONL entries and Gurukul datasets.
-  - Updated `_evidence_type()` classification for expanded Vedic/Upanishadic/Gītā sources.
-  - Expanded `_graph()` to construct deep multi-tradition graph structures including `lokas`, `koshas`, `chakras`, `yantras`, `vidyas`, `shastras`, `deities`, and retrieved evidence nodes with 0 orphaned nodes.
+### 1. Core Ontology Engine & Data Map
 
----
+- [`backend/ontology/sanskrit_decoder.py`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/ontology/sanskrit_decoder.py)
+  - **Responsibility**: Core 35-layer Civilizational Knowledge Engine (`v3`), alias resolution, multi-source retrieval, Pāṇini sūtra lookup, Śikṣā acoustic phonetics lookup, comparative hermeneutics matrix parser, zero-synthesis claim builder, knowledge graph construction, and `traverse_concept_graph()` BFS multi-hop traversal function.
 
-## Canonical Knowledge Corpus (`backend/knowledge/sanskrit/`)
+- [`backend/knowledge/gurukul/sanskrit/grammar.md`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/knowledge/gurukul/sanskrit/grammar.md)
+  - **Responsibility**: Gurukul Vedāṅga grammar source file expanded with a machine-readable JSON catalogue of Pāṇini Ashtadhyayi sūtras for all 23 concept roots.
 
-### [NEW] `backend/knowledge/sanskrit/lokas.md`
-- **Role**: Canonical 34-layer record for Lokas (planes of existence/cosmological realms).
-- **Connects to**: Cosmology, Psychology, Governance, Vāstu, Lokas graph nodes.
+- [`backend/knowledge/sanskrit/phonetics/bija_phonetics.json`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/knowledge/sanskrit/phonetics/bija_phonetics.json) [NEW]
+  - **Responsibility**: Machine-readable bīja seed syllable acoustic phonetics map sourced to Vedic Śikṣā texts (*Pāṇinīya-Śikṣā*, *Taittirīya Prātiśākhya*).
 
-### [NEW] `backend/knowledge/sanskrit/koshas.md`
-- **Role**: Canonical 34-layer record for Koshas (five sheaths of embodiment).
-- **Connects to**: Taittirīya Upanishad, Āyurveda, Psychology, Yoga, Koshas graph nodes.
+- [`backend/knowledge/sanskrit/lokas.md`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/knowledge/sanskrit/lokas.md) [NEW]
+  - **Responsibility**: Canonical markdown record for Lokas (Seven higher/lower cosmic planes).
 
-### [NEW] `backend/knowledge/sanskrit/chakras.md`
-- **Role**: Canonical 34-layer record for Chakras (subtle energy vortices along Suṣumnā).
-- **Connects to**: Ṣaṭ-Cakra-Nirūpaṇa, Tantra, Āyurveda, Endocrine science, Chakras graph nodes.
+- [`backend/knowledge/sanskrit/koshas.md`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/knowledge/sanskrit/koshas.md) [NEW]
+  - **Responsibility**: Canonical markdown record for Koshas (Five sheaths of human embodiment).
 
----
+- [`backend/knowledge/sanskrit/chakras.md`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/knowledge/sanskrit/chakras.md) [NEW]
+  - **Responsibility**: Canonical markdown record for Chakras (Six subtle energy centers).
 
-## API Service Layer & Ecosystem Integration
+### 2. Service Endpoints & Ecosystem Integration
 
-### `backend/service/uniguru_runtime_api.py` (MODIFIED)
-- **Role**: Unified Constitutional Runtime FastAPI server.
-- **Key Changes**:
-  - Added `@app.post("/v2/runtime/sanskrit/decode")` route alias for explicit Phase 2 contract compliance alongside `/runtime/sanskrit/decode`.
+- [`backend/service/uniguru_runtime_api.py`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/service/uniguru_runtime_api.py)
+  - **Responsibility**: FastAPI production service layer exposing `/runtime/sanskrit/decode`, `/v2/runtime/sanskrit/decode`, and `/v2/runtime/sanskrit/graph/traverse` endpoints.
 
-### `backend/service/ecosystem_runtime.py` (VERIFIED/INTEGRATED)
-- **Role**: TANTRA Runtime Ecosystem execution engine.
-- **Connection**: Leverages `_attach_sanskrit_decoder` to attach 34-layer Sanskrit knowledge objects, Vijay replay validation, and InsightFlow observability to ecosystem queries.
+- [`backend/integrations/mdu_client.py`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/integrations/mdu_client.py)
+  - **Responsibility**: MDU Intelligence Data Universe client with `BHIV-DS-UNIGURU-RUNTIME-001` integration.
 
----
+### 3. Test Suite & Proof Generators
 
-## Testing & Validation Suite
+- [`backend/tests/test_sanskrit_decoder.py`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/backend/tests/test_sanskrit_decoder.py)
+  - **Responsibility**: Test suite covering 23 concepts, 35 knowledge layers, Pāṇini sūtras, Śikṣā phonetics, comparative hermeneutics, multi-hop graph traversal, `/v2` endpoints, and unknown concept safety.
 
-### `backend/tests/test_sanskrit_decoder.py` (MODIFIED)
-- **Role**: Unit test suite for Sanskrit decoder.
-- **Key Changes**: Updated assertions for 23 concepts, tested new Lokas/Koshas/Chakras concepts, validated `/v2/runtime/sanskrit/decode` endpoint.
-
-### `backend/tests/test_mdu_client.py` (MODIFIED)
-- **Role**: MDU Client test suite.
-- **Key Changes**: Added mock timestamp fields to match `DatasetResponse.from_dict` schema.
-
----
-
-## Review Packets & Proof Artifacts
-
-### `scripts/generate_phase2_proof_logs.py` (NEW)
-- **Role**: Utility script generating deterministic JSON proof artifacts for concept decodes and ecosystem replay.
-
-### `review_packets/proof_logs/` (NEW PROOF ARTIFACTS)
-- Proof logs for `dharma`, `karma`, `lokas`, `koshas`, `chakras`, `prana`, `agni`, `atman`, `brahman`.
-
-### `review_packets/integration_proof/` (NEW INTEGRATION ARTIFACTS)
-- `ecosystem_execution_isha_sanskrit_dharma_v2.json`
-- `replay_verification_isha_sanskrit_dharma_v2.json`
-- `ecosystem_execution_latest.json`
+- [`scripts/generate_phase2_proof_logs.py`](file:///c:/Users/Isha%20Singh/Desktop/uniguru%203/uniguru/scripts/generate_phase2_proof_logs.py)
+  - **Responsibility**: Script generating machine-readable JSON proof logs for all 23 concept decodes, graph traversal proof (`Prāṇa → Kosha → Chakra → Bīja`), and ecosystem execution/replay proofs.

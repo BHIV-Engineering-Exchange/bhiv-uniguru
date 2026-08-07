@@ -2,7 +2,7 @@
   "canonical_entity_count": 1,
   "contradiction_event_count": 0,
   "event_count": 1,
-  "generated_at": "2026-08-07T05:29:58.007196Z",
+  "generated_at": "2026-08-07T05:39:54.083493Z",
   "hash_chain_ok": true,
   "last_event_hash": "55ec433f8d2959f70398224e67dc3e474a0dcad0727dd61184c6669b81dd01f5",
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_OBSERVABILITY_V1",

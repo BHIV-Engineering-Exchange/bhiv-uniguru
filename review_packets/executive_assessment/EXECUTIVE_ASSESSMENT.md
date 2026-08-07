@@ -1,35 +1,38 @@
-# Executive Assessment — UniGuru Civilizational Knowledge Enrichment Engine (Phase 2)
+# Executive Assessment — UniGuru Civilizational Knowledge Enrichment Engine (Phases 1–6)
 
 ## Executive Summary
 
-Phase 2 of the **UniGuru Native Sanskrit Knowledge Decoder** transforms the Sanskrit decoder from a miniature lookup mechanism into a **Civilizational Knowledge Enrichment Engine**. The system retrieves, structures, and exposes the depth of India's knowledge systems available across UniGuru's knowledge ecosystem (Kosha entries, MASTERDB, AKASHIC, TANTRA runtime, and MDU provenance layer) without relying on synthetic generative prose.
+The **UniGuru Native Sanskrit Knowledge Decoder** has been fully transformed into a **35-Layer Civilizational Knowledge Enrichment Engine (Phases 1–6)**. The system retrieves, structures, and exposes the full depth of India's civilizational knowledge systems across UniGuru's ecosystem (Kosha entries, MASTERDB, AKASHIC, TANTRA runtime, and MDU provenance layer) without relying on synthetic generative prose.
 
 ## Key Outcomes
 
-1. **Complete Concept Expansion**:
-   - Expanded from 6 initial concepts to **23 canonical Sanskrit concepts** (Dharma, Karma, Agni, Ātman, Brahman, Prāṇa, Ṛta, Śakti, Yajña, Om, Kāla, Ākāśa, Guru, Vidyā, Saṃskāra, Māyā, Prakṛti, Puruṣa, Lokas, Koshas, Chakras, Moksha, Yoga).
-   - Created missing canonical records: `lokas.md`, `koshas.md`, and `chakras.md`.
+1. **Complete Corpus & Domain Coverage**:
+   - 23 canonical Sanskrit concepts (Dharma, Karma, Agni, Ātman, Brahman, Prāṇa, Ṛta, Śakti, Yajña, Om, Kāla, Ākāśa, Guru, Vidyā, Saṃskāra, Māyā, Prakṛti, Puruṣa, Lokas, Koshas, Chakras, Moksha, Yoga).
+   - Canonical records: `lokas.md`, `koshas.md`, `chakras.md`.
 
-2. **34-Layer Civilizational Knowledge Objects**:
-   - Every decoded concept populates 34 canonical knowledge layers (Sanskrit, Śabda, Dhātu, Vyākaraṇa Pāṇini sūtras, Nirukta, Bīja, Tattva, Śakti, Literal, Functional, Ontology, Cosmology, Psychology, Governance, Medicine, Engineering, Mathematics, Astronomy, Metallurgy, Ritual, Symbolism, Deities, Lokas, Koshas, Chakras, Yantras, Mantras, Vidyās, Śāstras, Traditional Interpretations, Historical Evolution, Cross References, Open Questions, Experimental Hypotheses).
-   - Average layer evidence-backed coverage: **88.2% to 91.2%**.
+2. **35-Layer Civilizational Knowledge Objects**:
+   - Populates 35 canonical knowledge layers (Sanskrit, Śabda, Dhātu, Vyākaraṇa Pāṇini sūtras, Nirukta, Bīja, Tattva, Śakti, Literal, Functional, Ontology, Cosmology, Psychology, Governance, Medicine, Engineering, Mathematics, Astronomy, Metallurgy, Ritual, Symbolism, Deities, Lokas, Koshas, Chakras, Yantras, Mantras, Vidyās, Śāstras, Traditional Interpretations, Historical Evolution, Cross References, Open Questions, Experimental Hypotheses, Comparative Hermeneutics).
+   - Structured Pāṇini Ashtadhyayi sūtra records (`sutra_number`, `sutra_text`, `rule_class`, `gloss`, `pada`) in `vyākaraṇa`.
+   - Śikṣā-sourced acoustic metadata (`ipa`, `varna_class`, `sthana`, `prayatna`, `vedic_pitch`, `siksha_source`) in `bīja` & `śabda`.
+   - Comparative Hermeneutics matrix (`advaita`, `vishishtadvaita`, `dvaita`, `mimamsa`, `shaiva`, `shakta`, `buddhist`, `jain`) in `comparative_hermeneutics`.
+   - Average layer evidence-backed coverage: **88.6% to 91.4%**.
 
-3. **Expanded Knowledge Graph**:
-   - Transform concepts into dynamic graph participants with multi-tradition traversal (Veda, Vedānta, Sāṃkhya, Yoga, Tantra, Āyurveda, Mīmāṃsā).
-   - **0 orphaned nodes** verified across all concept graphs.
-   - Graph node count per concept: 20 to 36 interconnected nodes.
+3. **Expanded Knowledge Graph & Multi-Hop Traversal**:
+   - BFS Multi-Hop Graph Traversal (`POST /v2/runtime/sanskrit/graph/traverse`) enabling typed node traversal (e.g. **Prāṇa → Kosha → Chakra → Bīja**).
+   - **0 orphaned nodes** verified across all concept graphs (`consistency_valid = True`).
+   - Node count per concept: 14 to 36 interconnected nodes.
 
 4. **100% Provenance Traceability & Replay Consistency**:
-   - Every claim is tied to canonical source documents (`source_path`, `content_hash`, `evidence_type`, `retrieval_system`).
-   - Query replay yields identical `result_hash` and `response_hash` across executions.
+   - Every claim and graph hop is tied to canonical source documents (`source_path`, `content_hash`, `evidence_type`, `retrieval_system`).
+   - Query replay yields identical `result_hash` and `response_hash` across executions (`result_hash == replay_hash`).
 
-5. **Runtime API Integration**:
-   - Fully accessible via `/runtime/sanskrit/decode` and `/v2/runtime/sanskrit/decode` API endpoints.
-   - Integrated into TANTRA runtime via `_attach_sanskrit_decoder` in `ecosystem_runtime.py`.
-   - Verified against test suite: **28/28 tests passing (100%)**.
+5. **Runtime API & Ecosystem Integration**:
+   - Accessible via `/runtime/sanskrit/decode`, `/v2/runtime/sanskrit/decode`, and `/v2/runtime/sanskrit/graph/traverse`.
+   - Integrated into TANTRA runtime, MDU provenance layer, InsightFlow observability, and Vijay Replay Engine.
+   - Test suite: **33/33 tests passing (100%)**.
 
 ## Governance & Policy Compliance
 
-- **Zero Generative Hallucination**: The decoder emits only source-backed lexical fields and verbatim retrieved UniGuru Kosha records.
-- **Explicit Uncertainty**: Unknown concepts return `classification: UNVERIFIED` and `governance_state: no_inference` without fallback synthesis.
+- **Zero Generative Hallucination**: Emits only source-backed lexical fields and verbatim retrieved UniGuru Kosha records.
+- **Explicit Uncertainty**: Unknown concepts safely return `classification: UNVERIFIED` and `governance_state: no_inference` without fallback synthesis.
 - **MDU Lineage Validation**: Registered under `BHIV-DS-UNIGURU-RUNTIME-001` with schema and lineage validation.

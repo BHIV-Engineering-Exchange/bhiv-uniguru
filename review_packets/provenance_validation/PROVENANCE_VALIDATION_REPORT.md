@@ -1,17 +1,17 @@
-# Provenance Validation Report — Sanskrit Knowledge Decoder Phase 2
+# Provenance Validation Report — Sanskrit Knowledge Decoder (Phases 1–6)
 
 ## Provenance Architecture
 
-The UniGuru Sanskrit Knowledge Enrichment Engine enforces strict provenance tracking across all decoded concepts. Provenance metadata is generated deterministically at decode time and attached to every claim and graph node.
+The UniGuru Sanskrit Knowledge Enrichment Engine enforces strict provenance tracking across all decoded concepts and multi-hop graph traversals. Provenance metadata is generated deterministically at decode/traversal time and attached to every claim, graph node, and edge.
 
 ## Lineage Protocol & Metadata
 
-Every claim in the 34-layer civilizational knowledge object includes:
-- `source_id`: 16-character SHA-256 hash derived from concept ID and source reference.
+Every claim in the 35-layer civilizational knowledge object includes:
+- `source_id`: 16-character SHA-256 hash derived from concept ID/source reference.
 - `evidence_type`: Formally classified evidence category (`VEDA`, `UPANISHAD`, `BHAGAVAD_GITA`, `PRIMARY_CANON`, `PANINI`, `NIRUKTA`, `COMMENTARY`, `TRADITION`, `DERIVED`).
-- `source_path`: Relative repository path to canonical markdown file.
+- `source_path`: Relative repository path to canonical source file (`knowledge/sanskrit/*.md`, `gurukul/sanskrit/grammar.md`, `phonetics/bija_phonetics.json`).
 - `content_hash`: Cryptographic hash of the source document text.
-- `retrieval_system`: `sanskrit_lexical_records` or `uniguru_kosha`.
+- `retrieval_system`: `sanskrit_lexical_records`, `uniguru_kosha`, `uniguru_vedanga_grammar`, `uniguru_vedanga_shiksha`.
 
 ## Evidence Classification Rules
 
@@ -22,6 +22,7 @@ if "veda" in token or "rigveda" in token: -> EvidenceType.VEDA
 if "panini" in token or "ashtadhyayi" in token: -> EvidenceType.PANINI
 if "nirukta" in token or "yaska" in token: -> EvidenceType.NIRUKTA
 if "bhasya" in token or "sankara" in token: -> EvidenceType.COMMENTARY
+if "siksha" in token or "pratisakhya" in token: -> EvidenceType.VEDA (VEDANGA_SHIKSHA)
 ```
 
 ## MDU Intelligence Data Universe Integration
@@ -38,3 +39,4 @@ Machine-readable proof logs validating lineage preservation across executions:
 - `review_packets/proof_logs/sanskrit_decoder_proof_lokas_v2.json`
 - `review_packets/proof_logs/sanskrit_decoder_proof_koshas_v2.json`
 - `review_packets/proof_logs/sanskrit_decoder_proof_chakras_v2.json`
+- `review_packets/proof_logs/sanskrit_graph_traverse_proof_prana_v3.json`
