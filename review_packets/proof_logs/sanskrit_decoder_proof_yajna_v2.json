@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Yajña",
     "shabda": "यज्ञ",
-    "beeja": "ॐ (Om) — the primordial offering. Also स्वाहा (Svāhā) — the mantra of offering in fire rituals.",
-    "nirukta": "Yāska: \"yajyate devā anena iti yajñaḥ\" — that by which the gods are worshipped. Yajña is the act of offering that creates and maintains the relationship between humans and the divine.",
-    "sanskrit": "यज्ञ",
-    "tattva": "Yajña-Tattva — the principle of sacred exchange and cosmic reciprocity. The universe itself is a yajña — a continuous cycle of giving and receiving between all levels of existence.",
-    "concept_id": "sanskar:sanskrit:yajna",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "यज् (Yaj) — To worship, to sacrifice, to offer.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Yajña is the foundational principle of Vedic civilization — the sacred act of offering that maintains cosmic order (ṛta). The Bhagavad Gītā (3.10-16) describes yajña as the cosmic cycle: Brahmā created beings along with yajña; through yajña, rain falls; from rain, food grows; from food, beings live; beings perform yajña — the wheel of cosmic reciprocity. Yajña operates at five levels: Brahma-yajña (study of Vedas), Deva-yajña (fire offerings to gods), Pitṛ-yajña (offerings to ancestors), Bhūta-yajña (offerings to all beings), Manuṣya-yajña (hospitality to humans).",
     "canonical_name": "yajna",
+    "sanskrit": "यज्ञ",
+    "transliteration": "Yajña",
+    "beeja": "ॐ (Om) — the primordial offering. Also स्वाहा (Svāhā) — the mantra of offering in fire rituals.",
+    "vyakarana": "Yajña is a masculine noun derived from the root yaj (to worship/sacrifice) with the suffix -na. The root yaj is one of the most important roots in Vedic Sanskrit — it gives yajña (sacrifice), yajus (sacrificial formula), yajamāna (sacrificer), and Yajurveda (the Veda of sacrificial formulas).",
+    "functional_meaning": "Yajña is the foundational principle of Vedic civilization — the sacred act of offering that maintains cosmic order (ṛta). The Bhagavad Gītā (3.10-16) describes yajña as the cosmic cycle: Brahmā created beings along with yajña; through yajña, rain falls; from rain, food grows; from food, beings live; beings perform yajña — the wheel of cosmic reciprocity. Yajña operates at five levels: Brahma-yajña (study of Vedas), Deva-yajña (fire offerings to gods), Pitṛ-yajña (offerings to ancestors), Bhūta-yajña (offerings to all beings), Manuṣya-yajña (hospitality to humans).",
+    "dhatu": "यज् (Yaj) — To worship, to sacrifice, to offer.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:yajna",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"yajyate devā anena iti yajñaḥ\" — that by which the gods are worshipped. Yajña is the act of offering that creates and maintains the relationship between humans and the divine.",
     "related_concepts": [
       "agni",
       "dharma",
@@ -19,26 +20,26 @@
       "prana",
       "rta"
     ],
-    "vyakarana": "Yajña is a masculine noun derived from the root yaj (to worship/sacrifice) with the suffix -na. The root yaj is one of the most important roots in Vedic Sanskrit — it gives yajña (sacrifice), yajus (sacrificial formula), yajamāna (sacrificer), and Yajurveda (the Veda of sacrificial formulas).",
-    "shakti": null
+    "tattva": "Yajña-Tattva — the principle of sacred exchange and cosmic reciprocity. The universe itself is a yajña — a continuous cycle of giving and receiving between all levels of existence."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:yajna",
     "canonical_name": "yajna",
     "lexical_record": {
-      "transliteration": "Yajña",
       "shabda": "यज्ञ",
-      "beeja": "ॐ (Om) — the primordial offering. Also स्वाहा (Svāhā) — the mantra of offering in fire rituals.",
-      "nirukta": "Yāska: \"yajyate devā anena iti yajñaḥ\" — that by which the gods are worshipped. Yajña is the act of offering that creates and maintains the relationship between humans and the divine.",
-      "sanskrit": "यज्ञ",
-      "tattva": "Yajña-Tattva — the principle of sacred exchange and cosmic reciprocity. The universe itself is a yajña — a continuous cycle of giving and receiving between all levels of existence.",
-      "concept_id": "sanskar:sanskrit:yajna",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "यज् (Yaj) — To worship, to sacrifice, to offer.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Yajña is the foundational principle of Vedic civilization — the sacred act of offering that maintains cosmic order (ṛta). The Bhagavad Gītā (3.10-16) describes yajña as the cosmic cycle: Brahmā created beings along with yajña; through yajña, rain falls; from rain, food grows; from food, beings live; beings perform yajña — the wheel of cosmic reciprocity. Yajña operates at five levels: Brahma-yajña (study of Vedas), Deva-yajña (fire offerings to gods), Pitṛ-yajña (offerings to ancestors), Bhūta-yajña (offerings to all beings), Manuṣya-yajña (hospitality to humans).",
       "canonical_name": "yajna",
+      "sanskrit": "यज्ञ",
+      "transliteration": "Yajña",
+      "beeja": "ॐ (Om) — the primordial offering. Also स्वाहा (Svāhā) — the mantra of offering in fire rituals.",
+      "vyakarana": "Yajña is a masculine noun derived from the root yaj (to worship/sacrifice) with the suffix -na. The root yaj is one of the most important roots in Vedic Sanskrit — it gives yajña (sacrifice), yajus (sacrificial formula), yajamāna (sacrificer), and Yajurveda (the Veda of sacrificial formulas).",
+      "functional_meaning": "Yajña is the foundational principle of Vedic civilization — the sacred act of offering that maintains cosmic order (ṛta). The Bhagavad Gītā (3.10-16) describes yajña as the cosmic cycle: Brahmā created beings along with yajña; through yajña, rain falls; from rain, food grows; from food, beings live; beings perform yajña — the wheel of cosmic reciprocity. Yajña operates at five levels: Brahma-yajña (study of Vedas), Deva-yajña (fire offerings to gods), Pitṛ-yajña (offerings to ancestors), Bhūta-yajña (offerings to all beings), Manuṣya-yajña (hospitality to humans).",
+      "dhatu": "यज् (Yaj) — To worship, to sacrifice, to offer.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:yajna",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"yajyate devā anena iti yajñaḥ\" — that by which the gods are worshipped. Yajña is the act of offering that creates and maintains the relationship between humans and the divine.",
       "related_concepts": [
         "agni",
         "dharma",
@@ -46,8 +47,7 @@
         "prana",
         "rta"
       ],
-      "vyakarana": "Yajña is a masculine noun derived from the root yaj (to worship/sacrifice) with the suffix -na. The root yaj is one of the most important roots in Vedic Sanskrit — it gives yajña (sacrifice), yajus (sacrificial formula), yajamāna (sacrificer), and Yajurveda (the Veda of sacrificial formulas).",
-      "shakti": null
+      "tattva": "Yajña-Tattva — the principle of sacred exchange and cosmic reciprocity. The universe itself is a yajña — a continuous cycle of giving and receiving between all levels of existence."
     },
     "layers": {
       "sanskrit": {

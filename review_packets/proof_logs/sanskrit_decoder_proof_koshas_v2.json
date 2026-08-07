@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Kośāḥ",
     "shabda": "कोश (Kośa)",
-    "beeja": "हँ (Haṁ) — the subtle vāyu seed syllable associated with sheath transmutations.",
-    "nirukta": "Yāska's Nirukta: \"kuśnāti ātmānam iti kośaḥ\" — that which covers or sheaths the innermost Self. Like a scabbard covering a sword, the koshas veil the luminous Ātman.",
-    "sanskrit": "कोशाः",
-    "tattva": "Pañca-Kośa Tattva — the fivefold doctrine of human embodiment detailed in the Taittirīya Upanishad.",
-    "concept_id": "sanskar:sanskrit:koshas",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "कुश् (Kuś) — To enclose, cover, sheath, contain.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "The Koshas represent the five concentric sheaths or layers of human existence: Annamaya Kosha (food/physical sheath), Prāṇamaya Kosha (vital energetic sheath), Manomaya Kosha (mental/emotional sheath), Vijñānamaya Kosha (wisdom/intellectual sheath), and Ānandamaya Kosha (bliss sheath). They provide a systematic model for self-realization by peeling away identification with non-self layers.",
     "canonical_name": "koshas",
+    "sanskrit": "कोशाः",
+    "transliteration": "Kośāḥ",
+    "beeja": "हँ (Haṁ) — the subtle vāyu seed syllable associated with sheath transmutations.",
+    "vyakarana": "Derived from verbal root कुश् (kuś). Masculine noun, plural form कोशाः (Kośāḥ). Pāṇini Ashtadhyayi 3.1.134. Refers to the five sheaths enclosing the Ātman.",
+    "functional_meaning": "The Koshas represent the five concentric sheaths or layers of human existence: Annamaya Kosha (food/physical sheath), Prāṇamaya Kosha (vital energetic sheath), Manomaya Kosha (mental/emotional sheath), Vijñānamaya Kosha (wisdom/intellectual sheath), and Ānandamaya Kosha (bliss sheath). They provide a systematic model for self-realization by peeling away identification with non-self layers.",
+    "dhatu": "कुश् (Kuś) — To enclose, cover, sheath, contain.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:koshas",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska's Nirukta: \"kuśnāti ātmānam iti kośaḥ\" — that which covers or sheaths the innermost Self. Like a scabbard covering a sword, the koshas veil the luminous Ātman.",
     "related_concepts": [
       "atman",
       "prana",
@@ -19,26 +20,26 @@
       "brahman",
       "samskara"
     ],
-    "vyakarana": "Derived from verbal root कुश् (kuś). Masculine noun, plural form कोशाः (Kośāḥ). Pāṇini Ashtadhyayi 3.1.134. Refers to the five sheaths enclosing the Ātman.",
-    "shakti": null
+    "tattva": "Pañca-Kośa Tattva — the fivefold doctrine of human embodiment detailed in the Taittirīya Upanishad."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:koshas",
     "canonical_name": "koshas",
     "lexical_record": {
-      "transliteration": "Kośāḥ",
       "shabda": "कोश (Kośa)",
-      "beeja": "हँ (Haṁ) — the subtle vāyu seed syllable associated with sheath transmutations.",
-      "nirukta": "Yāska's Nirukta: \"kuśnāti ātmānam iti kośaḥ\" — that which covers or sheaths the innermost Self. Like a scabbard covering a sword, the koshas veil the luminous Ātman.",
-      "sanskrit": "कोशाः",
-      "tattva": "Pañca-Kośa Tattva — the fivefold doctrine of human embodiment detailed in the Taittirīya Upanishad.",
-      "concept_id": "sanskar:sanskrit:koshas",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "कुश् (Kuś) — To enclose, cover, sheath, contain.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "The Koshas represent the five concentric sheaths or layers of human existence: Annamaya Kosha (food/physical sheath), Prāṇamaya Kosha (vital energetic sheath), Manomaya Kosha (mental/emotional sheath), Vijñānamaya Kosha (wisdom/intellectual sheath), and Ānandamaya Kosha (bliss sheath). They provide a systematic model for self-realization by peeling away identification with non-self layers.",
       "canonical_name": "koshas",
+      "sanskrit": "कोशाः",
+      "transliteration": "Kośāḥ",
+      "beeja": "हँ (Haṁ) — the subtle vāyu seed syllable associated with sheath transmutations.",
+      "vyakarana": "Derived from verbal root कुश् (kuś). Masculine noun, plural form कोशाः (Kośāḥ). Pāṇini Ashtadhyayi 3.1.134. Refers to the five sheaths enclosing the Ātman.",
+      "functional_meaning": "The Koshas represent the five concentric sheaths or layers of human existence: Annamaya Kosha (food/physical sheath), Prāṇamaya Kosha (vital energetic sheath), Manomaya Kosha (mental/emotional sheath), Vijñānamaya Kosha (wisdom/intellectual sheath), and Ānandamaya Kosha (bliss sheath). They provide a systematic model for self-realization by peeling away identification with non-self layers.",
+      "dhatu": "कुश् (Kuś) — To enclose, cover, sheath, contain.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:koshas",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska's Nirukta: \"kuśnāti ātmānam iti kośaḥ\" — that which covers or sheaths the innermost Self. Like a scabbard covering a sword, the koshas veil the luminous Ātman.",
       "related_concepts": [
         "atman",
         "prana",
@@ -46,8 +47,7 @@
         "brahman",
         "samskara"
       ],
-      "vyakarana": "Derived from verbal root कुश् (kuś). Masculine noun, plural form कोशाः (Kośāḥ). Pāṇini Ashtadhyayi 3.1.134. Refers to the five sheaths enclosing the Ātman.",
-      "shakti": null
+      "tattva": "Pañca-Kośa Tattva — the fivefold doctrine of human embodiment detailed in the Taittirīya Upanishad."
     },
     "layers": {
       "sanskrit": {

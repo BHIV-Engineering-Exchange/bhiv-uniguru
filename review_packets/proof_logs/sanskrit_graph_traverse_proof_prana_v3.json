@@ -3,14 +3,15 @@
   "max_depth": 3,
   "edge_type_filter": [
     "related_chakra",
-    "canonical_cross_reference",
-    "related_kosha"
+    "related_kosha",
+    "canonical_cross_reference"
   ],
   "path": [
     {
       "hop": 0,
       "node_id": "sanskar:sanskrit:prana",
       "node_label": "prana",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": null,
       "provenance": "knowledge/sanskrit/prana.md"
     },
@@ -18,6 +19,7 @@
       "hop": 1,
       "node_id": "sanskar:sanskrit:agni",
       "node_label": "agni",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/agni.md"
     },
@@ -25,6 +27,7 @@
       "hop": 1,
       "node_id": "sanskar:sanskrit:atman",
       "node_label": "atman",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/atman.md"
     },
@@ -32,20 +35,87 @@
       "hop": 1,
       "node_id": "sanskar:sanskrit:yoga",
       "node_label": "yoga",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/yoga.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "kosha_ref:pranamaya_kosha",
+      "node_label": "Pranamaya Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "kosha_ref:annamaya_kosha",
+      "node_label": "Annamaya Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "kosha_ref:manomaya_kosha",
+      "node_label": "Manomaya Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "chakra_ref:anahata",
+      "node_label": "Anahata Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "chakra_ref:visuddha",
+      "node_label": "Visuddha Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "chakra_ref:svadhisthana",
+      "node_label": "Svadhisthana Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 1,
+      "node_id": "chakra_ref:manipura",
+      "node_label": "Manipura Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
     },
     {
       "hop": 2,
       "node_id": "sanskar:sanskrit:yajna",
       "node_label": "yajna",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/yajna.md"
     },
     {
       "hop": 2,
+      "node_id": "chakra_ref:ajna",
+      "node_label": "Ajna Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 2,
       "node_id": "sanskar:sanskrit:brahman",
       "node_label": "brahman",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/brahman.md"
     },
@@ -53,13 +123,47 @@
       "hop": 2,
       "node_id": "sanskar:sanskrit:moksha",
       "node_label": "moksha",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/moksha.md"
     },
     {
       "hop": 2,
+      "node_id": "kosha_ref:anandamaya_kosha",
+      "node_label": "Anandamaya Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "kosha_ref:vijnanamaya_kosha",
+      "node_label": "Vijnanamaya Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "kosha_ref:all_five_koshas_are_sheaths_that_veil_the_atman",
+      "node_label": "All Five Koshas Are Sheaths That Veil The Atman Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "chakra_ref:sahasrara",
+      "node_label": "Sahasrara Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 2,
       "node_id": "sanskar:sanskrit:dharma",
       "node_label": "dharma",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/dharma.md"
     },
@@ -67,13 +171,39 @@
       "hop": 2,
       "node_id": "sanskar:sanskrit:karma",
       "node_label": "karma",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/karma.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "chakra_ref:all_seven_chakras_are_the_map_of_the_yogic_body",
+      "node_label": "All Seven Chakras Are The Map Of The Yogic Body Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "chakra_ref:muladhara",
+      "node_label": "Muladhara Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 2,
+      "node_id": "chakra_ref:susumna_nadi_—_the_central_channel_through_which_yoga_energy_flows",
+      "node_label": "Susumna Nadi — The Central Channel Through Which Yoga Energy Flows Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
     },
     {
       "hop": 3,
       "node_id": "sanskar:sanskrit:rta",
       "node_label": "rta",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/rta.md"
     },
@@ -81,6 +211,7 @@
       "hop": 3,
       "node_id": "sanskar:sanskrit:maya",
       "node_label": "maya",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/maya.md"
     },
@@ -88,6 +219,7 @@
       "hop": 3,
       "node_id": "sanskar:sanskrit:om",
       "node_label": "om",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/om.md"
     },
@@ -95,8 +227,73 @@
       "hop": 3,
       "node_id": "sanskar:sanskrit:purusha",
       "node_label": "purusha",
+      "node_type": "sanskrit_concept",
       "incoming_edge_type": "canonical_cross_reference",
       "provenance": "knowledge/sanskrit/purusha.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:all_five_koshas_are_within_brahman",
+      "node_label": "All Five Koshas Are Within Brahman Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:beyond_all_koshas_is_atman_=_brahman",
+      "node_label": "Beyond All Koshas Is Atman = Brahman Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "chakra_ref:the_entire_chakra_system_is_within_brahman",
+      "node_label": "The Entire Chakra System Is Within Brahman Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:beyond_all_five_koshas_is_the_liberated_atman",
+      "node_label": "Beyond All Five Koshas Is The Liberated Atman Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:the_dissolution_of_identification_with_all_koshas_is_moksa",
+      "node_label": "The Dissolution Of Identification With All Koshas Is Moksa Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "chakra_ref:brahmarandhra",
+      "node_label": "Brahmarandhra Chakra",
+      "node_type": "chakra",
+      "incoming_edge_type": "related_chakra",
+      "provenance": "backend/knowledge/sanskrit/chakras.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:karana_sarira",
+      "node_label": "Karana Sarira Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
+    },
+    {
+      "hop": 3,
+      "node_id": "kosha_ref:suksma_sarira",
+      "node_label": "Suksma Sarira Kosha",
+      "node_type": "kosha",
+      "incoming_edge_type": "related_kosha",
+      "provenance": "backend/knowledge/sanskrit/koshas.md"
     }
   ],
   "sub_graph": {
@@ -523,6 +720,30 @@
         }
       },
       {
+        "id": "bija_ref:yam",
+        "type": "bija",
+        "label": "Yaṃ Bīja (यं)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+      },
+      {
+        "id": "bija_ref:ham",
+        "type": "bija",
+        "label": "Haṁ Bīja (हँ)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+      },
+      {
+        "id": "bija_ref:vam",
+        "type": "bija",
+        "label": "Vaṁ Bīja (वँ)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+      },
+      {
+        "id": "bija_ref:ram",
+        "type": "bija",
+        "label": "Raṃ Bīja (रं)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+      },
+      {
         "id": "sanskar:sanskrit:rta",
         "type": "sanskrit_concept",
         "label": "rta",
@@ -545,6 +766,12 @@
         "type": "vidya",
         "label": "Śulbasūtra Vidyā",
         "provenance": "knowledge/sanskrit/yajna.md"
+      },
+      {
+        "id": "bija_ref:om",
+        "type": "bija",
+        "label": "Om Bīja (ॐ)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
       },
       {
         "id": "sanskar:sanskrit:maya",
@@ -859,6 +1086,12 @@
         }
       },
       {
+        "id": "bija_ref:lam",
+        "type": "bija",
+        "label": "Laṁ Bīja (लँ)",
+        "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+      },
+      {
         "id": "loka:rta-dhaman",
         "type": "loka",
         "label": "Ṛta-dhāman",
@@ -1076,6 +1309,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 0
       },
       {
@@ -1084,6 +1319,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 0
       },
       {
@@ -1092,6 +1329,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 0
       },
       {
@@ -1100,6 +1339,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 0
       },
       {
@@ -1108,6 +1349,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 0
       },
       {
@@ -1116,6 +1359,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 0
       },
       {
@@ -1124,6 +1369,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 0
       },
       {
@@ -1132,6 +1379,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 0
       },
       {
@@ -1140,6 +1389,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 0
       },
       {
@@ -1148,110 +1399,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "deity:vayu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "deity:indra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "deity:hanuman",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "deity:prana-devi",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "loka:vayu-loka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "loka:all_lokas_are_sustained_by_prana",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "yantra:vayu_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "yantra:prana_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "vidya:pranayama_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "vidya:prana-vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "vidya:marma_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/prana.md",
-        "hop": 0
-      },
-      {
-        "from": "sanskar:sanskrit:prana",
-        "to": "kosha:KOSHA_ec20f7e7a794",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "पर"
-        ],
-        "evidence_type": "BHAGAVAD_GITA",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_ec20f7e7a794.json",
-          "content_hash": "5a1b34c227d82e13f627b7505986af4ec785472e78f86abd94a1e09f55daf96f",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "BHAGAVAD_GITA"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 0
       },
       {
@@ -1260,30 +1409,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "kosha_ref:pranamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "kosha_ref:annamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "chakra_ref:manipura",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 1
       },
       {
@@ -1292,118 +1419,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "deity:agni",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "deity:indra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "deity:surya",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "deity:rudra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "deity:skanda/karttikeya",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "loka:agni-loka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "loka:svarga",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "yantra:agni_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "vidya:agni-vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "vidya:jyotisa_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "vidya:ayurveda",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/agni.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:agni",
-        "to": "kosha:KOSHA_bffb6027024e",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "agni"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_bffb6027024e.json",
-          "content_hash": "0d6ab907a98f65e55ddc90a2c8d46d10e432becace7e9df9b1f2018fad492cff",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 1
       },
       {
@@ -1412,6 +1429,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 1
       },
       {
@@ -1420,6 +1439,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 1
       },
       {
@@ -1428,6 +1449,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 1
       },
       {
@@ -1436,6 +1459,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 1
       },
       {
@@ -1444,6 +1469,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 1
       },
       {
@@ -1452,110 +1479,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "chakra_ref:anahata",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "chakra_ref:ajna",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "deity:surya",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "deity:siva",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "deity:brahma",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "loka:brahmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "loka:atmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "yantra:bindu",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "vidya:atmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "vidya:brahmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:atman",
-        "to": "vidya:adhyatma_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/atman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 1
       },
       {
@@ -1564,6 +1489,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/yoga.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 1
       },
       {
@@ -1572,38 +1499,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "kosha_ref:pranamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "kosha_ref:manomaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "kosha_ref:vijnanamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "kosha_ref:anandamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 1
       },
       {
@@ -1612,6 +1509,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/yoga.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 1
       },
       {
@@ -1620,14 +1519,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "chakra_ref:sahasrara",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 1
       },
       {
@@ -1636,126 +1529,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "deity:siva",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "deity:krsna",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "deity:patanjali",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "deity:dattatreya",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "loka:yoga-loka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "loka:brahmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "yantra:kundalini_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "vidya:raja-yoga_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "vidya:hatha-yoga_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "vidya:kundalini-yoga_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "vidya:karma-yoga_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yoga.md",
-        "hop": 1
-      },
-      {
-        "from": "sanskar:sanskrit:yoga",
-        "to": "kosha:KOSHA_b0ee3744731a",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "yoga"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_b0ee3744731a.json",
-          "content_hash": "6ae9836d33dab92e4a69d74716e85fc1034724cc30be4f8d22d7f6bf378e00fc",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 1
       },
       {
@@ -1764,110 +1539,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "kosha_ref:pranamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "kosha_ref:annamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "chakra_ref:manipura",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "chakra_ref:anahata",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "deity:agni",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "deity:indra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "deity:brahma",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "loka:svarga",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "loka:pitrloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "yantra:agni_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "vidya:yajna_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:yajna",
-        "to": "vidya:sulbasutra_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/yajna.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 2
       },
       {
@@ -1876,6 +1549,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/brahman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 2
       },
       {
@@ -1884,6 +1559,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/brahman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 2
       },
       {
@@ -1892,6 +1569,8 @@
         "type": "canonical_cross_reference",
         "evidence_type": "DERIVED",
         "provenance": "knowledge/sanskrit/brahman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "sanskrit_concept",
         "hop": 2
       },
       {
@@ -1900,14 +1579,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "kosha_ref:anandamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       },
       {
@@ -1916,14 +1589,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "chakra_ref:sahasrara",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       },
       {
@@ -1932,150 +1599,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "deity:brahman_is_not_a_deity_but_the_ground_of_all_deities",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "deity:brahma",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "deity:siva",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "deity:devi",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "loka:brahmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "loka:all_lokas_are_within_brahman_—_\"sarvam_khalv_idam_brahma\"",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "yantra:bindu",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "vidya:brahmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "vidya:atmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "vidya:upanisad_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/brahman.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "kosha:KOSHA_0ee0e39422ee",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "brahman"
-        ],
-        "evidence_type": "UPANISHAD",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_0ee0e39422ee.json",
-          "content_hash": "fb19a5b8478c4e3a446ec0f78331eb5a53081b73ccbe325e3a032c2574e03362",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "UPANISHAD"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "kosha:KOSHA_9a8183e951a4",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "brahman"
-        ],
-        "evidence_type": "UPANISHAD",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_9a8183e951a4.json",
-          "content_hash": "ddd9ac294c4885d6c105268c9f8912f8d50a365498e62feb273f52c5211713e8",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "UPANISHAD"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:brahman",
-        "to": "kosha:KOSHA_da8756d0729f",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "brahman"
-        ],
-        "evidence_type": "UPANISHAD",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_da8756d0729f.json",
-          "content_hash": "19008433538ccc849287a6a23dd18a71006d430a69c04859e604f28e8ac2835c",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "UPANISHAD"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 2
       },
       {
@@ -2084,6 +1609,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/moksha.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       },
       {
@@ -2092,22 +1619,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "kosha_ref:anandamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "chakra_ref:sahasrara",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       },
       {
@@ -2116,366 +1629,8 @@
         "type": "related_chakra",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "deity:siva",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "deity:devi",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "deity:yama",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "deity:ganesa",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "loka:brahmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "loka:vaikuntha",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "loka:kailasa",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "loka:goloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "yantra:mrtyunjaya_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "vidya:brahmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "vidya:atmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "vidya:moksa-dharma_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/moksha.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:moksha",
-        "to": "kosha:KOSHA_9e0093dbdf4f",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "moksha"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_9e0093dbdf4f.json",
-          "content_hash": "cd23786eaf2fbedf3d2ba59d5b3554403dc1ad01c7ab9dbb5f1bc31e7fa8b354",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha_ref:vijnanamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha_ref:manomaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha_ref:anandamaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "chakra_ref:anahata",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "chakra_ref:ajna",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "chakra_ref:sahasrara",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "deity:yama",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "deity:mitra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "deity:varuna",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "deity:indra",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "loka:dharmaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "loka:satyaloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "loka:pitrloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "yantra:sri_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "yantra:dharma_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "vidya:dharmasastra_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "vidya:rajadharma_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "vidya:atmavidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/dharma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha:KOSHA_5926f3405196",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "धरम"
-        ],
-        "evidence_type": "BHAGAVAD_GITA",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_5926f3405196.json",
-          "content_hash": "d37e2d420bec268156e6f4e2ac51650c8a8b2d1452c9de623993982c8d374df4",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "BHAGAVAD_GITA"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha:KOSHA_7eaed110c87b",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "dharma"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_7eaed110c87b.json",
-          "content_hash": "b384f59df0e8616aab3f493b5633ff37035c7d056632f6926f563bdf22ef8024",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha:KOSHA_b0ee3744731a",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "dharma"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_b0ee3744731a.json",
-          "content_hash": "6ae9836d33dab92e4a69d74716e85fc1034724cc30be4f8d22d7f6bf378e00fc",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha:KOSHA_bf72b8578590",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "dharma"
-        ],
-        "evidence_type": "BHAGAVAD_GITA",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_bf72b8578590.json",
-          "content_hash": "3ed04ec4e9613714a80d92635425621221a96fcc17cda39883500b2ec53d30a5",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "BHAGAVAD_GITA"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:dharma",
-        "to": "kosha:KOSHA_ec20f7e7a794",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "धरम"
-        ],
-        "evidence_type": "BHAGAVAD_GITA",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_ec20f7e7a794.json",
-          "content_hash": "5a1b34c227d82e13f627b7505986af4ec785472e78f86abd94a1e09f55daf96f",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "BHAGAVAD_GITA"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "chakra",
         "hop": 2
       },
       {
@@ -2484,6 +1639,8 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/karma.md",
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       },
       {
@@ -2492,192 +1649,18 @@
         "type": "related_kosha",
         "evidence_type": "TRADITION",
         "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "kosha_ref:manomaya_kosha",
-        "type": "related_kosha",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "chakra_ref:manipura",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "chakra_ref:muladhara",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "chakra_ref:svadhisthana",
-        "type": "related_chakra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "deity:yama",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "deity:citragupta",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "deity:sani",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "deity:brahma",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "deity:visnu",
-        "type": "related_deity",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "loka:naraka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "loka:svarga",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "loka:pitrloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "loka:bhuloka",
-        "type": "related_loka",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "yantra:karma_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "yantra:sani_yantra",
-        "type": "related_yantra",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "vidya:karma-yoga_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "vidya:jyotisa_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "vidya:prayascitta_vidya",
-        "type": "related_vidya",
-        "evidence_type": "TRADITION",
-        "provenance": "knowledge/sanskrit/karma.md",
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "kosha:KOSHA_1164aa688883",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "karma"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_1164aa688883.json",
-          "content_hash": "07ef0480e4d89d4496807bd11353328242c26c84043c4315edd390892c0b1c5d",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
-        "hop": 2
-      },
-      {
-        "from": "sanskar:sanskrit:karma",
-        "to": "kosha:KOSHA_b0ee3744731a",
-        "type": "retrieved_evidence",
-        "match_terms": [
-          "karma"
-        ],
-        "evidence_type": "TRADITION",
-        "provenance": {
-          "source_path": "data/kosha/KOSHA_b0ee3744731a.json",
-          "content_hash": "6ae9836d33dab92e4a69d74716e85fc1034724cc30be4f8d22d7f6bf378e00fc",
-          "retrieval_system": "uniguru_kosha",
-          "evidence_type": "TRADITION"
-        },
+        "from_type": "sanskrit_concept",
+        "to_type": "kosha",
         "hop": 2
       }
     ],
-    "node_count": 146,
-    "edge_count": 186
+    "node_count": 152,
+    "edge_count": 35
   },
   "traversal_metadata": {
     "graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3",
     "schema_version": "3.0.0",
-    "traversal_hash": "a174aac4f0441355677fc05149d78f6c23c4f78a0f7fa9affa96b77b046d7255",
+    "traversal_hash": "6216c84d9130029d70a8eacf9c5af5b2c9a4a0ce5a673d36197b89de506204d7",
     "replay_safe": true
   }
 }

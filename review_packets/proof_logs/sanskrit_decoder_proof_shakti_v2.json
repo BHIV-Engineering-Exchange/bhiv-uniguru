@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Śakti",
     "shabda": "शक्ति",
-    "beeja": "ह्रीं (Hrīm) — the primary bīja of Śakti. Also क्रीं (Krīm) — the bīja of Kālī-Śakti; ऐं (Aim) — the bīja of Sarasvatī-Śakti; श्रीं (Śrīm) — the bīja of Lakṣmī-Śakti.",
-    "nirukta": "\"Śaknoti iti śaktiḥ\" — that which is capable, that which has power. Śakti is both the power itself and the Goddess who embodies that power.",
-    "sanskrit": "शक्ति",
-    "tattva": "Śakti-Tattva — the principle of divine power and creative energy. In Śākta philosophy: Śakti is the ultimate reality — Brahman as dynamic power. In Śaiva philosophy: Śakti is Śiva's inseparable power — \"Śivaḥ śaktyā yukto yadi bhavati śaktaḥ prabhavitum\" (Śiva united with Śakti is capable of creating — Soundaryalaharī 1).",
-    "concept_id": "sanskar:sanskrit:shakti",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "शक् (Śak) — To be able, to have power, to be capable.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Śakti is the dynamic, creative, and liberating power of the universe. It is the feminine principle that activates the masculine principle (Śiva/Puruṣa). Without Śakti, Śiva is śava (a corpse) — inert. Śakti manifests as the three primary powers: Icchā (will), Jñāna (knowledge), and Kriyā (action). In the individual, Śakti manifests as kuṇḍalinī — the dormant power at the base of the spine that, when awakened, leads to liberation.",
     "canonical_name": "shakti",
+    "sanskrit": "शक्ति",
+    "transliteration": "Śakti",
+    "beeja": "ह्रीं (Hrīm) — the primary bīja of Śakti. Also क्रीं (Krīm) — the bīja of Kālī-Śakti; ऐं (Aim) — the bīja of Sarasvatī-Śakti; श्रीं (Śrīm) — the bīja of Lakṣmī-Śakti.",
+    "vyakarana": "Śakti is a feminine noun, i-stem declension. Derived from the root śak (to be able) with the suffix -ti. The feminine gender is significant — power in the Indian tradition is inherently feminine.",
+    "functional_meaning": "Śakti is the dynamic, creative, and liberating power of the universe. It is the feminine principle that activates the masculine principle (Śiva/Puruṣa). Without Śakti, Śiva is śava (a corpse) — inert. Śakti manifests as the three primary powers: Icchā (will), Jñāna (knowledge), and Kriyā (action). In the individual, Śakti manifests as kuṇḍalinī — the dormant power at the base of the spine that, when awakened, leads to liberation.",
+    "dhatu": "शक् (Śak) — To be able, to have power, to be capable.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:shakti",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Śaknoti iti śaktiḥ\" — that which is capable, that which has power. Śakti is both the power itself and the Goddess who embodies that power.",
     "related_concepts": [
       "brahman",
       "shiva",
@@ -20,26 +21,26 @@
       "prana",
       "tantra"
     ],
-    "vyakarana": "Śakti is a feminine noun, i-stem declension. Derived from the root śak (to be able) with the suffix -ti. The feminine gender is significant — power in the Indian tradition is inherently feminine.",
-    "shakti": null
+    "tattva": "Śakti-Tattva — the principle of divine power and creative energy. In Śākta philosophy: Śakti is the ultimate reality — Brahman as dynamic power. In Śaiva philosophy: Śakti is Śiva's inseparable power — \"Śivaḥ śaktyā yukto yadi bhavati śaktaḥ prabhavitum\" (Śiva united with Śakti is capable of creating — Soundaryalaharī 1)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:shakti",
     "canonical_name": "shakti",
     "lexical_record": {
-      "transliteration": "Śakti",
       "shabda": "शक्ति",
-      "beeja": "ह्रीं (Hrīm) — the primary bīja of Śakti. Also क्रीं (Krīm) — the bīja of Kālī-Śakti; ऐं (Aim) — the bīja of Sarasvatī-Śakti; श्रीं (Śrīm) — the bīja of Lakṣmī-Śakti.",
-      "nirukta": "\"Śaknoti iti śaktiḥ\" — that which is capable, that which has power. Śakti is both the power itself and the Goddess who embodies that power.",
-      "sanskrit": "शक्ति",
-      "tattva": "Śakti-Tattva — the principle of divine power and creative energy. In Śākta philosophy: Śakti is the ultimate reality — Brahman as dynamic power. In Śaiva philosophy: Śakti is Śiva's inseparable power — \"Śivaḥ śaktyā yukto yadi bhavati śaktaḥ prabhavitum\" (Śiva united with Śakti is capable of creating — Soundaryalaharī 1).",
-      "concept_id": "sanskar:sanskrit:shakti",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "शक् (Śak) — To be able, to have power, to be capable.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Śakti is the dynamic, creative, and liberating power of the universe. It is the feminine principle that activates the masculine principle (Śiva/Puruṣa). Without Śakti, Śiva is śava (a corpse) — inert. Śakti manifests as the three primary powers: Icchā (will), Jñāna (knowledge), and Kriyā (action). In the individual, Śakti manifests as kuṇḍalinī — the dormant power at the base of the spine that, when awakened, leads to liberation.",
       "canonical_name": "shakti",
+      "sanskrit": "शक्ति",
+      "transliteration": "Śakti",
+      "beeja": "ह्रीं (Hrīm) — the primary bīja of Śakti. Also क्रीं (Krīm) — the bīja of Kālī-Śakti; ऐं (Aim) — the bīja of Sarasvatī-Śakti; श्रीं (Śrīm) — the bīja of Lakṣmī-Śakti.",
+      "vyakarana": "Śakti is a feminine noun, i-stem declension. Derived from the root śak (to be able) with the suffix -ti. The feminine gender is significant — power in the Indian tradition is inherently feminine.",
+      "functional_meaning": "Śakti is the dynamic, creative, and liberating power of the universe. It is the feminine principle that activates the masculine principle (Śiva/Puruṣa). Without Śakti, Śiva is śava (a corpse) — inert. Śakti manifests as the three primary powers: Icchā (will), Jñāna (knowledge), and Kriyā (action). In the individual, Śakti manifests as kuṇḍalinī — the dormant power at the base of the spine that, when awakened, leads to liberation.",
+      "dhatu": "शक् (Śak) — To be able, to have power, to be capable.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:shakti",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Śaknoti iti śaktiḥ\" — that which is capable, that which has power. Śakti is both the power itself and the Goddess who embodies that power.",
       "related_concepts": [
         "brahman",
         "shiva",
@@ -48,8 +49,7 @@
         "prana",
         "tantra"
       ],
-      "vyakarana": "Śakti is a feminine noun, i-stem declension. Derived from the root śak (to be able) with the suffix -ti. The feminine gender is significant — power in the Indian tradition is inherently feminine.",
-      "shakti": null
+      "tattva": "Śakti-Tattva — the principle of divine power and creative energy. In Śākta philosophy: Śakti is the ultimate reality — Brahman as dynamic power. In Śaiva philosophy: Śakti is Śiva's inseparable power — \"Śivaḥ śaktyā yukto yadi bhavati śaktaḥ prabhavitum\" (Śiva united with Śakti is capable of creating — Soundaryalaharī 1)."
     },
     "layers": {
       "sanskrit": {

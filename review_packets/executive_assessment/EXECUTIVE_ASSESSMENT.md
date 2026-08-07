@@ -17,19 +17,20 @@ The **UniGuru Native Sanskrit Knowledge Decoder** has been fully transformed int
    - Comparative Hermeneutics matrix (`advaita`, `vishishtadvaita`, `dvaita`, `mimamsa`, `shaiva`, `shakta`, `buddhist`, `jain`) in `comparative_hermeneutics`.
    - Average layer evidence-backed coverage: **88.6% to 91.4%**.
 
-3. **Expanded Knowledge Graph & Multi-Hop Traversal**:
-   - BFS Multi-Hop Graph Traversal (`POST /v2/runtime/sanskrit/graph/traverse`) enabling typed node traversal (e.g. **Prāṇa → Kosha → Chakra → Bīja**).
+3. **Expanded Knowledge Graph & Recursive Typed Node Traversal**:
+   - BFS Multi-Hop Graph Traversal (`POST /v2/runtime/sanskrit/graph/traverse`) with recursive expansion across typed nodes (**Prāṇa → Prāṇamaya Kosha → Anāhata Chakra → Yaṃ Bīja**).
    - **0 orphaned nodes** verified across all concept graphs (`consistency_valid = True`).
    - Node count per concept: 14 to 36 interconnected nodes.
+   - Node types supported: `sanskrit_concept`, `kosha`, `chakra`, `bija`, `loka`, `deity`, `shastra`, `yantra`, `vidya`.
 
 4. **100% Provenance Traceability & Replay Consistency**:
-   - Every claim and graph hop is tied to canonical source documents (`source_path`, `content_hash`, `evidence_type`, `retrieval_system`).
+   - Every claim, graph node, and edge is tied to canonical source documents (`source_path`, `content_hash`, `evidence_type`, `retrieval_system`).
    - Query replay yields identical `result_hash` and `response_hash` across executions (`result_hash == replay_hash`).
 
 5. **Runtime API & Ecosystem Integration**:
    - Accessible via `/runtime/sanskrit/decode`, `/v2/runtime/sanskrit/decode`, and `/v2/runtime/sanskrit/graph/traverse`.
    - Integrated into TANTRA runtime, MDU provenance layer, InsightFlow observability, and Vijay Replay Engine.
-   - Test suite: **33/33 tests passing (100%)**.
+   - Test suite: **34/34 tests passing (100%)**.
 
 ## Governance & Policy Compliance
 

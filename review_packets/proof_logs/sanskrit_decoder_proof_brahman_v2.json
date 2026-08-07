@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Brahman",
     "shabda": "ब्रह्मन्",
-    "beeja": "ॐ (Om/Auṃ) — the primordial sound that is the sonic form of Brahman. The Māṇḍūkya Upaniṣad opens: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this.",
-    "nirukta": "Yāska: \"bṛhati iti brahma\" — that which is great, that which expands. Brahman is the infinitely expanding reality that underlies all existence.",
-    "sanskrit": "ब्रह्मन्",
-    "tattva": "Brahma-Tattva — the principle of absolute, infinite, self-luminous reality. Brahman is described as Sat-Cit-Ānanda (Being-Consciousness-Bliss) — not three qualities but three aspects of one indivisible reality.",
-    "concept_id": "sanskar:sanskrit:brahman",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "बृह् (Bṛh) — To expand, to grow, to be great.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Brahman is the infinite, eternal, unchanging absolute reality that is the ground of all existence. It is both the material cause (upādāna-kāraṇa) and the efficient cause (nimitta-kāraṇa) of the universe. Brahman is described via two approaches: Nirguṇa Brahman (without attributes — the absolute beyond all description) and Saguṇa Brahman (with attributes — the personal God, Īśvara). The Upaniṣads teach that Brahman is identical with Ātman (the individual Self).",
     "canonical_name": "brahman",
+    "sanskrit": "ब्रह्मन्",
+    "transliteration": "Brahman",
+    "beeja": "ॐ (Om/Auṃ) — the primordial sound that is the sonic form of Brahman. The Māṇḍūkya Upaniṣad opens: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this.",
+    "vyakarana": "Brahman is a neuter noun (not to be confused with Brahmā, the masculine creator deity, or Brāhmaṇa, the priestly class). Derived from the root bṛh with the suffix -man. The neuter gender indicates that Brahman transcends all categories including gender.",
+    "functional_meaning": "Brahman is the infinite, eternal, unchanging absolute reality that is the ground of all existence. It is both the material cause (upādāna-kāraṇa) and the efficient cause (nimitta-kāraṇa) of the universe. Brahman is described via two approaches: Nirguṇa Brahman (without attributes — the absolute beyond all description) and Saguṇa Brahman (with attributes — the personal God, Īśvara). The Upaniṣads teach that Brahman is identical with Ātman (the individual Self).",
+    "dhatu": "बृह् (Bṛh) — To expand, to grow, to be great.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:brahman",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"bṛhati iti brahma\" — that which is great, that which expands. Brahman is the infinitely expanding reality that underlies all existence.",
     "related_concepts": [
       "atman",
       "moksha",
@@ -20,26 +21,26 @@
       "purusha",
       "om"
     ],
-    "vyakarana": "Brahman is a neuter noun (not to be confused with Brahmā, the masculine creator deity, or Brāhmaṇa, the priestly class). Derived from the root bṛh with the suffix -man. The neuter gender indicates that Brahman transcends all categories including gender.",
-    "shakti": null
+    "tattva": "Brahma-Tattva — the principle of absolute, infinite, self-luminous reality. Brahman is described as Sat-Cit-Ānanda (Being-Consciousness-Bliss) — not three qualities but three aspects of one indivisible reality."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:brahman",
     "canonical_name": "brahman",
     "lexical_record": {
-      "transliteration": "Brahman",
       "shabda": "ब्रह्मन्",
-      "beeja": "ॐ (Om/Auṃ) — the primordial sound that is the sonic form of Brahman. The Māṇḍūkya Upaniṣad opens: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this.",
-      "nirukta": "Yāska: \"bṛhati iti brahma\" — that which is great, that which expands. Brahman is the infinitely expanding reality that underlies all existence.",
-      "sanskrit": "ब्रह्मन्",
-      "tattva": "Brahma-Tattva — the principle of absolute, infinite, self-luminous reality. Brahman is described as Sat-Cit-Ānanda (Being-Consciousness-Bliss) — not three qualities but three aspects of one indivisible reality.",
-      "concept_id": "sanskar:sanskrit:brahman",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "बृह् (Bṛh) — To expand, to grow, to be great.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Brahman is the infinite, eternal, unchanging absolute reality that is the ground of all existence. It is both the material cause (upādāna-kāraṇa) and the efficient cause (nimitta-kāraṇa) of the universe. Brahman is described via two approaches: Nirguṇa Brahman (without attributes — the absolute beyond all description) and Saguṇa Brahman (with attributes — the personal God, Īśvara). The Upaniṣads teach that Brahman is identical with Ātman (the individual Self).",
       "canonical_name": "brahman",
+      "sanskrit": "ब्रह्मन्",
+      "transliteration": "Brahman",
+      "beeja": "ॐ (Om/Auṃ) — the primordial sound that is the sonic form of Brahman. The Māṇḍūkya Upaniṣad opens: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this.",
+      "vyakarana": "Brahman is a neuter noun (not to be confused with Brahmā, the masculine creator deity, or Brāhmaṇa, the priestly class). Derived from the root bṛh with the suffix -man. The neuter gender indicates that Brahman transcends all categories including gender.",
+      "functional_meaning": "Brahman is the infinite, eternal, unchanging absolute reality that is the ground of all existence. It is both the material cause (upādāna-kāraṇa) and the efficient cause (nimitta-kāraṇa) of the universe. Brahman is described via two approaches: Nirguṇa Brahman (without attributes — the absolute beyond all description) and Saguṇa Brahman (with attributes — the personal God, Īśvara). The Upaniṣads teach that Brahman is identical with Ātman (the individual Self).",
+      "dhatu": "बृह् (Bṛh) — To expand, to grow, to be great.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:brahman",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"bṛhati iti brahma\" — that which is great, that which expands. Brahman is the infinitely expanding reality that underlies all existence.",
       "related_concepts": [
         "atman",
         "moksha",
@@ -48,8 +49,7 @@
         "purusha",
         "om"
       ],
-      "vyakarana": "Brahman is a neuter noun (not to be confused with Brahmā, the masculine creator deity, or Brāhmaṇa, the priestly class). Derived from the root bṛh with the suffix -man. The neuter gender indicates that Brahman transcends all categories including gender.",
-      "shakti": null
+      "tattva": "Brahma-Tattva — the principle of absolute, infinite, self-luminous reality. Brahman is described as Sat-Cit-Ānanda (Being-Consciousness-Bliss) — not three qualities but three aspects of one indivisible reality."
     },
     "layers": {
       "sanskrit": {

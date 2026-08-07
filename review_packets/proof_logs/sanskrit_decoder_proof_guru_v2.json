@@ -1,51 +1,51 @@
 {
   "canonical_concept": {
-    "transliteration": "Guru",
     "shabda": "गुरु",
-    "beeja": "गुं (Guṃ) — the bīja associated with the Guru principle in Tantric traditions.",
-    "nirukta": "\"Gu-kāraś cāndhakārasya ru-kāras tannirodhakṛt\" — Gu represents darkness (ignorance), Ru represents its removal. The Guru is one who removes the darkness of ignorance. This etymology appears in the Advayatāraka Upaniṣad.",
-    "sanskrit": "गुरु",
-    "tattva": "Guru-Tattva — the principle of the teacher who transmits knowledge and removes ignorance. In Kashmir Śaivism: Guru-tattva is one of the thirty-six tattvas — the principle of divine grace operating through the human teacher.",
-    "concept_id": "sanskar:sanskrit:guru",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "गृ (Gṛ) — To swallow, to take in; also connected to गुर् (Gur) — heavy, weighty. The guru is the \"heavy one\" — weighty with knowledge.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "The Guru is the teacher who transmits knowledge (vidyā) from the tradition to the student. In the Vedic tradition, knowledge cannot be obtained from books alone — it must be transmitted from Guru to student in an unbroken lineage (paramparā). The Guru removes the student's ignorance (avidyā) and guides them toward liberation (mokṣa). The Guru-śiṣya (teacher-student) relationship is the foundational relationship of Indian civilization.",
     "canonical_name": "guru",
+    "sanskrit": "गुरु",
+    "transliteration": "Guru",
+    "beeja": "गुं (Guṃ) — the bīja associated with the Guru principle in Tantric traditions.",
+    "vyakarana": "Guru is an adjective (meaning \"heavy, weighty, important\") used as a noun. It is also used as a title. The feminine form is Gurū or Gurviṇī. The word is used in both the sense of \"teacher\" and \"heavy/important.\"",
+    "functional_meaning": "The Guru is the teacher who transmits knowledge (vidyā) from the tradition to the student. In the Vedic tradition, knowledge cannot be obtained from books alone — it must be transmitted from Guru to student in an unbroken lineage (paramparā). The Guru removes the student's ignorance (avidyā) and guides them toward liberation (mokṣa). The Guru-śiṣya (teacher-student) relationship is the foundational relationship of Indian civilization.",
+    "dhatu": "गृ (Gṛ) — To swallow, to take in; also connected to गुर् (Gur) — heavy, weighty. The guru is the \"heavy one\" — weighty with knowledge.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:guru",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Gu-kāraś cāndhakārasya ru-kāras tannirodhakṛt\" — Gu represents darkness (ignorance), Ru represents its removal. The Guru is one who removes the darkness of ignorance. This etymology appears in the Advayatāraka Upaniṣad.",
     "related_concepts": [
       "vidya",
       "samskara (upanayana — the saṃskāra of entering the guru's household)",
       "dharma",
       "brahman"
     ],
-    "vyakarana": "Guru is an adjective (meaning \"heavy, weighty, important\") used as a noun. It is also used as a title. The feminine form is Gurū or Gurviṇī. The word is used in both the sense of \"teacher\" and \"heavy/important.\"",
-    "shakti": null
+    "tattva": "Guru-Tattva — the principle of the teacher who transmits knowledge and removes ignorance. In Kashmir Śaivism: Guru-tattva is one of the thirty-six tattvas — the principle of divine grace operating through the human teacher."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:guru",
     "canonical_name": "guru",
     "lexical_record": {
-      "transliteration": "Guru",
       "shabda": "गुरु",
-      "beeja": "गुं (Guṃ) — the bīja associated with the Guru principle in Tantric traditions.",
-      "nirukta": "\"Gu-kāraś cāndhakārasya ru-kāras tannirodhakṛt\" — Gu represents darkness (ignorance), Ru represents its removal. The Guru is one who removes the darkness of ignorance. This etymology appears in the Advayatāraka Upaniṣad.",
-      "sanskrit": "गुरु",
-      "tattva": "Guru-Tattva — the principle of the teacher who transmits knowledge and removes ignorance. In Kashmir Śaivism: Guru-tattva is one of the thirty-six tattvas — the principle of divine grace operating through the human teacher.",
-      "concept_id": "sanskar:sanskrit:guru",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "गृ (Gṛ) — To swallow, to take in; also connected to गुर् (Gur) — heavy, weighty. The guru is the \"heavy one\" — weighty with knowledge.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "The Guru is the teacher who transmits knowledge (vidyā) from the tradition to the student. In the Vedic tradition, knowledge cannot be obtained from books alone — it must be transmitted from Guru to student in an unbroken lineage (paramparā). The Guru removes the student's ignorance (avidyā) and guides them toward liberation (mokṣa). The Guru-śiṣya (teacher-student) relationship is the foundational relationship of Indian civilization.",
       "canonical_name": "guru",
+      "sanskrit": "गुरु",
+      "transliteration": "Guru",
+      "beeja": "गुं (Guṃ) — the bīja associated with the Guru principle in Tantric traditions.",
+      "vyakarana": "Guru is an adjective (meaning \"heavy, weighty, important\") used as a noun. It is also used as a title. The feminine form is Gurū or Gurviṇī. The word is used in both the sense of \"teacher\" and \"heavy/important.\"",
+      "functional_meaning": "The Guru is the teacher who transmits knowledge (vidyā) from the tradition to the student. In the Vedic tradition, knowledge cannot be obtained from books alone — it must be transmitted from Guru to student in an unbroken lineage (paramparā). The Guru removes the student's ignorance (avidyā) and guides them toward liberation (mokṣa). The Guru-śiṣya (teacher-student) relationship is the foundational relationship of Indian civilization.",
+      "dhatu": "गृ (Gṛ) — To swallow, to take in; also connected to गुर् (Gur) — heavy, weighty. The guru is the \"heavy one\" — weighty with knowledge.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:guru",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Gu-kāraś cāndhakārasya ru-kāras tannirodhakṛt\" — Gu represents darkness (ignorance), Ru represents its removal. The Guru is one who removes the darkness of ignorance. This etymology appears in the Advayatāraka Upaniṣad.",
       "related_concepts": [
         "vidya",
         "samskara (upanayana — the saṃskāra of entering the guru's household)",
         "dharma",
         "brahman"
       ],
-      "vyakarana": "Guru is an adjective (meaning \"heavy, weighty, important\") used as a noun. It is also used as a title. The feminine form is Gurū or Gurviṇī. The word is used in both the sense of \"teacher\" and \"heavy/important.\"",
-      "shakti": null
+      "tattva": "Guru-Tattva — the principle of the teacher who transmits knowledge and removes ignorance. In Kashmir Śaivism: Guru-tattva is one of the thirty-six tattvas — the principle of divine grace operating through the human teacher."
     },
     "layers": {
       "sanskrit": {

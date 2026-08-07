@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Yoga",
     "shabda": "योग",
-    "beeja": "यं (Yaṃ) — the bīja of the air element (vāyu), associated with the heart chakra (Anāhata) and the breath-based practices of yoga.",
-    "nirukta": "\"Yujyate anena iti yogaḥ\" — that by which union is achieved. Also: \"yoge yukto bhavet\" — one who is yoked (disciplined) is in yoga.",
-    "sanskrit": "योग",
-    "tattva": "Yoga-Tattva — the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puruṣa with Prakṛti's dissolution (Sāṃkhya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga).",
-    "concept_id": "sanskar:sanskrit:yoga",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "युज् (Yuj) — To yoke, to unite, to join, to concentrate.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Yoga is the discipline leading to union of the individual self with the highest reality. Patañjali defines yoga as \"yogaś citta-vṛtti-nirodhaḥ\" — yoga is the cessation of the modifications of the mind-stuff. The Bhagavad Gītā defines yoga as \"samatvam yoga ucyate\" — equanimity is called yoga, and \"yogaḥ karmasu kauśalam\" — yoga is skill in action. The four classical paths are: Jñāna-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), Rāja-Yoga (meditation).",
     "canonical_name": "yoga",
+    "sanskrit": "योग",
+    "transliteration": "Yoga",
+    "beeja": "यं (Yaṃ) — the bīja of the air element (vāyu), associated with the heart chakra (Anāhata) and the breath-based practices of yoga.",
+    "vyakarana": "Yoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge — to unite; (2) yuj samādhau — to concentrate. Both meanings are operative in the concept of yoga.",
+    "functional_meaning": "Yoga is the discipline leading to union of the individual self with the highest reality. Patañjali defines yoga as \"yogaś citta-vṛtti-nirodhaḥ\" — yoga is the cessation of the modifications of the mind-stuff. The Bhagavad Gītā defines yoga as \"samatvam yoga ucyate\" — equanimity is called yoga, and \"yogaḥ karmasu kauśalam\" — yoga is skill in action. The four classical paths are: Jñāna-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), Rāja-Yoga (meditation).",
+    "dhatu": "युज् (Yuj) — To yoke, to unite, to join, to concentrate.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:yoga",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Yujyate anena iti yogaḥ\" — that by which union is achieved. Also: \"yoge yukto bhavet\" — one who is yoked (disciplined) is in yoga.",
     "related_concepts": [
       "dharma",
       "karma",
@@ -21,26 +22,26 @@
       "samadhi",
       "kundalini"
     ],
-    "vyakarana": "Yoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge — to unite; (2) yuj samādhau — to concentrate. Both meanings are operative in the concept of yoga.",
-    "shakti": null
+    "tattva": "Yoga-Tattva — the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puruṣa with Prakṛti's dissolution (Sāṃkhya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:yoga",
     "canonical_name": "yoga",
     "lexical_record": {
-      "transliteration": "Yoga",
       "shabda": "योग",
-      "beeja": "यं (Yaṃ) — the bīja of the air element (vāyu), associated with the heart chakra (Anāhata) and the breath-based practices of yoga.",
-      "nirukta": "\"Yujyate anena iti yogaḥ\" — that by which union is achieved. Also: \"yoge yukto bhavet\" — one who is yoked (disciplined) is in yoga.",
-      "sanskrit": "योग",
-      "tattva": "Yoga-Tattva — the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puruṣa with Prakṛti's dissolution (Sāṃkhya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga).",
-      "concept_id": "sanskar:sanskrit:yoga",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "युज् (Yuj) — To yoke, to unite, to join, to concentrate.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Yoga is the discipline leading to union of the individual self with the highest reality. Patañjali defines yoga as \"yogaś citta-vṛtti-nirodhaḥ\" — yoga is the cessation of the modifications of the mind-stuff. The Bhagavad Gītā defines yoga as \"samatvam yoga ucyate\" — equanimity is called yoga, and \"yogaḥ karmasu kauśalam\" — yoga is skill in action. The four classical paths are: Jñāna-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), Rāja-Yoga (meditation).",
       "canonical_name": "yoga",
+      "sanskrit": "योग",
+      "transliteration": "Yoga",
+      "beeja": "यं (Yaṃ) — the bīja of the air element (vāyu), associated with the heart chakra (Anāhata) and the breath-based practices of yoga.",
+      "vyakarana": "Yoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge — to unite; (2) yuj samādhau — to concentrate. Both meanings are operative in the concept of yoga.",
+      "functional_meaning": "Yoga is the discipline leading to union of the individual self with the highest reality. Patañjali defines yoga as \"yogaś citta-vṛtti-nirodhaḥ\" — yoga is the cessation of the modifications of the mind-stuff. The Bhagavad Gītā defines yoga as \"samatvam yoga ucyate\" — equanimity is called yoga, and \"yogaḥ karmasu kauśalam\" — yoga is skill in action. The four classical paths are: Jñāna-Yoga (knowledge), Bhakti-Yoga (devotion), Karma-Yoga (action), Rāja-Yoga (meditation).",
+      "dhatu": "युज् (Yuj) — To yoke, to unite, to join, to concentrate.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:yoga",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Yujyate anena iti yogaḥ\" — that by which union is achieved. Also: \"yoge yukto bhavet\" — one who is yoked (disciplined) is in yoga.",
       "related_concepts": [
         "dharma",
         "karma",
@@ -50,8 +51,7 @@
         "samadhi",
         "kundalini"
       ],
-      "vyakarana": "Yoga is a masculine noun derived from the root yuj with the suffix -a. The root yuj has two meanings: (1) yujir yoge — to unite; (2) yuj samādhau — to concentrate. Both meanings are operative in the concept of yoga.",
-      "shakti": null
+      "tattva": "Yoga-Tattva — the principle of union and integration. Yoga operates at multiple levels: union of individual self with universal Self (Advaita), union of Puruṣa with Prakṛti's dissolution (Sāṃkhya-Yoga), union of devotee with God (Bhakti-Yoga), union of action with non-attachment (Karma-Yoga)."
     },
     "layers": {
       "sanskrit": {

@@ -159,3 +159,42 @@ def test_graph_traverse_endpoint_validates_depth_and_returns_path():
         json={"start": "karma", "max_depth": 7, "emit_proof": False},
     )
     assert bad_resp.status_code == 422  # Pydantic validates max_depth <= 6
+
+
+def test_recursive_typed_node_traversal_prana_kosha_chakra_bija():
+    """Phase 4: Verify recursive traversal across typed nodes: Prāṇa -> Kosha -> Chakra -> Bīja."""
+    registry, metadata_by_id = load_sanskar_registry()
+    result = traverse_concept_graph(
+        start="prana",
+        edge_types=None,
+        max_depth=3,
+        registry=registry,
+        metadata_by_id=metadata_by_id,
+    )
+    assert "error" not in result
+    path_nodes = {frame["node_id"]: frame for frame in result["path"]}
+    path_types = {frame["node_type"] for frame in result["path"]}
+
+    # Must contain sanskrit_concept, kosha, chakra, and bija node types
+    assert "sanskrit_concept" in path_types
+    assert "kosha" in path_types
+    assert "chakra" in path_types
+    assert "bija" in path_types
+
+    # Verify key typed nodes are present in traversal path
+    assert "sanskar:sanskrit:prana" in path_nodes
+    assert "kosha_ref:pranamaya_kosha" in path_nodes
+    assert "chakra_ref:anahata" in path_nodes
+    assert "bija_ref:yam" in path_nodes
+
+    # Verify provenance exists on every path frame
+    for frame in result["path"]:
+        assert frame["provenance"] is not None
+        assert frame["node_type"] is not None
+
+    # Verify provenance exists on every sub-graph edge
+    for edge in result["sub_graph"]["edges"]:
+        assert "provenance" in edge
+        assert "from_type" in edge
+        assert "to_type" in edge
+

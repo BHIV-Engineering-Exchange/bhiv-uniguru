@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Māyā",
     "shabda": "माया",
-    "beeja": "ह्रीं (Hrīm) — the bīja of Māyā-Śakti in Tantric traditions. Hrīm is the bīja of the Goddess as the creative power of illusion and liberation.",
-    "nirukta": "\"Māyate iti māyā\" — that which measures/creates. Also: \"mā — not, yā — that which is\" — that which is not (the appearance of what is not real). The second etymology is a later philosophical interpretation.",
-    "sanskrit": "माया",
-    "tattva": "Māyā-Tattva — the principle of creative illusion and cosmic appearance. In Advaita: Māyā is the power of Brahman that projects the apparent multiplicity of the universe. In Kashmir Śaivism: Māyā is one of the five kañcukas (coverings) that limit the universal consciousness.",
-    "concept_id": "sanskar:sanskrit:maya",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "मा (Mā) — To measure, to create, to construct. Māyā is \"that which measures out\" or \"that which creates the appearance of measure and form.\"",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Māyā is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman. It is neither real (sat) nor unreal (asat) — it is anirvachanīya (indescribable). Māyā operates through avidyā (ignorance) at the individual level and through the cosmic creative power at the universal level. Liberation (mokṣa) is the transcendence of māyā through jñāna (knowledge).",
     "canonical_name": "maya",
+    "sanskrit": "माया",
+    "transliteration": "Māyā",
+    "beeja": "ह्रीं (Hrīm) — the bīja of Māyā-Śakti in Tantric traditions. Hrīm is the bīja of the Goddess as the creative power of illusion and liberation.",
+    "vyakarana": "Māyā is a feminine noun. Derived from the root mā (to measure/create) with the suffix -yā. In Vedic usage, māyā means \"supernatural power\" or \"creative magic.\" In Advaita Vedānta, it acquires the technical meaning of \"cosmic illusion.\"",
+    "functional_meaning": "Māyā is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman. It is neither real (sat) nor unreal (asat) — it is anirvachanīya (indescribable). Māyā operates through avidyā (ignorance) at the individual level and through the cosmic creative power at the universal level. Liberation (mokṣa) is the transcendence of māyā through jñāna (knowledge).",
+    "dhatu": "मा (Mā) — To measure, to create, to construct. Māyā is \"that which measures out\" or \"that which creates the appearance of measure and form.\"",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:maya",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Māyate iti māyā\" — that which measures/creates. Also: \"mā — not, yā — that which is\" — that which is not (the appearance of what is not real). The second etymology is a later philosophical interpretation.",
     "related_concepts": [
       "brahman",
       "avidya (ignorance — individual māyā)",
@@ -19,26 +20,26 @@
       "shakti",
       "moksha (liberation from māyā)"
     ],
-    "vyakarana": "Māyā is a feminine noun. Derived from the root mā (to measure/create) with the suffix -yā. In Vedic usage, māyā means \"supernatural power\" or \"creative magic.\" In Advaita Vedānta, it acquires the technical meaning of \"cosmic illusion.\"",
-    "shakti": null
+    "tattva": "Māyā-Tattva — the principle of creative illusion and cosmic appearance. In Advaita: Māyā is the power of Brahman that projects the apparent multiplicity of the universe. In Kashmir Śaivism: Māyā is one of the five kañcukas (coverings) that limit the universal consciousness."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:maya",
     "canonical_name": "maya",
     "lexical_record": {
-      "transliteration": "Māyā",
       "shabda": "माया",
-      "beeja": "ह्रीं (Hrīm) — the bīja of Māyā-Śakti in Tantric traditions. Hrīm is the bīja of the Goddess as the creative power of illusion and liberation.",
-      "nirukta": "\"Māyate iti māyā\" — that which measures/creates. Also: \"mā — not, yā — that which is\" — that which is not (the appearance of what is not real). The second etymology is a later philosophical interpretation.",
-      "sanskrit": "माया",
-      "tattva": "Māyā-Tattva — the principle of creative illusion and cosmic appearance. In Advaita: Māyā is the power of Brahman that projects the apparent multiplicity of the universe. In Kashmir Śaivism: Māyā is one of the five kañcukas (coverings) that limit the universal consciousness.",
-      "concept_id": "sanskar:sanskrit:maya",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "मा (Mā) — To measure, to create, to construct. Māyā is \"that which measures out\" or \"that which creates the appearance of measure and form.\"",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Māyā is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman. It is neither real (sat) nor unreal (asat) — it is anirvachanīya (indescribable). Māyā operates through avidyā (ignorance) at the individual level and through the cosmic creative power at the universal level. Liberation (mokṣa) is the transcendence of māyā through jñāna (knowledge).",
       "canonical_name": "maya",
+      "sanskrit": "माया",
+      "transliteration": "Māyā",
+      "beeja": "ह्रीं (Hrīm) — the bīja of Māyā-Śakti in Tantric traditions. Hrīm is the bīja of the Goddess as the creative power of illusion and liberation.",
+      "vyakarana": "Māyā is a feminine noun. Derived from the root mā (to measure/create) with the suffix -yā. In Vedic usage, māyā means \"supernatural power\" or \"creative magic.\" In Advaita Vedānta, it acquires the technical meaning of \"cosmic illusion.\"",
+      "functional_meaning": "Māyā is the cosmic power that creates the appearance of multiplicity in the non-dual Brahman. It is neither real (sat) nor unreal (asat) — it is anirvachanīya (indescribable). Māyā operates through avidyā (ignorance) at the individual level and through the cosmic creative power at the universal level. Liberation (mokṣa) is the transcendence of māyā through jñāna (knowledge).",
+      "dhatu": "मा (Mā) — To measure, to create, to construct. Māyā is \"that which measures out\" or \"that which creates the appearance of measure and form.\"",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:maya",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Māyate iti māyā\" — that which measures/creates. Also: \"mā — not, yā — that which is\" — that which is not (the appearance of what is not real). The second etymology is a later philosophical interpretation.",
       "related_concepts": [
         "brahman",
         "avidya (ignorance — individual māyā)",
@@ -46,8 +47,7 @@
         "shakti",
         "moksha (liberation from māyā)"
       ],
-      "vyakarana": "Māyā is a feminine noun. Derived from the root mā (to measure/create) with the suffix -yā. In Vedic usage, māyā means \"supernatural power\" or \"creative magic.\" In Advaita Vedānta, it acquires the technical meaning of \"cosmic illusion.\"",
-      "shakti": null
+      "tattva": "Māyā-Tattva — the principle of creative illusion and cosmic appearance. In Advaita: Māyā is the power of Brahman that projects the apparent multiplicity of the universe. In Kashmir Śaivism: Māyā is one of the five kañcukas (coverings) that limit the universal consciousness."
     },
     "layers": {
       "sanskrit": {

@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Prāṇa",
     "shabda": "प्राण",
-    "beeja": "यं (Yaṃ) — the bīja of vāyu (air/wind), the element most closely associated with prāṇa. Also हं (Haṃ) — the bīja of the throat chakra (Viśuddha) associated with prāṇa's vocal expression.",
-    "nirukta": "\"Prāṇiti iti prāṇaḥ\" — that which breathes is prāṇa. The life-force that animates all living beings.",
-    "sanskrit": "प्राण",
-    "tattva": "Prāṇa-Tattva — the life-force principle. Prāṇa is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). It is the animating principle that distinguishes the living from the dead.",
-    "concept_id": "sanskar:sanskrit:prana",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "प्र + अन् (Pra + An) — Pra (forward, forth) + An (to breathe, to live). That which breathes forth; the forward-moving breath.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Prāṇa is the universal life-force that animates all living beings. It operates through the prāṇamaya kosha (energy sheath) and the network of nāḍīs (energy channels). The five prāṇas (pañca-vāyu) govern specific physiological functions: Prāṇa (respiration, heart), Apāna (elimination, reproduction), Samāna (digestion, assimilation), Udāna (speech, upward movement, death), Vyāna (circulation, distribution). Prāṇāyāma (breath control) is the primary yogic practice for working with prāṇa.",
     "canonical_name": "prana",
+    "sanskrit": "प्राण",
+    "transliteration": "Prāṇa",
+    "beeja": "यं (Yaṃ) — the bīja of vāyu (air/wind), the element most closely associated with prāṇa. Also हं (Haṃ) — the bīja of the throat chakra (Viśuddha) associated with prāṇa's vocal expression.",
+    "vyakarana": "Prāṇa is a masculine noun. The prefix pra- (forward) combined with the root an- (to breathe) gives prāṇa — the primary, forward-moving life-breath. Distinguished from the five vāyus: Prāṇa (inward breath), Apāna (downward breath), Samāna (equalizing breath), Udāna (upward breath), Vyāna (pervading breath).",
+    "functional_meaning": "Prāṇa is the universal life-force that animates all living beings. It operates through the prāṇamaya kosha (energy sheath) and the network of nāḍīs (energy channels). The five prāṇas (pañca-vāyu) govern specific physiological functions: Prāṇa (respiration, heart), Apāna (elimination, reproduction), Samāna (digestion, assimilation), Udāna (speech, upward movement, death), Vyāna (circulation, distribution). Prāṇāyāma (breath control) is the primary yogic practice for working with prāṇa.",
+    "dhatu": "प्र + अन् (Pra + An) — Pra (forward, forth) + An (to breathe, to live). That which breathes forth; the forward-moving breath.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:prana",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Prāṇiti iti prāṇaḥ\" — that which breathes is prāṇa. The life-force that animates all living beings.",
     "related_concepts": [
       "yoga",
       "atman",
@@ -20,26 +21,26 @@
       "chakra (anāhata)",
       "vata (āyurvedic dosha)"
     ],
-    "vyakarana": "Prāṇa is a masculine noun. The prefix pra- (forward) combined with the root an- (to breathe) gives prāṇa — the primary, forward-moving life-breath. Distinguished from the five vāyus: Prāṇa (inward breath), Apāna (downward breath), Samāna (equalizing breath), Udāna (upward breath), Vyāna (pervading breath).",
-    "shakti": null
+    "tattva": "Prāṇa-Tattva — the life-force principle. Prāṇa is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). It is the animating principle that distinguishes the living from the dead."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:prana",
     "canonical_name": "prana",
     "lexical_record": {
-      "transliteration": "Prāṇa",
       "shabda": "प्राण",
-      "beeja": "यं (Yaṃ) — the bīja of vāyu (air/wind), the element most closely associated with prāṇa. Also हं (Haṃ) — the bīja of the throat chakra (Viśuddha) associated with prāṇa's vocal expression.",
-      "nirukta": "\"Prāṇiti iti prāṇaḥ\" — that which breathes is prāṇa. The life-force that animates all living beings.",
-      "sanskrit": "प्राण",
-      "tattva": "Prāṇa-Tattva — the life-force principle. Prāṇa is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). It is the animating principle that distinguishes the living from the dead.",
-      "concept_id": "sanskar:sanskrit:prana",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "प्र + अन् (Pra + An) — Pra (forward, forth) + An (to breathe, to live). That which breathes forth; the forward-moving breath.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Prāṇa is the universal life-force that animates all living beings. It operates through the prāṇamaya kosha (energy sheath) and the network of nāḍīs (energy channels). The five prāṇas (pañca-vāyu) govern specific physiological functions: Prāṇa (respiration, heart), Apāna (elimination, reproduction), Samāna (digestion, assimilation), Udāna (speech, upward movement, death), Vyāna (circulation, distribution). Prāṇāyāma (breath control) is the primary yogic practice for working with prāṇa.",
       "canonical_name": "prana",
+      "sanskrit": "प्राण",
+      "transliteration": "Prāṇa",
+      "beeja": "यं (Yaṃ) — the bīja of vāyu (air/wind), the element most closely associated with prāṇa. Also हं (Haṃ) — the bīja of the throat chakra (Viśuddha) associated with prāṇa's vocal expression.",
+      "vyakarana": "Prāṇa is a masculine noun. The prefix pra- (forward) combined with the root an- (to breathe) gives prāṇa — the primary, forward-moving life-breath. Distinguished from the five vāyus: Prāṇa (inward breath), Apāna (downward breath), Samāna (equalizing breath), Udāna (upward breath), Vyāna (pervading breath).",
+      "functional_meaning": "Prāṇa is the universal life-force that animates all living beings. It operates through the prāṇamaya kosha (energy sheath) and the network of nāḍīs (energy channels). The five prāṇas (pañca-vāyu) govern specific physiological functions: Prāṇa (respiration, heart), Apāna (elimination, reproduction), Samāna (digestion, assimilation), Udāna (speech, upward movement, death), Vyāna (circulation, distribution). Prāṇāyāma (breath control) is the primary yogic practice for working with prāṇa.",
+      "dhatu": "प्र + अन् (Pra + An) — Pra (forward, forth) + An (to breathe, to live). That which breathes forth; the forward-moving breath.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:prana",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Prāṇiti iti prāṇaḥ\" — that which breathes is prāṇa. The life-force that animates all living beings.",
       "related_concepts": [
         "yoga",
         "atman",
@@ -48,8 +49,7 @@
         "chakra (anāhata)",
         "vata (āyurvedic dosha)"
       ],
-      "vyakarana": "Prāṇa is a masculine noun. The prefix pra- (forward) combined with the root an- (to breathe) gives prāṇa — the primary, forward-moving life-breath. Distinguished from the five vāyus: Prāṇa (inward breath), Apāna (downward breath), Samāna (equalizing breath), Udāna (upward breath), Vyāna (pervading breath).",
-      "shakti": null
+      "tattva": "Prāṇa-Tattva — the life-force principle. Prāṇa is the bridge between the physical body (annamaya kosha) and the mind (manomaya kosha). It is the animating principle that distinguishes the living from the dead."
     },
     "layers": {
       "sanskrit": {

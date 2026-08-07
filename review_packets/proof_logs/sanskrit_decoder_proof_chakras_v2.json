@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Cakrāṇi",
     "shabda": "चक्र (Cakra)",
-    "beeja": "लँ, वँ, रँ, यँ, हँ, ॐ (Laṁ, Vaṁ, Raṁ, Yaṁ, Haṁ, Om) — the root seed syllables for the six major chakras plus Sahasrāra.",
-    "nirukta": "Yāska's Nirukta: \"cakram cakanaṁ vā, kramaṇam vā, krayam vā\" — that which revolves or moves forward continuously. Chakras are psycho-spiritual centers of energy flow along the central channel (Suṣumnā nāḍī).",
-    "sanskrit": "चक्राणि",
-    "tattva": "Cakra-Tattva — the subtle energy centers regulating the transformation of prāṇa and tattvas within the subtle body (sūkṣma-śarīra).",
-    "concept_id": "sanskar:sanskrit:chakras",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "क्रम् (Kram) / चक् (Cak) — To move, rotate, turn, shine.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Chakras are primary psycho-energetic nodes located along the central spinal axis where nāḍīs (energy channels) intersect. They govern physical organ systems, emotional patterns, mental states, and spiritual awakening stages. The primary seven chakras are Mūlādhāra, Svādhiṣṭhāna, Maṇipūra, Anāhata, Viśuddha, Ājñā, and Sahasrāra.",
     "canonical_name": "chakras",
+    "sanskrit": "चक्राणि",
+    "transliteration": "Cakrāṇi",
+    "beeja": "लँ, वँ, रँ, यँ, हँ, ॐ (Laṁ, Vaṁ, Raṁ, Yaṁ, Haṁ, Om) — the root seed syllables for the six major chakras plus Sahasrāra.",
+    "vyakarana": "Derived from verbal root क्रम् / चक् with reduplication and suffix -ra. Neuter noun, plural form चक्राणि (Cakrāṇi). Pāṇini Ashtadhyayi 3.1.114. Refers to subtle energy centers or vortices.",
+    "functional_meaning": "Chakras are primary psycho-energetic nodes located along the central spinal axis where nāḍīs (energy channels) intersect. They govern physical organ systems, emotional patterns, mental states, and spiritual awakening stages. The primary seven chakras are Mūlādhāra, Svādhiṣṭhāna, Maṇipūra, Anāhata, Viśuddha, Ājñā, and Sahasrāra.",
+    "dhatu": "क्रम् (Kram) / चक् (Cak) — To move, rotate, turn, shine.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:chakras",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska's Nirukta: \"cakram cakanaṁ vā, kramaṇam vā, krayam vā\" — that which revolves or moves forward continuously. Chakras are psycho-spiritual centers of energy flow along the central channel (Suṣumnā nāḍī).",
     "related_concepts": [
       "prana",
       "shakti",
@@ -19,26 +20,26 @@
       "om",
       "yajna"
     ],
-    "vyakarana": "Derived from verbal root क्रम् / चक् with reduplication and suffix -ra. Neuter noun, plural form चक्राणि (Cakrāṇi). Pāṇini Ashtadhyayi 3.1.114. Refers to subtle energy centers or vortices.",
-    "shakti": null
+    "tattva": "Cakra-Tattva — the subtle energy centers regulating the transformation of prāṇa and tattvas within the subtle body (sūkṣma-śarīra)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:chakras",
     "canonical_name": "chakras",
     "lexical_record": {
-      "transliteration": "Cakrāṇi",
       "shabda": "चक्र (Cakra)",
-      "beeja": "लँ, वँ, रँ, यँ, हँ, ॐ (Laṁ, Vaṁ, Raṁ, Yaṁ, Haṁ, Om) — the root seed syllables for the six major chakras plus Sahasrāra.",
-      "nirukta": "Yāska's Nirukta: \"cakram cakanaṁ vā, kramaṇam vā, krayam vā\" — that which revolves or moves forward continuously. Chakras are psycho-spiritual centers of energy flow along the central channel (Suṣumnā nāḍī).",
-      "sanskrit": "चक्राणि",
-      "tattva": "Cakra-Tattva — the subtle energy centers regulating the transformation of prāṇa and tattvas within the subtle body (sūkṣma-śarīra).",
-      "concept_id": "sanskar:sanskrit:chakras",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "क्रम् (Kram) / चक् (Cak) — To move, rotate, turn, shine.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Chakras are primary psycho-energetic nodes located along the central spinal axis where nāḍīs (energy channels) intersect. They govern physical organ systems, emotional patterns, mental states, and spiritual awakening stages. The primary seven chakras are Mūlādhāra, Svādhiṣṭhāna, Maṇipūra, Anāhata, Viśuddha, Ājñā, and Sahasrāra.",
       "canonical_name": "chakras",
+      "sanskrit": "चक्राणि",
+      "transliteration": "Cakrāṇi",
+      "beeja": "लँ, वँ, रँ, यँ, हँ, ॐ (Laṁ, Vaṁ, Raṁ, Yaṁ, Haṁ, Om) — the root seed syllables for the six major chakras plus Sahasrāra.",
+      "vyakarana": "Derived from verbal root क्रम् / चक् with reduplication and suffix -ra. Neuter noun, plural form चक्राणि (Cakrāṇi). Pāṇini Ashtadhyayi 3.1.114. Refers to subtle energy centers or vortices.",
+      "functional_meaning": "Chakras are primary psycho-energetic nodes located along the central spinal axis where nāḍīs (energy channels) intersect. They govern physical organ systems, emotional patterns, mental states, and spiritual awakening stages. The primary seven chakras are Mūlādhāra, Svādhiṣṭhāna, Maṇipūra, Anāhata, Viśuddha, Ājñā, and Sahasrāra.",
+      "dhatu": "क्रम् (Kram) / चक् (Cak) — To move, rotate, turn, shine.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:chakras",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska's Nirukta: \"cakram cakanaṁ vā, kramaṇam vā, krayam vā\" — that which revolves or moves forward continuously. Chakras are psycho-spiritual centers of energy flow along the central channel (Suṣumnā nāḍī).",
       "related_concepts": [
         "prana",
         "shakti",
@@ -46,8 +47,7 @@
         "om",
         "yajna"
       ],
-      "vyakarana": "Derived from verbal root क्रम् / चक् with reduplication and suffix -ra. Neuter noun, plural form चक्राणि (Cakrāṇi). Pāṇini Ashtadhyayi 3.1.114. Refers to subtle energy centers or vortices.",
-      "shakti": null
+      "tattva": "Cakra-Tattva — the subtle energy centers regulating the transformation of prāṇa and tattvas within the subtle body (sūkṣma-śarīra)."
     },
     "layers": {
       "sanskrit": {

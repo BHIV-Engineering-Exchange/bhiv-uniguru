@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Prakṛti",
     "shabda": "प्रकृति",
-    "beeja": "ह्रीं (Hrīm) — the bīja of Prakṛti as the creative power. Also क्लीं (Klīm) — the bīja of attraction and manifestation.",
-    "nirukta": "\"Prakṛṣṭā kṛtiḥ prakṛtiḥ\" — the primary creation. Prakṛti is the original nature from which all manifest existence emerges.",
-    "sanskrit": "प्रकृति",
-    "tattva": "Prakṛti-Tattva — the principle of primal matter and creative nature. In Sāṃkhya: Prakṛti is one of the two ultimate realities (along with Puruṣa). It is the material cause of the universe — the primal matter from which all manifest existence evolves.",
-    "concept_id": "sanskar:sanskrit:prakrti",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "प्र + कृ (Pra + Kṛ) — Pra (before, primary, forth) + Kṛ (to do, to make). The primary maker; the original nature; that which was made first.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Prakṛti is the primal, undifferentiated matter from which the entire manifest universe evolves. In Sāṃkhya philosophy, Prakṛti consists of three guṇas (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three guṇas are in perfect equilibrium, Prakṛti is unmanifest (avyakta). When the equilibrium is disturbed (by Puruṣa's proximity), Prakṛti begins to evolve the universe through twenty-three tattvas (principles).",
     "canonical_name": "prakrti",
+    "sanskrit": "प्रकृति",
+    "transliteration": "Prakṛti",
+    "beeja": "ह्रीं (Hrīm) — the bīja of Prakṛti as the creative power. Also क्लीं (Klīm) — the bīja of attraction and manifestation.",
+    "vyakarana": "Prakṛti is a feminine noun derived from the prefix pra- and the root kṛ (to make) with the suffix -ti. The feminine gender is significant — Prakṛti is the feminine creative principle, complementary to the masculine Puruṣa.",
+    "functional_meaning": "Prakṛti is the primal, undifferentiated matter from which the entire manifest universe evolves. In Sāṃkhya philosophy, Prakṛti consists of three guṇas (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three guṇas are in perfect equilibrium, Prakṛti is unmanifest (avyakta). When the equilibrium is disturbed (by Puruṣa's proximity), Prakṛti begins to evolve the universe through twenty-three tattvas (principles).",
+    "dhatu": "प्र + कृ (Pra + Kṛ) — Pra (before, primary, forth) + Kṛ (to do, to make). The primary maker; the original nature; that which was made first.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:prakrti",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Prakṛṣṭā kṛtiḥ prakṛtiḥ\" — the primary creation. Prakṛti is the original nature from which all manifest existence emerges.",
     "related_concepts": [
       "purusha",
       "maya",
@@ -19,26 +20,26 @@
       "guna (the three qualities of prakrti)",
       "atman (purusha — the consciousness beyond prakrti)"
     ],
-    "vyakarana": "Prakṛti is a feminine noun derived from the prefix pra- and the root kṛ (to make) with the suffix -ti. The feminine gender is significant — Prakṛti is the feminine creative principle, complementary to the masculine Puruṣa.",
-    "shakti": null
+    "tattva": "Prakṛti-Tattva — the principle of primal matter and creative nature. In Sāṃkhya: Prakṛti is one of the two ultimate realities (along with Puruṣa). It is the material cause of the universe — the primal matter from which all manifest existence evolves."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:prakrti",
     "canonical_name": "prakrti",
     "lexical_record": {
-      "transliteration": "Prakṛti",
       "shabda": "प्रकृति",
-      "beeja": "ह्रीं (Hrīm) — the bīja of Prakṛti as the creative power. Also क्लीं (Klīm) — the bīja of attraction and manifestation.",
-      "nirukta": "\"Prakṛṣṭā kṛtiḥ prakṛtiḥ\" — the primary creation. Prakṛti is the original nature from which all manifest existence emerges.",
-      "sanskrit": "प्रकृति",
-      "tattva": "Prakṛti-Tattva — the principle of primal matter and creative nature. In Sāṃkhya: Prakṛti is one of the two ultimate realities (along with Puruṣa). It is the material cause of the universe — the primal matter from which all manifest existence evolves.",
-      "concept_id": "sanskar:sanskrit:prakrti",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "प्र + कृ (Pra + Kṛ) — Pra (before, primary, forth) + Kṛ (to do, to make). The primary maker; the original nature; that which was made first.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Prakṛti is the primal, undifferentiated matter from which the entire manifest universe evolves. In Sāṃkhya philosophy, Prakṛti consists of three guṇas (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three guṇas are in perfect equilibrium, Prakṛti is unmanifest (avyakta). When the equilibrium is disturbed (by Puruṣa's proximity), Prakṛti begins to evolve the universe through twenty-three tattvas (principles).",
       "canonical_name": "prakrti",
+      "sanskrit": "प्रकृति",
+      "transliteration": "Prakṛti",
+      "beeja": "ह्रीं (Hrīm) — the bīja of Prakṛti as the creative power. Also क्लीं (Klīm) — the bīja of attraction and manifestation.",
+      "vyakarana": "Prakṛti is a feminine noun derived from the prefix pra- and the root kṛ (to make) with the suffix -ti. The feminine gender is significant — Prakṛti is the feminine creative principle, complementary to the masculine Puruṣa.",
+      "functional_meaning": "Prakṛti is the primal, undifferentiated matter from which the entire manifest universe evolves. In Sāṃkhya philosophy, Prakṛti consists of three guṇas (qualities): Sattva (clarity, luminosity), Rajas (activity, passion), Tamas (inertia, darkness). When the three guṇas are in perfect equilibrium, Prakṛti is unmanifest (avyakta). When the equilibrium is disturbed (by Puruṣa's proximity), Prakṛti begins to evolve the universe through twenty-three tattvas (principles).",
+      "dhatu": "प्र + कृ (Pra + Kṛ) — Pra (before, primary, forth) + Kṛ (to do, to make). The primary maker; the original nature; that which was made first.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:prakrti",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Prakṛṣṭā kṛtiḥ prakṛtiḥ\" — the primary creation. Prakṛti is the original nature from which all manifest existence emerges.",
       "related_concepts": [
         "purusha",
         "maya",
@@ -46,8 +47,7 @@
         "guna (the three qualities of prakrti)",
         "atman (purusha — the consciousness beyond prakrti)"
       ],
-      "vyakarana": "Prakṛti is a feminine noun derived from the prefix pra- and the root kṛ (to make) with the suffix -ti. The feminine gender is significant — Prakṛti is the feminine creative principle, complementary to the masculine Puruṣa.",
-      "shakti": null
+      "tattva": "Prakṛti-Tattva — the principle of primal matter and creative nature. In Sāṃkhya: Prakṛti is one of the two ultimate realities (along with Puruṣa). It is the material cause of the universe — the primal matter from which all manifest existence evolves."
     },
     "layers": {
       "sanskrit": {

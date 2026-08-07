@@ -1,7 +1,7 @@
 {
   "trace_id": "isha_phase2_dharma_execution",
   "query": "dharma",
-  "timestamp": "2026-08-07T05:29:31.033416Z",
+  "timestamp": "2026-08-07T05:51:48.459386Z",
   "verification_status": "PARTIAL_VERIFIED_SAMPLE",
   "confidence": 0.65,
   "answer": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).",
@@ -58,7 +58,7 @@
       "domain": "sanskrit",
       "trace_id": "isha_phase2_dharma_execution"
     },
-    "timestamp": "2026-08-07T05:29:29.612124Z",
+    "timestamp": "2026-08-07T05:51:45.893148Z",
     "emitted": true,
     "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_isha_phase2_dharma_execution.json",
     "live_endpoint": null,
@@ -148,7 +148,7 @@
     "execution_event": {
       "schema_version": "execution_event.v1.0.0",
       "trace_id": "isha_phase2_dharma_execution",
-      "timestamp": "2026-08-07T05:29:29.621117Z",
+      "timestamp": "2026-08-07T05:51:45.920087Z",
       "ownership": "uniguru",
       "provenance": {
         "source_system": "uniguru_backend",
@@ -226,18 +226,19 @@
     ],
     "sanskrit_decoder": {
       "canonical_concept": {
-        "transliteration": "Dharma",
         "shabda": "धर्म",
-        "beeja": "ध (Dha) — the seed syllable associated with sustaining force in Tantric traditions.",
-        "nirukta": "Yāska's Nirukta: \"dharayati iti dharmaḥ\" — that which upholds is Dharma. The root dhṛ carries the sense of bearing, sustaining, maintaining cosmic and social order.",
-        "sanskrit": "धर्म",
-        "tattva": "Ṛta-Dharma Tattva — the principle of cosmic and moral order that sustains all existence. In Sāṃkhya: Dharma is a quality (guṇa) of the Mahat (cosmic intellect). In Vedānta: Dharma is the expression of Ṛta at the human level.",
-        "concept_id": "sanskar:sanskrit:dharma",
-        "semantic_version": "uniguru_civilizational_enrichment_v3",
-        "dhatu": "धृ (Dhṛ) — To uphold, sustain, support.",
-        "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-        "functional_meaning": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).",
         "canonical_name": "dharma",
+        "sanskrit": "धर्म",
+        "transliteration": "Dharma",
+        "beeja": "ध (Dha) — the seed syllable associated with sustaining force in Tantric traditions.",
+        "vyakarana": "Derived from the verbal root धृ (dhṛ) with the suffix -man. Masculine noun, second declension. Pāṇini Ashtadhyayi 3.3.18 governs the suffix formation.",
+        "functional_meaning": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).",
+        "dhatu": "धृ (Dhṛ) — To uphold, sustain, support.",
+        "semantic_version": "uniguru_civilizational_enrichment_v3",
+        "concept_id": "sanskar:sanskrit:dharma",
+        "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+        "shakti": null,
+        "nirukta": "Yāska's Nirukta: \"dharayati iti dharmaḥ\" — that which upholds is Dharma. The root dhṛ carries the sense of bearing, sustaining, maintaining cosmic and social order.",
         "related_concepts": [
           "karma",
           "moksha",
@@ -249,26 +250,26 @@
           "satya",
           "yajña"
         ],
-        "vyakarana": "Derived from the verbal root धृ (dhṛ) with the suffix -man. Masculine noun, second declension. Pāṇini Ashtadhyayi 3.3.18 governs the suffix formation.",
-        "shakti": null
+        "tattva": "Ṛta-Dharma Tattva — the principle of cosmic and moral order that sustains all existence. In Sāṃkhya: Dharma is a quality (guṇa) of the Mahat (cosmic intellect). In Vedānta: Dharma is the expression of Ṛta at the human level."
       },
       "civilizational_knowledge": {
         "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
         "concept_id": "sanskar:sanskrit:dharma",
         "canonical_name": "dharma",
         "lexical_record": {
-          "transliteration": "Dharma",
           "shabda": "धर्म",
-          "beeja": "ध (Dha) — the seed syllable associated with sustaining force in Tantric traditions.",
-          "nirukta": "Yāska's Nirukta: \"dharayati iti dharmaḥ\" — that which upholds is Dharma. The root dhṛ carries the sense of bearing, sustaining, maintaining cosmic and social order.",
-          "sanskrit": "धर्म",
-          "tattva": "Ṛta-Dharma Tattva — the principle of cosmic and moral order that sustains all existence. In Sāṃkhya: Dharma is a quality (guṇa) of the Mahat (cosmic intellect). In Vedānta: Dharma is the expression of Ṛta at the human level.",
-          "concept_id": "sanskar:sanskrit:dharma",
-          "semantic_version": "uniguru_civilizational_enrichment_v3",
-          "dhatu": "धृ (Dhṛ) — To uphold, sustain, support.",
-          "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-          "functional_meaning": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).",
           "canonical_name": "dharma",
+          "sanskrit": "धर्म",
+          "transliteration": "Dharma",
+          "beeja": "ध (Dha) — the seed syllable associated with sustaining force in Tantric traditions.",
+          "vyakarana": "Derived from the verbal root धृ (dhṛ) with the suffix -man. Masculine noun, second declension. Pāṇini Ashtadhyayi 3.3.18 governs the suffix formation.",
+          "functional_meaning": "Dharma is the universal principle governing righteous conduct, cosmic order, social duty, and individual ethics. It operates simultaneously at four levels: Ṛta (cosmic order), Varṇāśrama-dharma (social order), Svadharma (individual duty), and Sādhāraṇa-dharma (universal ethics applicable to all beings).",
+          "dhatu": "धृ (Dhṛ) — To uphold, sustain, support.",
+          "semantic_version": "uniguru_civilizational_enrichment_v3",
+          "concept_id": "sanskar:sanskrit:dharma",
+          "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+          "shakti": null,
+          "nirukta": "Yāska's Nirukta: \"dharayati iti dharmaḥ\" — that which upholds is Dharma. The root dhṛ carries the sense of bearing, sustaining, maintaining cosmic and social order.",
           "related_concepts": [
             "karma",
             "moksha",
@@ -280,8 +281,7 @@
             "satya",
             "yajña"
           ],
-          "vyakarana": "Derived from the verbal root धृ (dhṛ) with the suffix -man. Masculine noun, second declension. Pāṇini Ashtadhyayi 3.3.18 governs the suffix formation.",
-          "shakti": null
+          "tattva": "Ṛta-Dharma Tattva — the principle of cosmic and moral order that sustains all existence. In Sāṃkhya: Dharma is a quality (guṇa) of the Mahat (cosmic intellect). In Vedānta: Dharma is the expression of Ṛta at the human level."
         },
         "layers": {
           "sanskrit": {

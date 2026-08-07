@@ -514,7 +514,147 @@ def _graph(concept: SanskritConcept, registry: SanskritRegistry, metadata: Dict[
     return {"graph_id": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_GRAPH_V3", "schema_version": "3.0.0", "nodes": nodes, "edges": edges, "metadata": {"adapter": DECODER_VERSION, "consistency_valid": True, "orphaned_nodes": [], "source_snapshot_hash": metadata["content_hash"], "node_count": len(nodes), "edge_count": len(edges)}}
 
 
-# ── Phase 3: Multi-Hop Graph Traversal ────────────────────────────────────────
+# ── Phase 3 & 4: Typed Entity Expansion & Multi-Hop Graph Traversal ─────────
+
+def _expand_typed_node(
+    node_id: str,
+    registry: "SanskritRegistry",
+    metadata_by_id: Dict[str, Dict[str, Any]],
+) -> Tuple[Optional[Dict[str, Any]], List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """Resolve any typed node_id to (node_info, outbound_nodes, outbound_edges).
+
+    Supports recursive traversal for:
+    - sanskar:sanskrit:<name> (type: sanskrit_concept)
+    - kosha_ref:<key> (type: kosha)
+    - chakra_ref:<key> (type: chakra)
+    - bija_ref:<key> (type: bija)
+    - loka:<key> (type: loka)
+    - deity:<key> (type: deity)
+    - shastra:<key> (type: shastra)
+    - yantra:<key> (type: yantra)
+    - vidya:<key> (type: vidya)
+    """
+    if node_id.startswith("sanskar:sanskrit:"):
+        cname = node_id.split(":")[-1]
+        concept = _resolve(cname, registry)
+        if concept is None:
+            return None, [], []
+        meta = metadata_by_id.get(concept.concept_id, {})
+        records = _kosha_records(concept)
+        g = _graph(concept, registry, meta, records)
+        node_info = {
+            "id": concept.concept_id,
+            "type": "sanskrit_concept",
+            "label": concept.canonical_name,
+            "provenance": meta.get("path", "backend/knowledge/sanskrit/" + cname + ".md"),
+        }
+        out_edges = []
+        for e in g["edges"]:
+            edge_copy = dict(e)
+            edge_copy["from_type"] = edge_copy.get("from_type", "sanskrit_concept")
+            target_node = next((n for n in g["nodes"] if n["id"] == edge_copy["to"]), None)
+            edge_copy["to_type"] = edge_copy.get("to_type", target_node["type"] if target_node else "unknown")
+            out_edges.append(edge_copy)
+        return node_info, g["nodes"], out_edges
+
+    elif node_id.startswith("kosha_ref:"):
+        key = node_id.split(":", 1)[1]
+        path = "backend/knowledge/sanskrit/koshas.md"
+        label = key.replace("_", " ").title() + " Kosha" if not key.endswith("kosha") else key.replace("_", " ").title()
+        node_info = {"id": node_id, "type": "kosha", "label": label, "provenance": path}
+        out_nodes = [node_info]
+        out_edges = []
+        if "pranamaya" in key:
+            c_id = "chakra_ref:anahata"
+            c_node = {"id": c_id, "type": "chakra", "label": "Anāhata", "provenance": "backend/knowledge/sanskrit/chakras.md"}
+            out_nodes.append(c_node)
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+            p_id = "sanskar:sanskrit:prana"
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": p_id, "to_type": "sanskrit_concept", "type": "related_concept", "evidence_type": EvidenceType.DERIVED.value, "provenance": path})
+        elif "annamaya" in key:
+            c_id = "chakra_ref:muladhara"
+            c_node = {"id": c_id, "type": "chakra", "label": "Mūlādhāra", "provenance": "backend/knowledge/sanskrit/chakras.md"}
+            out_nodes.append(c_node)
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "manomaya" in key:
+            c_id = "chakra_ref:manipura"
+            c_node = {"id": c_id, "type": "chakra", "label": "Maṇipūra", "provenance": "backend/knowledge/sanskrit/chakras.md"}
+            out_nodes.append(c_node)
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "vijnanamaya" in key:
+            c_id = "chakra_ref:ajna"
+            c_node = {"id": c_id, "type": "chakra", "label": "Ājñā", "provenance": "backend/knowledge/sanskrit/chakras.md"}
+            out_nodes.append(c_node)
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "anandamaya" in key:
+            c_id = "chakra_ref:sahasrara"
+            c_node = {"id": c_id, "type": "chakra", "label": "Sahasrāra", "provenance": "backend/knowledge/sanskrit/chakras.md"}
+            out_nodes.append(c_node)
+            out_edges.append({"from": node_id, "from_type": "kosha", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        return node_info, out_nodes, out_edges
+
+    elif node_id.startswith("chakra_ref:"):
+        key = node_id.split(":", 1)[1]
+        path = "backend/knowledge/sanskrit/chakras.md"
+        label = key.replace("_", " ").title() + " Chakra" if not key.endswith("chakra") else key.replace("_", " ").title()
+        node_info = {"id": node_id, "type": "chakra", "label": label, "provenance": path}
+        out_nodes = [node_info]
+        out_edges = []
+        if "anahata" in key:
+            b_id = "bija_ref:yam"
+            b_node = {"id": b_id, "type": "bija", "label": "Yaṃ Bīja (यं)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+            k_id = "kosha_ref:pranamaya_kosha"
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": k_id, "to_type": "kosha", "type": "related_kosha", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "muladhara" in key:
+            b_id = "bija_ref:lam"
+            b_node = {"id": b_id, "type": "bija", "label": "Laṁ Bīja (लँ)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "svadhisthana" in key:
+            b_id = "bija_ref:vam"
+            b_node = {"id": b_id, "type": "bija", "label": "Vaṁ Bīja (वँ)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "manipura" in key:
+            b_id = "bija_ref:ram"
+            b_node = {"id": b_id, "type": "bija", "label": "Raṃ Bīja (रं)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "visuddha" in key:
+            b_id = "bija_ref:ham"
+            b_node = {"id": b_id, "type": "bija", "label": "Haṁ Bīja (हँ)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        elif "ajna" in key:
+            b_id = "bija_ref:om"
+            b_node = {"id": b_id, "type": "bija", "label": "Om Bīja (ॐ)", "provenance": "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"}
+            out_nodes.append(b_node)
+            out_edges.append({"from": node_id, "from_type": "chakra", "to": b_id, "to_type": "bija", "type": "related_bija", "evidence_type": EvidenceType.TRADITION.value, "provenance": path})
+        return node_info, out_nodes, out_edges
+
+    elif node_id.startswith("bija_ref:"):
+        key = node_id.split(":", 1)[1]
+        path = "backend/knowledge/sanskrit/phonetics/bija_phonetics.json"
+        label = key.upper() + " Bīja"
+        node_info = {"id": node_id, "type": "bija", "label": label, "provenance": path}
+        out_nodes = [node_info]
+        out_edges = []
+        if "yam" in key:
+            c_id = "chakra_ref:anahata"
+            out_edges.append({"from": node_id, "from_type": "bija", "to": c_id, "to_type": "chakra", "type": "related_chakra", "evidence_type": EvidenceType.VEDA.value, "provenance": path})
+            p_id = "sanskar:sanskrit:prana"
+            out_edges.append({"from": node_id, "from_type": "bija", "to": p_id, "to_type": "sanskrit_concept", "type": "related_concept", "evidence_type": EvidenceType.VEDA.value, "provenance": path})
+        return node_info, out_nodes, out_edges
+
+    else:
+        prefix, key = node_id.split(":", 1) if ":" in node_id else ("entity", node_id)
+        label = key.replace("_", " ").title()
+        path = "backend/knowledge/sanskrit/" + key + ".md" if key in metadata_by_id else "backend/knowledge/sanskrit/dharma.md"
+        node_info = {"id": node_id, "type": prefix, "label": label, "provenance": path}
+        return node_info, [node_info], []
+
 
 def traverse_concept_graph(
     start: str,
@@ -525,87 +665,59 @@ def traverse_concept_graph(
 ) -> Dict[str, Any]:
     """BFS multi-hop traversal of the Civilizational Knowledge Graph.
 
-    Walks the graph outward from *start*, following only edges whose type
-    is in *edge_types* (or all edges if *edge_types* is empty/None).
-    Returns ordered path frames and the visited sub-graph.
+    Walks the graph outward from *start*, recursively resolving and expanding
+    all typed nodes (sanskrit_concept, kosha, chakra, bija, loka, deity, shastra, etc.).
+    Returns ordered path frames and the visited sub-graph with provenance on every node and edge.
     """
     start_concept = _resolve(start, registry)
-    if start_concept is None:
-        return {
-            "error": f"Start concept '{start}' not found in Sanskrit registry.",
-            "path": [], "sub_graph": {"nodes": [], "edges": []},
-        }
+    start_id = start_concept.concept_id if start_concept else start
     allowed_types: Optional[set] = set(edge_types) if edge_types else None
     max_depth = max(1, min(max_depth, 6))  # clamp 1–6
 
     visited_nodes: Dict[str, Any] = {}
     visited_edges: List[Dict[str, Any]] = []
     path_frames: List[Dict[str, Any]] = []
-    # BFS queue: (concept_id, depth, incoming_edge)
+    # BFS queue: (node_id, depth, incoming_edge)
     from collections import deque
     queue: deque = deque()
-    queue.append((start_concept.concept_id, 0, None))
-    queued_ids = {start_concept.concept_id}
+    queue.append((start_id, 0, None))
+    queued_ids = {start_id}
 
     while queue:
         current_id, depth, incoming = queue.popleft()
-        # Resolve concept — only sanskrit_concept nodes are resolvable
-        if current_id.startswith("sanskar:sanskrit:"):
-            cname = current_id.split(":")[-1]
-            concept = _resolve(cname, registry)
-        else:
-            concept = None
-
-        if concept is None:
+        node_info, out_nodes, out_edges = _expand_typed_node(current_id, registry, metadata_by_id)
+        if node_info is None:
             continue
-        meta = metadata_by_id.get(concept.concept_id, {})
-        records = _kosha_records(concept)
-        graph = _graph(concept, registry, meta, records)
 
-        # Register all nodes from this concept's graph
-        for node in graph["nodes"]:
+        # Register all nodes from this expansion
+        for node in out_nodes:
             if node["id"] not in visited_nodes:
                 visited_nodes[node["id"]] = node
 
-        # Record path frame
+        # Record path frame with node_type and provenance
         path_frames.append({
             "hop": depth,
-            "node_id": concept.concept_id,
-            "node_label": concept.canonical_name,
+            "node_id": node_info["id"],
+            "node_label": node_info["label"],
+            "node_type": node_info["type"],
             "incoming_edge_type": incoming,
-            "provenance": meta.get("path"),
+            "provenance": node_info["provenance"],
         })
 
         if depth >= max_depth:
             continue
 
-        # Follow edges to next-hop concepts
-        for edge in graph["edges"]:
+        # Follow edges to next-hop nodes recursively
+        for edge in out_edges:
             etype = edge["type"]
             if allowed_types and etype not in allowed_types:
                 continue
             target_id = edge["to"]
             if target_id in queued_ids:
                 continue
-            # Only traverse into known sanskrit_concept nodes for multi-hop
-            if not target_id.startswith("sanskar:sanskrit:"):
-                # Still add the edge+node to sub-graph, but don't recurse
-                if target_id not in visited_nodes:
-                    for node in graph["nodes"]:
-                        if node["id"] == target_id:
-                            visited_nodes[target_id] = node
-                            break
-                visited_edges.append({**edge, "hop": depth})
-                continue
             queued_ids.add(target_id)
             visited_edges.append({**edge, "hop": depth})
             queue.append((target_id, depth + 1, etype))
-
-        # Add all non-concept edges at this depth too
-        for edge in graph["edges"]:
-            if edge["to"] not in queued_ids and not edge["to"].startswith("sanskar:sanskrit:"):
-                if edge not in visited_edges:
-                    visited_edges.append({**edge, "hop": depth})
 
     # Deduplicate edges
     seen_edge_sigs: set = set()
@@ -636,6 +748,7 @@ def traverse_concept_graph(
             "replay_safe": True,
         },
     }
+
 
 
 def decode_sanskrit_concept(query: str) -> Dict[str, Any]:

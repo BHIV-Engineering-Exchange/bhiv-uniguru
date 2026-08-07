@@ -1,51 +1,51 @@
 {
   "canonical_concept": {
-    "transliteration": "Ṛta",
     "shabda": "ऋत",
-    "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
-    "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
-    "sanskrit": "ऋत",
-    "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle.",
-    "concept_id": "sanskar:sanskrit:rta",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
     "canonical_name": "rta",
+    "sanskrit": "ऋत",
+    "transliteration": "Ṛta",
+    "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+    "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+    "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+    "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:rta",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
     "related_concepts": [
       "dharma",
       "satya (truth)",
       "yajna",
       "varuna (the guardian of rta)"
     ],
-    "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
-    "shakti": null
+    "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:rta",
     "canonical_name": "rta",
     "lexical_record": {
-      "transliteration": "Ṛta",
       "shabda": "ऋत",
-      "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
-      "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
-      "sanskrit": "ऋत",
-      "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle.",
-      "concept_id": "sanskar:sanskrit:rta",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
       "canonical_name": "rta",
+      "sanskrit": "ऋत",
+      "transliteration": "Ṛta",
+      "beeja": "ऋ (Ṛ) — the vowel ṛ itself is the bīja of cosmic order and right movement.",
+      "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
+      "functional_meaning": "Ṛta is the Vedic concept of cosmic truth and right order. It governs the movements of the celestial bodies, the cycle of seasons, the moral order of human society, and the efficacy of ritual. Varuṇa is the primary guardian of Ṛta — he punishes those who violate it. Ṛta is the foundation from which Dharma (ethical order) later developed. The concept of Ṛta underlies the Vedic understanding of truth (satya) — to speak truth is to align with Ṛta.",
+      "dhatu": "ऋ (Ṛ) — To go, to move, to flow. Ṛta is \"that which has moved/flowed in the right way\" — the right order of things.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:rta",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"ṛtam — satyam\" — Ṛta is truth. The cosmic truth that underlies all existence. Ṛta is both the cosmic order and the truth that expresses it.",
       "related_concepts": [
         "dharma",
         "satya (truth)",
         "yajna",
         "varuna (the guardian of rta)"
       ],
-      "vyakarana": "Ṛta is a neuter noun derived from the past passive participle of the root ṛ (to go/flow). It means \"that which has gone rightly\" — the right order, the truth, the cosmic law.",
-      "shakti": null
+      "tattva": "Ṛta-Tattva — the principle of cosmic truth and right order. Ṛta is the Vedic precursor to Dharma — the cosmic law that governs all existence before it was articulated as ethical principle."
     },
     "layers": {
       "sanskrit": {

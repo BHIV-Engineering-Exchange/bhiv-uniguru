@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Lokāḥ",
     "shabda": "लोक (Loka)",
-    "beeja": "लँ (Laṁ) — the earth seed syllable associated with manifestation across realms.",
-    "nirukta": "Yāska's Nirukta: \"lokyate ity lokaḥ\" — that which is perceived or experienced. A loka is not merely a geographic place, but a dimensional field of consciousness and experience.",
-    "sanskrit": "लोकाः",
-    "tattva": "Loka-Tattva — the structural hierarchy of dimensional existence within Prakṛti, inhabited by jīvas according to karma and consciousness state.",
-    "concept_id": "sanskar:sanskrit:lokas",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "लोक् (Lok) — To see, perceive, experience, shine.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Lokas represent the multi-dimensional structure of the cosmos in Indian cosmology. They classify states of manifestation and consciousness ranging from physical density to subtle divine awareness. In Vedāntic and Purāṇic frameworks, lokas serve as fields of karmic fruition (bhoga-bhūmi).",
     "canonical_name": "lokas",
+    "sanskrit": "लोकाः",
+    "transliteration": "Lokāḥ",
+    "beeja": "लँ (Laṁ) — the earth seed syllable associated with manifestation across realms.",
+    "vyakarana": "Derived from verbal root लोक् (lok) with the ghañ suffix. Masculine noun, plural form लोकाः (Lokāḥ). Pāṇini Ashtadhyayi 3.3.18. Signifies realms of perception and manifestation.",
+    "functional_meaning": "Lokas represent the multi-dimensional structure of the cosmos in Indian cosmology. They classify states of manifestation and consciousness ranging from physical density to subtle divine awareness. In Vedāntic and Purāṇic frameworks, lokas serve as fields of karmic fruition (bhoga-bhūmi).",
+    "dhatu": "लोक् (Lok) — To see, perceive, experience, shine.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:lokas",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska's Nirukta: \"lokyate ity lokaḥ\" — that which is perceived or experienced. A loka is not merely a geographic place, but a dimensional field of consciousness and experience.",
     "related_concepts": [
       "dharma",
       "karma",
@@ -20,26 +21,26 @@
       "brahman",
       "prakrti"
     ],
-    "vyakarana": "Derived from verbal root लोक् (lok) with the ghañ suffix. Masculine noun, plural form लोकाः (Lokāḥ). Pāṇini Ashtadhyayi 3.3.18. Signifies realms of perception and manifestation.",
-    "shakti": null
+    "tattva": "Loka-Tattva — the structural hierarchy of dimensional existence within Prakṛti, inhabited by jīvas according to karma and consciousness state."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:lokas",
     "canonical_name": "lokas",
     "lexical_record": {
-      "transliteration": "Lokāḥ",
       "shabda": "लोक (Loka)",
-      "beeja": "लँ (Laṁ) — the earth seed syllable associated with manifestation across realms.",
-      "nirukta": "Yāska's Nirukta: \"lokyate ity lokaḥ\" — that which is perceived or experienced. A loka is not merely a geographic place, but a dimensional field of consciousness and experience.",
-      "sanskrit": "लोकाः",
-      "tattva": "Loka-Tattva — the structural hierarchy of dimensional existence within Prakṛti, inhabited by jīvas according to karma and consciousness state.",
-      "concept_id": "sanskar:sanskrit:lokas",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "लोक् (Lok) — To see, perceive, experience, shine.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Lokas represent the multi-dimensional structure of the cosmos in Indian cosmology. They classify states of manifestation and consciousness ranging from physical density to subtle divine awareness. In Vedāntic and Purāṇic frameworks, lokas serve as fields of karmic fruition (bhoga-bhūmi).",
       "canonical_name": "lokas",
+      "sanskrit": "लोकाः",
+      "transliteration": "Lokāḥ",
+      "beeja": "लँ (Laṁ) — the earth seed syllable associated with manifestation across realms.",
+      "vyakarana": "Derived from verbal root लोक् (lok) with the ghañ suffix. Masculine noun, plural form लोकाः (Lokāḥ). Pāṇini Ashtadhyayi 3.3.18. Signifies realms of perception and manifestation.",
+      "functional_meaning": "Lokas represent the multi-dimensional structure of the cosmos in Indian cosmology. They classify states of manifestation and consciousness ranging from physical density to subtle divine awareness. In Vedāntic and Purāṇic frameworks, lokas serve as fields of karmic fruition (bhoga-bhūmi).",
+      "dhatu": "लोक् (Lok) — To see, perceive, experience, shine.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:lokas",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska's Nirukta: \"lokyate ity lokaḥ\" — that which is perceived or experienced. A loka is not merely a geographic place, but a dimensional field of consciousness and experience.",
       "related_concepts": [
         "dharma",
         "karma",
@@ -48,8 +49,7 @@
         "brahman",
         "prakrti"
       ],
-      "vyakarana": "Derived from verbal root लोक् (lok) with the ghañ suffix. Masculine noun, plural form लोकाः (Lokāḥ). Pāṇini Ashtadhyayi 3.3.18. Signifies realms of perception and manifestation.",
-      "shakti": null
+      "tattva": "Loka-Tattva — the structural hierarchy of dimensional existence within Prakṛti, inhabited by jīvas according to karma and consciousness state."
     },
     "layers": {
       "sanskrit": {

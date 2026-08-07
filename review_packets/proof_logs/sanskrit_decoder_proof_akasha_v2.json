@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Ākāśa",
     "shabda": "आकाश",
-    "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
-    "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
-    "sanskrit": "आकाश",
-    "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space.",
-    "concept_id": "sanskar:sanskrit:akasha",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
     "canonical_name": "akasha",
+    "sanskrit": "आकाश",
+    "transliteration": "Ākāśa",
+    "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+    "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+    "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+    "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:akasha",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
     "related_concepts": [
       "brahman",
       "prana",
@@ -19,26 +20,26 @@
       "shabda (sound — the quality of akasha)",
       "kosha"
     ],
-    "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
-    "shakti": null
+    "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:akasha",
     "canonical_name": "akasha",
     "lexical_record": {
-      "transliteration": "Ākāśa",
       "shabda": "आकाश",
-      "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
-      "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
-      "sanskrit": "आकाश",
-      "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space.",
-      "concept_id": "sanskar:sanskrit:akasha",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
       "canonical_name": "akasha",
+      "sanskrit": "आकाश",
+      "transliteration": "Ākāśa",
+      "beeja": "हं (Haṃ) — the bīja of the space element (ākāśa) in Tantric traditions. Associated with the Viśuddha chakra (throat — the space center).",
+      "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
+      "functional_meaning": "Ākāśa is the subtlest of the five elements — the space in which all other elements and all phenomena exist. It is the medium of sound (śabda) — sound travels through ākāśa. In Vedānta, ākāśa is the first element to emerge from Brahman in the process of creation. The Chāndogya Upaniṣad teaches that Brahman is ākāśa — the infinite space of consciousness.",
+      "dhatu": "आ + काश् (Ā + Kāś) — Ā (towards, completely) + Kāś (to shine, to be luminous). That which shines completely; the luminous space.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:akasha",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Ākāśate iti ākāśaḥ\" — that which shines. Space is not mere emptiness but the luminous ground of all existence.",
       "related_concepts": [
         "brahman",
         "prana",
@@ -46,8 +47,7 @@
         "shabda (sound — the quality of akasha)",
         "kosha"
       ],
-      "vyakarana": "Ākāśa is a masculine noun derived from the prefix ā- and the root kāś (to shine). The word conveys both the sense of \"space\" and \"luminosity\" — space is not empty but luminous.",
-      "shakti": null
+      "tattva": "Ākāśa-Tattva — the space principle. The first and subtlest of the five mahābhūtas (great elements): Ākāśa (space), Vāyu (air), Agni (fire), Āp (water), Pṛthvī (earth). Ākāśa is the substratum of all other elements — they all exist within space."
     },
     "layers": {
       "sanskrit": {

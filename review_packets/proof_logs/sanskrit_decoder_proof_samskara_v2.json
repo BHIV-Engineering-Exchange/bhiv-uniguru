@@ -1,51 +1,51 @@
 {
   "canonical_concept": {
-    "transliteration": "Saṃskāra",
     "shabda": "संस्कार",
-    "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
-    "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
-    "sanskrit": "संस्कार",
-    "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions).",
-    "concept_id": "sanskar:sanskrit:samskara",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
     "canonical_name": "samskara",
+    "sanskrit": "संस्कार",
+    "transliteration": "Saṃskāra",
+    "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+    "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+    "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+    "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:samskara",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
     "related_concepts": [
       "karma",
       "vasana (latent tendencies)",
       "dharma",
       "kosha (causal body as saṃskāra storehouse)"
     ],
-    "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
-    "shakti": null
+    "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:samskara",
     "canonical_name": "samskara",
     "lexical_record": {
-      "transliteration": "Saṃskāra",
       "shabda": "संस्कार",
-      "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
-      "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
-      "sanskrit": "संस्कार",
-      "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions).",
-      "concept_id": "sanskar:sanskrit:samskara",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
       "canonical_name": "samskara",
+      "sanskrit": "संस्कार",
+      "transliteration": "Saṃskāra",
+      "beeja": "सं (Saṃ) — the prefix itself carries the bīja energy of completeness and perfection.",
+      "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
+      "functional_meaning": "Saṃskāra operates at two levels: (1) Psychological: the mental impressions (vāsanās) left by past experiences that shape present behavior and future tendencies. These are the karmic residues stored in the causal body. (2) Sociological: the sixteen (or more) life-cycle rituals (ṣoḍaśa-saṃskāras) that mark and sanctify the major transitions of human life from conception to death.",
+      "dhatu": "सम् + कृ (Sam + Kṛ) — Sam (together, completely, perfectly) + Kṛ (to do, to make). That which is perfectly made; that which refines and purifies.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:samskara",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Saṃskriyate anena iti saṃskāraḥ\" — that by which one is refined/purified. Saṃskāra has three meanings: (1) mental impression (psychological), (2) life-cycle ritual (sociological), (3) refinement/purification (philosophical).",
       "related_concepts": [
         "karma",
         "vasana (latent tendencies)",
         "dharma",
         "kosha (causal body as saṃskāra storehouse)"
       ],
-      "vyakarana": "Saṃskāra is a masculine noun derived from the prefix sam- (together, completely) and the root kṛ (to do) with the suffix -a. The word carries the sense of \"making perfect,\" \"refining,\" and \"purifying.\"",
-      "shakti": null
+      "tattva": "Saṃskāra-Tattva — the principle of refinement, impression, and ritual transformation. Saṃskāras operate at two levels: the psychological (mental impressions that shape character) and the sociological (life-cycle rituals that mark transitions)."
     },
     "layers": {
       "sanskrit": {

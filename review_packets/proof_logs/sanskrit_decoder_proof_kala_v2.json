@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Kāla",
     "shabda": "काल",
-    "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
-    "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
-    "sanskrit": "काल",
-    "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time.",
-    "concept_id": "sanskar:sanskrit:kala",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
     "canonical_name": "kala",
+    "sanskrit": "काल",
+    "transliteration": "Kāla",
+    "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+    "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+    "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+    "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:kala",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
     "related_concepts": [
       "dharma",
       "karma",
@@ -19,26 +20,26 @@
       "brahman (beyond time)",
       "atman (beyond time)"
     ],
-    "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
-    "shakti": null
+    "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:kala",
     "canonical_name": "kala",
     "lexical_record": {
-      "transliteration": "Kāla",
       "shabda": "काल",
-      "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
-      "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
-      "sanskrit": "काल",
-      "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time.",
-      "concept_id": "sanskar:sanskrit:kala",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
       "canonical_name": "kala",
+      "sanskrit": "काल",
+      "transliteration": "Kāla",
+      "beeja": "क्रीं (Krīm) — the bīja of Kālī (the Goddess of time and death). Also कं (Kaṃ) — the bīja of Brahmā (the creator who operates within time).",
+      "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
+      "functional_meaning": "Kāla is the universal principle of time that governs all change, growth, decay, and death. It operates at multiple levels: Kṣaṇa (moment), Muhūrta (48 minutes), Ahorātra (day-night), Pakṣa (fortnight), Māsa (month), Ṛtu (season), Ayana (half-year), Saṃvatsara (year), Yuga (cosmic age), Kalpa (cosmic cycle). The Bhagavad Gītā (11.32) identifies Kāla with Kṛṣṇa himself: \"Kālo'smi loka-kṣaya-kṛt pravṛddhaḥ\" — I am time, the destroyer of worlds.",
+      "dhatu": "कल् (Kal) — To count, to calculate; also connected to कल् (Kal) — to drive, to impel. Time is that which counts/measures and that which drives all things forward.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:kala",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Kalayati iti kālaḥ\" — that which counts/measures. Also: \"kālayati sarvam iti kālaḥ\" — that which drives everything forward. Time is the universal driver.",
       "related_concepts": [
         "dharma",
         "karma",
@@ -46,8 +47,7 @@
         "brahman (beyond time)",
         "atman (beyond time)"
       ],
-      "vyakarana": "Kāla is a masculine noun. It has two distinct meanings: (1) time (the cosmic principle), (2) death/Yama (the lord of time). The same word means both \"time\" and \"death\" — time is the force that leads all things to death.",
-      "shakti": null
+      "tattva": "Kāla-Tattva — the principle of time. In Sāṃkhya: Kāla is not a separate tattva but the mode of Prakṛti's activity. In Kashmir Śaivism: Kāla is one of the five kañcukas (coverings) that limit the universal consciousness — it limits the soul's experience to a particular time."
     },
     "layers": {
       "sanskrit": {

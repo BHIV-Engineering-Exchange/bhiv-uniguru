@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Karma",
     "shabda": "कर्म",
-    "beeja": "क (Ka) — the seed syllable of action and creation in Tantric traditions. Associated with Brahmā (the creator) whose bīja is also Ka.",
-    "nirukta": "Yāska: \"kriyate anena iti karma\" — that by which action is performed. The root kṛ encompasses all forms of doing, making, and performing.",
-    "sanskrit": "कर्म",
-    "tattva": "Karma-Tattva — the principle of causation through action. In Sāṃkhya: karma is the activity of the three guṇas (sattva, rajas, tamas). In Vaiśeṣika: karma is one of the seven padārthas (categories), defined as motion. In Vedānta: karma is the mechanism of saṃsāra (cycle of rebirth).",
-    "concept_id": "sanskar:sanskrit:karma",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "कृ (Kṛ) — To do, perform, act, make.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Karma is the universal principle that every action generates corresponding consequences. It operates across three dimensions: Sañcita karma (accumulated past actions), Prārabdha karma (karma currently bearing fruit), and Āgāmi/Kriyamāṇa karma (karma being created now). The law of karma is not punishment but the natural law of cause and effect operating through consciousness.",
     "canonical_name": "karma",
+    "sanskrit": "कर्म",
+    "transliteration": "Karma",
+    "beeja": "क (Ka) — the seed syllable of action and creation in Tantric traditions. Associated with Brahmā (the creator) whose bīja is also Ka.",
+    "vyakarana": "Derived from the verbal root कृ (kṛ) with the suffix -man (neuter noun). Pāṇini Ashtadhyayi 3.3.18. Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient).",
+    "functional_meaning": "Karma is the universal principle that every action generates corresponding consequences. It operates across three dimensions: Sañcita karma (accumulated past actions), Prārabdha karma (karma currently bearing fruit), and Āgāmi/Kriyamāṇa karma (karma being created now). The law of karma is not punishment but the natural law of cause and effect operating through consciousness.",
+    "dhatu": "कृ (Kṛ) — To do, perform, act, make.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:karma",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"kriyate anena iti karma\" — that by which action is performed. The root kṛ encompasses all forms of doing, making, and performing.",
     "related_concepts": [
       "dharma",
       "moksha",
@@ -21,26 +22,26 @@
       "ahaṃkāra (ego — the false doer)",
       "vāsanā (latent tendencies)"
     ],
-    "vyakarana": "Derived from the verbal root कृ (kṛ) with the suffix -man (neuter noun). Pāṇini Ashtadhyayi 3.3.18. Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient).",
-    "shakti": null
+    "tattva": "Karma-Tattva — the principle of causation through action. In Sāṃkhya: karma is the activity of the three guṇas (sattva, rajas, tamas). In Vaiśeṣika: karma is one of the seven padārthas (categories), defined as motion. In Vedānta: karma is the mechanism of saṃsāra (cycle of rebirth)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:karma",
     "canonical_name": "karma",
     "lexical_record": {
-      "transliteration": "Karma",
       "shabda": "कर्म",
-      "beeja": "क (Ka) — the seed syllable of action and creation in Tantric traditions. Associated with Brahmā (the creator) whose bīja is also Ka.",
-      "nirukta": "Yāska: \"kriyate anena iti karma\" — that by which action is performed. The root kṛ encompasses all forms of doing, making, and performing.",
-      "sanskrit": "कर्म",
-      "tattva": "Karma-Tattva — the principle of causation through action. In Sāṃkhya: karma is the activity of the three guṇas (sattva, rajas, tamas). In Vaiśeṣika: karma is one of the seven padārthas (categories), defined as motion. In Vedānta: karma is the mechanism of saṃsāra (cycle of rebirth).",
-      "concept_id": "sanskar:sanskrit:karma",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "कृ (Kṛ) — To do, perform, act, make.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Karma is the universal principle that every action generates corresponding consequences. It operates across three dimensions: Sañcita karma (accumulated past actions), Prārabdha karma (karma currently bearing fruit), and Āgāmi/Kriyamāṇa karma (karma being created now). The law of karma is not punishment but the natural law of cause and effect operating through consciousness.",
       "canonical_name": "karma",
+      "sanskrit": "कर्म",
+      "transliteration": "Karma",
+      "beeja": "क (Ka) — the seed syllable of action and creation in Tantric traditions. Associated with Brahmā (the creator) whose bīja is also Ka.",
+      "vyakarana": "Derived from the verbal root कृ (kṛ) with the suffix -man (neuter noun). Pāṇini Ashtadhyayi 3.3.18. Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient).",
+      "functional_meaning": "Karma is the universal principle that every action generates corresponding consequences. It operates across three dimensions: Sañcita karma (accumulated past actions), Prārabdha karma (karma currently bearing fruit), and Āgāmi/Kriyamāṇa karma (karma being created now). The law of karma is not punishment but the natural law of cause and effect operating through consciousness.",
+      "dhatu": "कृ (Kṛ) — To do, perform, act, make.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:karma",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"kriyate anena iti karma\" — that by which action is performed. The root kṛ encompasses all forms of doing, making, and performing.",
       "related_concepts": [
         "dharma",
         "moksha",
@@ -50,8 +51,7 @@
         "ahaṃkāra (ego — the false doer)",
         "vāsanā (latent tendencies)"
       ],
-      "vyakarana": "Derived from the verbal root कृ (kṛ) with the suffix -man (neuter noun). Pāṇini Ashtadhyayi 3.3.18. Karma is a neuter noun meaning \"action\" or \"deed.\" In grammar, karma also denotes the object of a verb (karman = object/patient).",
-      "shakti": null
+      "tattva": "Karma-Tattva — the principle of causation through action. In Sāṃkhya: karma is the activity of the three guṇas (sattva, rajas, tamas). In Vaiśeṣika: karma is one of the seven padārthas (categories), defined as motion. In Vedānta: karma is the mechanism of saṃsāra (cycle of rebirth)."
     },
     "layers": {
       "sanskrit": {

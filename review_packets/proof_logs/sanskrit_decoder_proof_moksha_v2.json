@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Mokṣa",
     "shabda": "मोक्ष",
-    "beeja": "ह्रीं (Hrīm) — the bīja of liberation in Śākta traditions. Also ॐ (Om) as the sound of the liberated state.",
-    "nirukta": "\"Mucyate iti mokṣaḥ\" — that from which one is released, or the state of being released. Liberation from the cycle of birth and death (saṃsāra) and from the bondage of ignorance (avidyā).",
-    "sanskrit": "मोक्ष",
-    "tattva": "Mokṣa-Tattva — the principle of ultimate liberation. The fourth and highest Puruṣārtha (aim of human life), transcending Dharma, Artha, and Kāma. In Advaita: Mokṣa is the recognition of what always already is — Ātman = Brahman. In Sāṃkhya: Mokṣa is the Puruṣa's recognition of its eternal distinction from Prakṛti (kaivalya).",
-    "concept_id": "sanskar:sanskrit:moksha",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "मुच् (Muc) — To release, to free, to liberate.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Mokṣa is freedom from the cycle of birth, death, and rebirth (saṃsāra) and from the root cause of that cycle — ignorance (avidyā) and its product, ego (ahaṃkāra). It is not a place or a future state but the recognition of one's true nature as already free. The Upaniṣads teach that bondage and liberation are both appearances — the Ātman was never bound. Different schools describe mokṣa differently: as jīvanmukti (liberation while living), videhamukti (liberation at death), sāyujya (union with God), sālokya (dwelling in God's realm), sārūpya (having God's form), sāmīpya (proximity to God).",
     "canonical_name": "moksha",
+    "sanskrit": "मोक्ष",
+    "transliteration": "Mokṣa",
+    "beeja": "ह्रीं (Hrīm) — the bīja of liberation in Śākta traditions. Also ॐ (Om) as the sound of the liberated state.",
+    "vyakarana": "Mokṣa is a masculine noun derived from the root muc (to release) with the suffix -a. Related forms: mukti (liberation), vimokṣa (complete liberation), apavarga (Nyāya-Vaiśeṣika term for liberation).",
+    "functional_meaning": "Mokṣa is freedom from the cycle of birth, death, and rebirth (saṃsāra) and from the root cause of that cycle — ignorance (avidyā) and its product, ego (ahaṃkāra). It is not a place or a future state but the recognition of one's true nature as already free. The Upaniṣads teach that bondage and liberation are both appearances — the Ātman was never bound. Different schools describe mokṣa differently: as jīvanmukti (liberation while living), videhamukti (liberation at death), sāyujya (union with God), sālokya (dwelling in God's realm), sārūpya (having God's form), sāmīpya (proximity to God).",
+    "dhatu": "मुच् (Muc) — To release, to free, to liberate.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:moksha",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Mucyate iti mokṣaḥ\" — that from which one is released, or the state of being released. Liberation from the cycle of birth and death (saṃsāra) and from the bondage of ignorance (avidyā).",
     "related_concepts": [
       "dharma",
       "karma",
@@ -22,26 +23,26 @@
       "kaivalya (sāṃkhya-yoga equivalent)",
       "mukti (synonym)"
     ],
-    "vyakarana": "Mokṣa is a masculine noun derived from the root muc (to release) with the suffix -a. Related forms: mukti (liberation), vimokṣa (complete liberation), apavarga (Nyāya-Vaiśeṣika term for liberation).",
-    "shakti": null
+    "tattva": "Mokṣa-Tattva — the principle of ultimate liberation. The fourth and highest Puruṣārtha (aim of human life), transcending Dharma, Artha, and Kāma. In Advaita: Mokṣa is the recognition of what always already is — Ātman = Brahman. In Sāṃkhya: Mokṣa is the Puruṣa's recognition of its eternal distinction from Prakṛti (kaivalya)."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:moksha",
     "canonical_name": "moksha",
     "lexical_record": {
-      "transliteration": "Mokṣa",
       "shabda": "मोक्ष",
-      "beeja": "ह्रीं (Hrīm) — the bīja of liberation in Śākta traditions. Also ॐ (Om) as the sound of the liberated state.",
-      "nirukta": "\"Mucyate iti mokṣaḥ\" — that from which one is released, or the state of being released. Liberation from the cycle of birth and death (saṃsāra) and from the bondage of ignorance (avidyā).",
-      "sanskrit": "मोक्ष",
-      "tattva": "Mokṣa-Tattva — the principle of ultimate liberation. The fourth and highest Puruṣārtha (aim of human life), transcending Dharma, Artha, and Kāma. In Advaita: Mokṣa is the recognition of what always already is — Ātman = Brahman. In Sāṃkhya: Mokṣa is the Puruṣa's recognition of its eternal distinction from Prakṛti (kaivalya).",
-      "concept_id": "sanskar:sanskrit:moksha",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "मुच् (Muc) — To release, to free, to liberate.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Mokṣa is freedom from the cycle of birth, death, and rebirth (saṃsāra) and from the root cause of that cycle — ignorance (avidyā) and its product, ego (ahaṃkāra). It is not a place or a future state but the recognition of one's true nature as already free. The Upaniṣads teach that bondage and liberation are both appearances — the Ātman was never bound. Different schools describe mokṣa differently: as jīvanmukti (liberation while living), videhamukti (liberation at death), sāyujya (union with God), sālokya (dwelling in God's realm), sārūpya (having God's form), sāmīpya (proximity to God).",
       "canonical_name": "moksha",
+      "sanskrit": "मोक्ष",
+      "transliteration": "Mokṣa",
+      "beeja": "ह्रीं (Hrīm) — the bīja of liberation in Śākta traditions. Also ॐ (Om) as the sound of the liberated state.",
+      "vyakarana": "Mokṣa is a masculine noun derived from the root muc (to release) with the suffix -a. Related forms: mukti (liberation), vimokṣa (complete liberation), apavarga (Nyāya-Vaiśeṣika term for liberation).",
+      "functional_meaning": "Mokṣa is freedom from the cycle of birth, death, and rebirth (saṃsāra) and from the root cause of that cycle — ignorance (avidyā) and its product, ego (ahaṃkāra). It is not a place or a future state but the recognition of one's true nature as already free. The Upaniṣads teach that bondage and liberation are both appearances — the Ātman was never bound. Different schools describe mokṣa differently: as jīvanmukti (liberation while living), videhamukti (liberation at death), sāyujya (union with God), sālokya (dwelling in God's realm), sārūpya (having God's form), sāmīpya (proximity to God).",
+      "dhatu": "मुच् (Muc) — To release, to free, to liberate.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:moksha",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Mucyate iti mokṣaḥ\" — that from which one is released, or the state of being released. Liberation from the cycle of birth and death (saṃsāra) and from the bondage of ignorance (avidyā).",
       "related_concepts": [
         "dharma",
         "karma",
@@ -52,8 +53,7 @@
         "kaivalya (sāṃkhya-yoga equivalent)",
         "mukti (synonym)"
       ],
-      "vyakarana": "Mokṣa is a masculine noun derived from the root muc (to release) with the suffix -a. Related forms: mukti (liberation), vimokṣa (complete liberation), apavarga (Nyāya-Vaiśeṣika term for liberation).",
-      "shakti": null
+      "tattva": "Mokṣa-Tattva — the principle of ultimate liberation. The fourth and highest Puruṣārtha (aim of human life), transcending Dharma, Artha, and Kāma. In Advaita: Mokṣa is the recognition of what always already is — Ātman = Brahman. In Sāṃkhya: Mokṣa is the Puruṣa's recognition of its eternal distinction from Prakṛti (kaivalya)."
     },
     "layers": {
       "sanskrit": {

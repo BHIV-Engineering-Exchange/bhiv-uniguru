@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Vidyā",
     "shabda": "विद्या",
-    "beeja": "ऐं (Aim) — the bīja of Sarasvatī, the Goddess of knowledge. Aim is the bīja of vidyā in all its forms.",
-    "nirukta": "\"Vidyate anayā iti vidyā\" — that by which one knows. Also: \"vindati iti vidyā\" — that which is found/discovered. Knowledge is not created but discovered — it already exists and is revealed through study and practice.",
-    "sanskrit": "विद्या",
-    "tattva": "Vidyā-Tattva — the principle of knowledge and illumination. In Advaita: Vidyā (knowledge) is the direct means of liberation — it removes avidyā (ignorance). In Kashmir Śaivism: Vidyā is one of the thirty-six tattvas — the principle of limited knowledge that characterizes the bound soul.",
-    "concept_id": "sanskar:sanskrit:vidya",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "विद् (Vid) — To know, to find, to exist. The root vid is one of the most productive roots in Sanskrit — it gives vidyā (knowledge), veda (that which is known), vedana (sensation), vidvān (the knower).",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Vidyā is the knowledge that liberates. The Muṇḍaka Upaniṣad distinguishes two types of vidyā: Parā Vidyā (higher knowledge — knowledge of Brahman that leads to liberation) and Aparā Vidyā (lower knowledge — the fourteen traditional sciences including the Vedas, Vedāṅgas, and other disciplines). True vidyā is not mere information but transformative knowledge that changes the knower.",
     "canonical_name": "vidya",
+    "sanskrit": "विद्या",
+    "transliteration": "Vidyā",
+    "beeja": "ऐं (Aim) — the bīja of Sarasvatī, the Goddess of knowledge. Aim is the bīja of vidyā in all its forms.",
+    "vyakarana": "Vidyā is a feminine noun derived from the root vid (to know) with the suffix -yā. The feminine gender reflects the Indian tradition of treating knowledge as the Goddess (Sarasvatī).",
+    "functional_meaning": "Vidyā is the knowledge that liberates. The Muṇḍaka Upaniṣad distinguishes two types of vidyā: Parā Vidyā (higher knowledge — knowledge of Brahman that leads to liberation) and Aparā Vidyā (lower knowledge — the fourteen traditional sciences including the Vedas, Vedāṅgas, and other disciplines). True vidyā is not mere information but transformative knowledge that changes the knower.",
+    "dhatu": "विद् (Vid) — To know, to find, to exist. The root vid is one of the most productive roots in Sanskrit — it gives vidyā (knowledge), veda (that which is known), vedana (sensation), vidvān (the knower).",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:vidya",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "\"Vidyate anayā iti vidyā\" — that by which one knows. Also: \"vindati iti vidyā\" — that which is found/discovered. Knowledge is not created but discovered — it already exists and is revealed through study and practice.",
     "related_concepts": [
       "guru",
       "brahman",
@@ -19,26 +20,26 @@
       "jnana (knowledge — synonym)",
       "samskara (vidyārambha — the saṃskāra of beginning education)"
     ],
-    "vyakarana": "Vidyā is a feminine noun derived from the root vid (to know) with the suffix -yā. The feminine gender reflects the Indian tradition of treating knowledge as the Goddess (Sarasvatī).",
-    "shakti": null
+    "tattva": "Vidyā-Tattva — the principle of knowledge and illumination. In Advaita: Vidyā (knowledge) is the direct means of liberation — it removes avidyā (ignorance). In Kashmir Śaivism: Vidyā is one of the thirty-six tattvas — the principle of limited knowledge that characterizes the bound soul."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:vidya",
     "canonical_name": "vidya",
     "lexical_record": {
-      "transliteration": "Vidyā",
       "shabda": "विद्या",
-      "beeja": "ऐं (Aim) — the bīja of Sarasvatī, the Goddess of knowledge. Aim is the bīja of vidyā in all its forms.",
-      "nirukta": "\"Vidyate anayā iti vidyā\" — that by which one knows. Also: \"vindati iti vidyā\" — that which is found/discovered. Knowledge is not created but discovered — it already exists and is revealed through study and practice.",
-      "sanskrit": "विद्या",
-      "tattva": "Vidyā-Tattva — the principle of knowledge and illumination. In Advaita: Vidyā (knowledge) is the direct means of liberation — it removes avidyā (ignorance). In Kashmir Śaivism: Vidyā is one of the thirty-six tattvas — the principle of limited knowledge that characterizes the bound soul.",
-      "concept_id": "sanskar:sanskrit:vidya",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "विद् (Vid) — To know, to find, to exist. The root vid is one of the most productive roots in Sanskrit — it gives vidyā (knowledge), veda (that which is known), vedana (sensation), vidvān (the knower).",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Vidyā is the knowledge that liberates. The Muṇḍaka Upaniṣad distinguishes two types of vidyā: Parā Vidyā (higher knowledge — knowledge of Brahman that leads to liberation) and Aparā Vidyā (lower knowledge — the fourteen traditional sciences including the Vedas, Vedāṅgas, and other disciplines). True vidyā is not mere information but transformative knowledge that changes the knower.",
       "canonical_name": "vidya",
+      "sanskrit": "विद्या",
+      "transliteration": "Vidyā",
+      "beeja": "ऐं (Aim) — the bīja of Sarasvatī, the Goddess of knowledge. Aim is the bīja of vidyā in all its forms.",
+      "vyakarana": "Vidyā is a feminine noun derived from the root vid (to know) with the suffix -yā. The feminine gender reflects the Indian tradition of treating knowledge as the Goddess (Sarasvatī).",
+      "functional_meaning": "Vidyā is the knowledge that liberates. The Muṇḍaka Upaniṣad distinguishes two types of vidyā: Parā Vidyā (higher knowledge — knowledge of Brahman that leads to liberation) and Aparā Vidyā (lower knowledge — the fourteen traditional sciences including the Vedas, Vedāṅgas, and other disciplines). True vidyā is not mere information but transformative knowledge that changes the knower.",
+      "dhatu": "विद् (Vid) — To know, to find, to exist. The root vid is one of the most productive roots in Sanskrit — it gives vidyā (knowledge), veda (that which is known), vedana (sensation), vidvān (the knower).",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:vidya",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "\"Vidyate anayā iti vidyā\" — that by which one knows. Also: \"vindati iti vidyā\" — that which is found/discovered. Knowledge is not created but discovered — it already exists and is revealed through study and practice.",
       "related_concepts": [
         "guru",
         "brahman",
@@ -46,8 +47,7 @@
         "jnana (knowledge — synonym)",
         "samskara (vidyārambha — the saṃskāra of beginning education)"
       ],
-      "vyakarana": "Vidyā is a feminine noun derived from the root vid (to know) with the suffix -yā. The feminine gender reflects the Indian tradition of treating knowledge as the Goddess (Sarasvatī).",
-      "shakti": null
+      "tattva": "Vidyā-Tattva — the principle of knowledge and illumination. In Advaita: Vidyā (knowledge) is the direct means of liberation — it removes avidyā (ignorance). In Kashmir Śaivism: Vidyā is one of the thirty-six tattvas — the principle of limited knowledge that characterizes the bound soul."
     },
     "layers": {
       "sanskrit": {

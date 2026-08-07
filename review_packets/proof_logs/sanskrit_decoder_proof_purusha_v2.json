@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Puruṣa",
     "shabda": "पुरुष",
-    "beeja": "ॐ (Om) — the primordial sound of Puruṣa. Also सोऽहम् (So'ham) — the natural mantra of Puruṣa (I am That).",
-    "nirukta": "Yāska: \"puri śayānāt puruṣaḥ\" — that which lies in the city (body). The soul dwells in the body as a person dwells in a city.",
-    "sanskrit": "पुरुष",
-    "tattva": "Puruṣa-Tattva — the principle of pure consciousness and cosmic personhood. In Sāṃkhya: Puruṣa is one of the two ultimate realities (along with Prakṛti). It is pure consciousness (cit), eternally free, and the witness of Prakṛti's evolution.",
-    "concept_id": "sanskar:sanskrit:purusha",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "पुर् (Pur) — To fill, to precede; also पुरि शेते (Puri śete) — that which lies in the city (the body). Puruṣa is \"that which fills\" or \"that which dwells in the city (body).\"",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Puruṣa is the principle of pure consciousness that witnesses Prakṛti's evolution without being affected by it. In Sāṃkhya: Puruṣa is the eternal, unchanging witness — it does not act, does not create, does not suffer. It is the pure light of consciousness in which Prakṛti's evolution appears. Liberation (kaivalya) is Puruṣa's recognition of its eternal distinction from Prakṛti. In the Ṛgveda (10.90), the cosmic Puruṣa is the primordial being from whose sacrifice the universe was created.",
     "canonical_name": "purusha",
+    "sanskrit": "पुरुष",
+    "transliteration": "Puruṣa",
+    "beeja": "ॐ (Om) — the primordial sound of Puruṣa. Also सोऽहम् (So'ham) — the natural mantra of Puruṣa (I am That).",
+    "vyakarana": "Puruṣa is a masculine noun. It has multiple meanings: (1) the cosmic person (Ṛgveda 10.90), (2) the individual soul (Sāṃkhya), (3) the supreme being (Viṣṇu/Brahman), (4) a human being (man).",
+    "functional_meaning": "Puruṣa is the principle of pure consciousness that witnesses Prakṛti's evolution without being affected by it. In Sāṃkhya: Puruṣa is the eternal, unchanging witness — it does not act, does not create, does not suffer. It is the pure light of consciousness in which Prakṛti's evolution appears. Liberation (kaivalya) is Puruṣa's recognition of its eternal distinction from Prakṛti. In the Ṛgveda (10.90), the cosmic Puruṣa is the primordial being from whose sacrifice the universe was created.",
+    "dhatu": "पुर् (Pur) — To fill, to precede; also पुरि शेते (Puri śete) — that which lies in the city (the body). Puruṣa is \"that which fills\" or \"that which dwells in the city (body).\"",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:purusha",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"puri śayānāt puruṣaḥ\" — that which lies in the city (body). The soul dwells in the body as a person dwells in a city.",
     "related_concepts": [
       "prakrti",
       "atman",
@@ -19,26 +20,26 @@
       "yoga",
       "samkhya (the philosophy of purusha and prakrti)"
     ],
-    "vyakarana": "Puruṣa is a masculine noun. It has multiple meanings: (1) the cosmic person (Ṛgveda 10.90), (2) the individual soul (Sāṃkhya), (3) the supreme being (Viṣṇu/Brahman), (4) a human being (man).",
-    "shakti": null
+    "tattva": "Puruṣa-Tattva — the principle of pure consciousness and cosmic personhood. In Sāṃkhya: Puruṣa is one of the two ultimate realities (along with Prakṛti). It is pure consciousness (cit), eternally free, and the witness of Prakṛti's evolution."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:purusha",
     "canonical_name": "purusha",
     "lexical_record": {
-      "transliteration": "Puruṣa",
       "shabda": "पुरुष",
-      "beeja": "ॐ (Om) — the primordial sound of Puruṣa. Also सोऽहम् (So'ham) — the natural mantra of Puruṣa (I am That).",
-      "nirukta": "Yāska: \"puri śayānāt puruṣaḥ\" — that which lies in the city (body). The soul dwells in the body as a person dwells in a city.",
-      "sanskrit": "पुरुष",
-      "tattva": "Puruṣa-Tattva — the principle of pure consciousness and cosmic personhood. In Sāṃkhya: Puruṣa is one of the two ultimate realities (along with Prakṛti). It is pure consciousness (cit), eternally free, and the witness of Prakṛti's evolution.",
-      "concept_id": "sanskar:sanskrit:purusha",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "पुर् (Pur) — To fill, to precede; also पुरि शेते (Puri śete) — that which lies in the city (the body). Puruṣa is \"that which fills\" or \"that which dwells in the city (body).\"",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Puruṣa is the principle of pure consciousness that witnesses Prakṛti's evolution without being affected by it. In Sāṃkhya: Puruṣa is the eternal, unchanging witness — it does not act, does not create, does not suffer. It is the pure light of consciousness in which Prakṛti's evolution appears. Liberation (kaivalya) is Puruṣa's recognition of its eternal distinction from Prakṛti. In the Ṛgveda (10.90), the cosmic Puruṣa is the primordial being from whose sacrifice the universe was created.",
       "canonical_name": "purusha",
+      "sanskrit": "पुरुष",
+      "transliteration": "Puruṣa",
+      "beeja": "ॐ (Om) — the primordial sound of Puruṣa. Also सोऽहम् (So'ham) — the natural mantra of Puruṣa (I am That).",
+      "vyakarana": "Puruṣa is a masculine noun. It has multiple meanings: (1) the cosmic person (Ṛgveda 10.90), (2) the individual soul (Sāṃkhya), (3) the supreme being (Viṣṇu/Brahman), (4) a human being (man).",
+      "functional_meaning": "Puruṣa is the principle of pure consciousness that witnesses Prakṛti's evolution without being affected by it. In Sāṃkhya: Puruṣa is the eternal, unchanging witness — it does not act, does not create, does not suffer. It is the pure light of consciousness in which Prakṛti's evolution appears. Liberation (kaivalya) is Puruṣa's recognition of its eternal distinction from Prakṛti. In the Ṛgveda (10.90), the cosmic Puruṣa is the primordial being from whose sacrifice the universe was created.",
+      "dhatu": "पुर् (Pur) — To fill, to precede; also पुरि शेते (Puri śete) — that which lies in the city (the body). Puruṣa is \"that which fills\" or \"that which dwells in the city (body).\"",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:purusha",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"puri śayānāt puruṣaḥ\" — that which lies in the city (body). The soul dwells in the body as a person dwells in a city.",
       "related_concepts": [
         "prakrti",
         "atman",
@@ -46,8 +47,7 @@
         "yoga",
         "samkhya (the philosophy of purusha and prakrti)"
       ],
-      "vyakarana": "Puruṣa is a masculine noun. It has multiple meanings: (1) the cosmic person (Ṛgveda 10.90), (2) the individual soul (Sāṃkhya), (3) the supreme being (Viṣṇu/Brahman), (4) a human being (man).",
-      "shakti": null
+      "tattva": "Puruṣa-Tattva — the principle of pure consciousness and cosmic personhood. In Sāṃkhya: Puruṣa is one of the two ultimate realities (along with Prakṛti). It is pure consciousness (cit), eternally free, and the witness of Prakṛti's evolution."
     },
     "layers": {
       "sanskrit": {

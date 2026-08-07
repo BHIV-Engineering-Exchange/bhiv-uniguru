@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Om (also Auṃ)",
     "shabda": "ॐ",
-    "beeja": "ॐ itself is the mahā-bīja (great seed syllable) — the source of all other bīja mantras.",
-    "nirukta": "Yāska: Om is the name of Brahman. The Māṇḍūkya Upaniṣad: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this. The three letters represent the three states of consciousness (waking, dreaming, deep sleep) and the three worlds.",
-    "sanskrit": "ॐ",
-    "tattva": "Praṇava-Tattva — the principle of the primordial sound. Om is the sonic form of Brahman — the vibration from which the universe emerges and into which it dissolves.",
-    "concept_id": "sanskar:sanskrit:om",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "अव् (Av) — To protect, to pervade. Some traditions derive Om from the root av (to protect) or from the three letters A-U-M representing creation, preservation, dissolution.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Om is the sonic representation of Brahman — the absolute reality expressed as vibration. It is used as a prefix to all mantras, prayers, and sacred texts. The Māṇḍūkya Upaniṣad teaches that Om encompasses all of time (past, present, future) and all states of consciousness. Meditation on Om leads to the direct experience of Brahman.",
     "canonical_name": "om",
+    "sanskrit": "ॐ",
+    "transliteration": "Om (also Auṃ)",
+    "beeja": "ॐ itself is the mahā-bīja (great seed syllable) — the source of all other bīja mantras.",
+    "vyakarana": "Om is classified as a praṇava (primordial sound) and an avyaya (indeclinable). It is not declined like ordinary nouns. Pāṇini treats it as a sacred syllable (maṅgala-vācaka). The written form ॐ is a ligature of the three letters A, U, M with the anusvāra (nasal resonance) and the bindu (point of silence above).",
+    "functional_meaning": "Om is the sonic representation of Brahman — the absolute reality expressed as vibration. It is used as a prefix to all mantras, prayers, and sacred texts. The Māṇḍūkya Upaniṣad teaches that Om encompasses all of time (past, present, future) and all states of consciousness. Meditation on Om leads to the direct experience of Brahman.",
+    "dhatu": "अव् (Av) — To protect, to pervade. Some traditions derive Om from the root av (to protect) or from the three letters A-U-M representing creation, preservation, dissolution.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:om",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: Om is the name of Brahman. The Māṇḍūkya Upaniṣad: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this. The three letters represent the three states of consciousness (waking, dreaming, deep sleep) and the three worlds.",
     "related_concepts": [
       "brahman",
       "nada (sacred sound)",
@@ -19,26 +20,26 @@
       "samadhi",
       "turiya (the fourth state of consciousness)"
     ],
-    "vyakarana": "Om is classified as a praṇava (primordial sound) and an avyaya (indeclinable). It is not declined like ordinary nouns. Pāṇini treats it as a sacred syllable (maṅgala-vācaka). The written form ॐ is a ligature of the three letters A, U, M with the anusvāra (nasal resonance) and the bindu (point of silence above).",
-    "shakti": null
+    "tattva": "Praṇava-Tattva — the principle of the primordial sound. Om is the sonic form of Brahman — the vibration from which the universe emerges and into which it dissolves."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:om",
     "canonical_name": "om",
     "lexical_record": {
-      "transliteration": "Om (also Auṃ)",
       "shabda": "ॐ",
-      "beeja": "ॐ itself is the mahā-bīja (great seed syllable) — the source of all other bīja mantras.",
-      "nirukta": "Yāska: Om is the name of Brahman. The Māṇḍūkya Upaniṣad: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this. The three letters represent the three states of consciousness (waking, dreaming, deep sleep) and the three worlds.",
-      "sanskrit": "ॐ",
-      "tattva": "Praṇava-Tattva — the principle of the primordial sound. Om is the sonic form of Brahman — the vibration from which the universe emerges and into which it dissolves.",
-      "concept_id": "sanskar:sanskrit:om",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "अव् (Av) — To protect, to pervade. Some traditions derive Om from the root av (to protect) or from the three letters A-U-M representing creation, preservation, dissolution.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Om is the sonic representation of Brahman — the absolute reality expressed as vibration. It is used as a prefix to all mantras, prayers, and sacred texts. The Māṇḍūkya Upaniṣad teaches that Om encompasses all of time (past, present, future) and all states of consciousness. Meditation on Om leads to the direct experience of Brahman.",
       "canonical_name": "om",
+      "sanskrit": "ॐ",
+      "transliteration": "Om (also Auṃ)",
+      "beeja": "ॐ itself is the mahā-bīja (great seed syllable) — the source of all other bīja mantras.",
+      "vyakarana": "Om is classified as a praṇava (primordial sound) and an avyaya (indeclinable). It is not declined like ordinary nouns. Pāṇini treats it as a sacred syllable (maṅgala-vācaka). The written form ॐ is a ligature of the three letters A, U, M with the anusvāra (nasal resonance) and the bindu (point of silence above).",
+      "functional_meaning": "Om is the sonic representation of Brahman — the absolute reality expressed as vibration. It is used as a prefix to all mantras, prayers, and sacred texts. The Māṇḍūkya Upaniṣad teaches that Om encompasses all of time (past, present, future) and all states of consciousness. Meditation on Om leads to the direct experience of Brahman.",
+      "dhatu": "अव् (Av) — To protect, to pervade. Some traditions derive Om from the root av (to protect) or from the three letters A-U-M representing creation, preservation, dissolution.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:om",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: Om is the name of Brahman. The Māṇḍūkya Upaniṣad: \"Auṃ ity etad akṣaram idaṃ sarvam\" — Om, this syllable is all this. The three letters represent the three states of consciousness (waking, dreaming, deep sleep) and the three worlds.",
       "related_concepts": [
         "brahman",
         "nada (sacred sound)",
@@ -46,8 +47,7 @@
         "samadhi",
         "turiya (the fourth state of consciousness)"
       ],
-      "vyakarana": "Om is classified as a praṇava (primordial sound) and an avyaya (indeclinable). It is not declined like ordinary nouns. Pāṇini treats it as a sacred syllable (maṅgala-vācaka). The written form ॐ is a ligature of the three letters A, U, M with the anusvāra (nasal resonance) and the bindu (point of silence above).",
-      "shakti": null
+      "tattva": "Praṇava-Tattva — the principle of the primordial sound. Om is the sonic form of Brahman — the vibration from which the universe emerges and into which it dissolves."
     },
     "layers": {
       "sanskrit": {

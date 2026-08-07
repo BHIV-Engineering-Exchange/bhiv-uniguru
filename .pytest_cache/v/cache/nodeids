@@ -18,6 +18,7 @@
   "backend/tests/test_sanskrit_decoder.py::test_graph_traversal_multi_hop_returns_provenance_chain",
   "backend/tests/test_sanskrit_decoder.py::test_graph_traverse_endpoint_validates_depth_and_returns_path",
   "backend/tests/test_sanskrit_decoder.py::test_panini_sutra_layer_is_structured_and_source_backed",
+  "backend/tests/test_sanskrit_decoder.py::test_recursive_typed_node_traversal_prana_kosha_chakra_bija",
   "backend/tests/test_sanskrit_decoder.py::test_sanskar_decoder_supports_lokas_koshas_chakras",
   "backend/tests/test_sanskrit_decoder.py::test_sanskar_source_retrieval_supports_all_supplied_concepts",
   "backend/tests/test_sanskrit_decoder.py::test_sanskrit_runtime_endpoint_returns_decoded_payload",

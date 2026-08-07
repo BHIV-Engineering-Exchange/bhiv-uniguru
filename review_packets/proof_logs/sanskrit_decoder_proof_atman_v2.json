@@ -1,17 +1,18 @@
 {
   "canonical_concept": {
-    "transliteration": "Ātman",
     "shabda": "आत्मन्",
-    "beeja": "अ (A) — the first letter of the Sanskrit alphabet, representing the unmanifest source. In the Gītā (10.33), Kṛṣṇa declares \"akṣarāṇām akāro'smi\" — among letters I am the letter A.",
-    "nirukta": "Yāska: \"ātmā vyāpnoti iti\" — that which pervades. Also: \"ātmā aniti prāṇiti\" — that which breathes. The Self is both the pervader and the life-breath.",
-    "sanskrit": "आत्मन्",
-    "tattva": "Ātma-Tattva — the principle of pure consciousness and selfhood. In Advaita: Ātman is identical with Brahman (Aham Brahmāsmi). In Sāṃkhya: Ātman (Puruṣa) is pure consciousness, eternally distinct from Prakṛti. In Viśiṣṭādvaita: Ātman is real but eternally dependent on and part of Brahman-Viṣṇu.",
-    "concept_id": "sanskar:sanskrit:atman",
-    "semantic_version": "uniguru_civilizational_enrichment_v3",
-    "dhatu": "अत् (At) — To move constantly; also connected to अन् (An) — to breathe, to live.",
-    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-    "functional_meaning": "Ātman is the eternal, unchanging Self underlying individual existence. It is the witness (sākṣī) of all mental and physical activity, never itself modified. The Upaniṣads teach that Ātman is not the body, not the mind, not the intellect, not the ego — it is the pure awareness in which all these appear. The realization of Ātman as identical with Brahman (Aham Brahmāsmi) is the goal of Advaita Vedānta.",
     "canonical_name": "atman",
+    "sanskrit": "आत्मन्",
+    "transliteration": "Ātman",
+    "beeja": "अ (A) — the first letter of the Sanskrit alphabet, representing the unmanifest source. In the Gītā (10.33), Kṛṣṇa declares \"akṣarāṇām akāro'smi\" — among letters I am the letter A.",
+    "vyakarana": "Ātman is a masculine noun (though it refers to the genderless Self). Derived from the root at (to move) or an (to breathe). The word appears in all cases and is used reflexively (\"oneself\"). Pāṇini treats ātman as a reflexive pronoun in certain constructions.",
+    "functional_meaning": "Ātman is the eternal, unchanging Self underlying individual existence. It is the witness (sākṣī) of all mental and physical activity, never itself modified. The Upaniṣads teach that Ātman is not the body, not the mind, not the intellect, not the ego — it is the pure awareness in which all these appear. The realization of Ātman as identical with Brahman (Aham Brahmāsmi) is the goal of Advaita Vedānta.",
+    "dhatu": "अत् (At) — To move constantly; also connected to अन् (An) — to breathe, to live.",
+    "semantic_version": "uniguru_civilizational_enrichment_v3",
+    "concept_id": "sanskar:sanskrit:atman",
+    "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+    "shakti": null,
+    "nirukta": "Yāska: \"ātmā vyāpnoti iti\" — that which pervades. Also: \"ātmā aniti prāṇiti\" — that which breathes. The Self is both the pervader and the life-breath.",
     "related_concepts": [
       "brahman",
       "moksha",
@@ -21,26 +22,26 @@
       "anātman (buddhist no-self doctrine)",
       "kosha (the five sheaths veiling ātman)"
     ],
-    "vyakarana": "Ātman is a masculine noun (though it refers to the genderless Self). Derived from the root at (to move) or an (to breathe). The word appears in all cases and is used reflexively (\"oneself\"). Pāṇini treats ātman as a reflexive pronoun in certain constructions.",
-    "shakti": null
+    "tattva": "Ātma-Tattva — the principle of pure consciousness and selfhood. In Advaita: Ātman is identical with Brahman (Aham Brahmāsmi). In Sāṃkhya: Ātman (Puruṣa) is pure consciousness, eternally distinct from Prakṛti. In Viśiṣṭādvaita: Ātman is real but eternally dependent on and part of Brahman-Viṣṇu."
   },
   "civilizational_knowledge": {
     "schema_version": "UNIGURU_CIVILIZATIONAL_KNOWLEDGE_OBJECT_V3",
     "concept_id": "sanskar:sanskrit:atman",
     "canonical_name": "atman",
     "lexical_record": {
-      "transliteration": "Ātman",
       "shabda": "आत्मन्",
-      "beeja": "अ (A) — the first letter of the Sanskrit alphabet, representing the unmanifest source. In the Gītā (10.33), Kṛṣṇa declares \"akṣarāṇām akāro'smi\" — among letters I am the letter A.",
-      "nirukta": "Yāska: \"ātmā vyāpnoti iti\" — that which pervades. Also: \"ātmā aniti prāṇiti\" — that which breathes. The Self is both the pervader and the life-breath.",
-      "sanskrit": "आत्मन्",
-      "tattva": "Ātma-Tattva — the principle of pure consciousness and selfhood. In Advaita: Ātman is identical with Brahman (Aham Brahmāsmi). In Sāṃkhya: Ātman (Puruṣa) is pure consciousness, eternally distinct from Prakṛti. In Viśiṣṭādvaita: Ātman is real but eternally dependent on and part of Brahman-Viṣṇu.",
-      "concept_id": "sanskar:sanskrit:atman",
-      "semantic_version": "uniguru_civilizational_enrichment_v3",
-      "dhatu": "अत् (At) — To move constantly; also connected to अन् (An) — to breathe, to live.",
-      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
-      "functional_meaning": "Ātman is the eternal, unchanging Self underlying individual existence. It is the witness (sākṣī) of all mental and physical activity, never itself modified. The Upaniṣads teach that Ātman is not the body, not the mind, not the intellect, not the ego — it is the pure awareness in which all these appear. The realization of Ātman as identical with Brahman (Aham Brahmāsmi) is the goal of Advaita Vedānta.",
       "canonical_name": "atman",
+      "sanskrit": "आत्मन्",
+      "transliteration": "Ātman",
+      "beeja": "अ (A) — the first letter of the Sanskrit alphabet, representing the unmanifest source. In the Gītā (10.33), Kṛṣṇa declares \"akṣarāṇām akāro'smi\" — among letters I am the letter A.",
+      "vyakarana": "Ātman is a masculine noun (though it refers to the genderless Self). Derived from the root at (to move) or an (to breathe). The word appears in all cases and is used reflexively (\"oneself\"). Pāṇini treats ātman as a reflexive pronoun in certain constructions.",
+      "functional_meaning": "Ātman is the eternal, unchanging Self underlying individual existence. It is the witness (sākṣī) of all mental and physical activity, never itself modified. The Upaniṣads teach that Ātman is not the body, not the mind, not the intellect, not the ego — it is the pure awareness in which all these appear. The realization of Ātman as identical with Brahman (Aham Brahmāsmi) is the goal of Advaita Vedānta.",
+      "dhatu": "अत् (At) — To move constantly; also connected to अन् (An) — to breathe, to live.",
+      "semantic_version": "uniguru_civilizational_enrichment_v3",
+      "concept_id": "sanskar:sanskrit:atman",
+      "ontology_version": "uniguru_sanskrit_knowledge_ecosystem_v3",
+      "shakti": null,
+      "nirukta": "Yāska: \"ātmā vyāpnoti iti\" — that which pervades. Also: \"ātmā aniti prāṇiti\" — that which breathes. The Self is both the pervader and the life-breath.",
       "related_concepts": [
         "brahman",
         "moksha",
@@ -50,8 +51,7 @@
         "anātman (buddhist no-self doctrine)",
         "kosha (the five sheaths veiling ātman)"
       ],
-      "vyakarana": "Ātman is a masculine noun (though it refers to the genderless Self). Derived from the root at (to move) or an (to breathe). The word appears in all cases and is used reflexively (\"oneself\"). Pāṇini treats ātman as a reflexive pronoun in certain constructions.",
-      "shakti": null
+      "tattva": "Ātma-Tattva — the principle of pure consciousness and selfhood. In Advaita: Ātman is identical with Brahman (Aham Brahmāsmi). In Sāṃkhya: Ātman (Puruṣa) is pure consciousness, eternally distinct from Prakṛti. In Viśiṣṭādvaita: Ātman is real but eternally dependent on and part of Brahman-Viṣṇu."
     },
     "layers": {
       "sanskrit": {
