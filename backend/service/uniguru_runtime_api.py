@@ -24,7 +24,7 @@ if str(ROOT) not in sys.path:
 from governance.constitutional_runtime import ConstitutionalCognitionRuntime
 from learning_runtime.learning_intelligence import build_learning_intelligence
 from memory.constitutional_semantic_memory import stable_hash, utc_now_iso
-from ontology.sanskrit_decoder import decode_sanskrit_concept
+from ontology.sanskrit_decoder import decode_sanskrit_concept, load_sanskar_registry, traverse_concept_graph
 from retrieval.retrieval_engine import retrieve_from_masterdb
 from service.ecosystem_runtime import execute_ecosystem_runtime, verify_ecosystem_replay
 
@@ -271,6 +271,7 @@ def runtime_execute(request: RuntimeRequest) -> Dict[str, Any]:
 
 
 @app.post("/runtime/sanskrit/decode")
+@app.post("/v2/runtime/sanskrit/decode")
 def runtime_sanskrit_decode(request: SanskritDecoderRequest) -> Dict[str, Any]:
     decoder_result = decode_sanskrit_concept(request.query)
     trace_id = f"sanskrit_{stable_hash({'result': decoder_result['result_hash']})[:16]}"
@@ -289,6 +290,61 @@ def runtime_sanskrit_decode(request: SanskritDecoderRequest) -> Dict[str, Any]:
     if request.emit_proof:
         PROOF_DIR.mkdir(parents=True, exist_ok=True)
         proof_path = PROOF_DIR / f"sanskrit_decoder_{trace_id}.json"
+        proof_path.write_text(json.dumps(payload, indent=2, ensure_ascii=True, sort_keys=True), encoding="utf-8")
+    return payload
+
+
+class GraphTraverseRequest(BaseModel):
+    """Request model for the multi-hop Knowledge Graph traversal endpoint."""
+    start: str = Field(..., min_length=1, max_length=200, description="Starting Sanskrit concept (IAST, Devanagari, or canonical name).")
+    edge_types: Optional[List[str]] = Field(
+        default=None,
+        description=(
+            "Edge types to follow. Leave null/empty for all edges. "
+            "Allowed values: canonical_cross_reference, related_deity, related_loka, "
+            "related_kosha, related_chakra, related_yantra, related_vidya, "
+            "referenced_in_shastra, retrieved_evidence."
+        ),
+    )
+    max_depth: int = Field(default=3, ge=1, le=6, description="Maximum hop depth (1–6).")
+    emit_proof: bool = True
+
+    @field_validator("start")
+    @classmethod
+    def _normalize_start(cls, value: str) -> str:
+        normalized = value.strip()
+        if not normalized:
+            raise ValueError("start must not be empty or whitespace-only.")
+        return normalized
+
+
+@app.post("/v2/runtime/sanskrit/graph/traverse")
+def graph_traverse(request: GraphTraverseRequest) -> Dict[str, Any]:
+    """Multi-hop civilizational knowledge graph traversal.
+
+    Walks the Sanskrit Civilizational Knowledge Graph outward from the start concept,
+    following edges of the specified types up to max_depth hops. Returns an ordered
+    path of hop frames and the full visited sub-graph with provenance on every edge.
+    """
+    registry, metadata_by_id = load_sanskar_registry()
+    result = traverse_concept_graph(
+        start=request.start,
+        edge_types=request.edge_types,
+        max_depth=request.max_depth,
+        registry=registry,
+        metadata_by_id=metadata_by_id,
+    )
+    trace_id = f"graph_traverse_{stable_hash({'start': request.start, 'depth': request.max_depth})[:16]}"
+    payload = {
+        "trace_id": trace_id,
+        "traversal_result": result,
+        "schema_version": "UNIGURU_GRAPH_TRAVERSAL_RESPONSE_V1",
+        "replay_safe": result.get("traversal_metadata", {}).get("replay_safe", True),
+    }
+    payload["response_hash"] = stable_hash(payload)
+    if request.emit_proof:
+        PROOF_DIR.mkdir(parents=True, exist_ok=True)
+        proof_path = PROOF_DIR / f"graph_traverse_{trace_id}.json"
         proof_path.write_text(json.dumps(payload, indent=2, ensure_ascii=True, sort_keys=True), encoding="utf-8")
     return payload
 
