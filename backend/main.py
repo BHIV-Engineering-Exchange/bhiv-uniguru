@@ -1,10 +1,34 @@
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
 
 import uvicorn
 from dotenv import load_dotenv
+
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+BACKEND_DIR = Path(__file__).resolve().parent
+
+
+def _configure_python_path() -> None:
+    resolved_backend = BACKEND_DIR.resolve()
+    resolved_root = ROOT_DIR.resolve()
+    ordered_entries = [str(resolved_root), str(resolved_backend)]
+
+    for entry in sys.path:
+        if not entry:
+            continue
+        resolved_entry = Path(entry).resolve() if Path(entry).exists() else Path(entry)
+        if resolved_entry in {resolved_backend, resolved_root}:
+            continue
+        ordered_entries.append(entry)
+
+    sys.path[:] = ordered_entries
+
+
+_configure_python_path()
 
 
 def main() -> None:

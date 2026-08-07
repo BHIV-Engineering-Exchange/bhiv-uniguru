@@ -11,6 +11,8 @@
   "backend/tests/test_ecosystem_integration.py::test_ecosystem_replay_endpoint_verifies_stable_cross_service_fields",
   "backend/tests/test_ecosystem_integration.py::test_execute_ecosystem_runtime_emits_evidence",
   "backend/tests/test_ecosystem_integration.py::test_mitra_endpoint_redacts_internal_governance_details",
+  "backend/tests/test_import_path_precedence.py::test_backend_retrieval_package_is_importable_before_repo_root_package",
+  "backend/tests/test_import_path_precedence.py::test_repo_root_retrieval_package_is_importable_before_backend_shadowing",
   "backend/tests/test_mdu_client.py::test_mdu_client_uses_canonical_dataset_lookup",
   "backend/tests/test_sanskrit_decoder.py::test_acoustic_phonetic_layer_is_evidence_backed",
   "backend/tests/test_sanskrit_decoder.py::test_comparative_hermeneutics_matrix_is_populated",
