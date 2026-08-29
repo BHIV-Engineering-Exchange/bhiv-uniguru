@@ -1,5 +1,27 @@
 {
   "canonical_memory": {
+    "Assembly": {
+      "canonical": "Assembly",
+      "confidence": 0.5939,
+      "lineage_event_hashes": [
+        "2f73febbf6a650462a32d2365e779d478547e8a5ccefa6903fc405b72558ba6c",
+        "07e8bf03cfe0c6c31e5e1f0bd95686e96deb8c9e1a8852d3a86cac2d9e28a865",
+        "a07a414b287366b1bb0171a2631257111ef9b2ee39ab39a6d8f50ddc017f62bd",
+        "9eed778012c1cfab272290ebcf9a40131a81518d72b7a1dde4b3669bc472f76d"
+      ],
+      "source_signal_ids": [
+        "signal_f83cddef0988",
+        "signal_f83cddef0988",
+        "signal_f83cddef0988",
+        "signal_f83cddef0988"
+      ],
+      "trace_ids": [
+        "ecosystem_00b0f8ea13a2",
+        "ecosystem_replay_55e3d47e8734",
+        "ecosystem_2712b5678bc8",
+        "ecosystem_f4fb47880b0f"
+      ]
+    },
     "Atman": {
       "canonical": "Atman",
       "confidence": 0.6,
@@ -668,6 +690,28 @@
         "trace_50d291a0a6665b37",
         "trace_a2d819539239596f",
         "trace_377ee9db9eb652ea"
+      ]
+    },
+    "Dharma": {
+      "canonical": "Dharma",
+      "confidence": 0.5939,
+      "lineage_event_hashes": [
+        "2f73febbf6a650462a32d2365e779d478547e8a5ccefa6903fc405b72558ba6c",
+        "07e8bf03cfe0c6c31e5e1f0bd95686e96deb8c9e1a8852d3a86cac2d9e28a865",
+        "a07a414b287366b1bb0171a2631257111ef9b2ee39ab39a6d8f50ddc017f62bd",
+        "9eed778012c1cfab272290ebcf9a40131a81518d72b7a1dde4b3669bc472f76d"
+      ],
+      "source_signal_ids": [
+        "signal_f83cddef0988",
+        "signal_f83cddef0988",
+        "signal_f83cddef0988",
+        "signal_f83cddef0988"
+      ],
+      "trace_ids": [
+        "ecosystem_00b0f8ea13a2",
+        "ecosystem_replay_55e3d47e8734",
+        "ecosystem_2712b5678bc8",
+        "ecosystem_f4fb47880b0f"
       ]
     },
     "Narada Purana": {
@@ -1814,7 +1858,7 @@
       "trace_id": "constitutional_contradiction_injection"
     }
   ],
-  "event_count": 527,
+  "event_count": 535,
   "lineage": [
     {
       "classification": "transient",
@@ -6031,15 +6075,79 @@
       "previous_event_hash": "5c52df173eba4496f881f3ddc9d838fa79988848018237065c69b25d22eeaf92",
       "retrieval_truth_hash": "2b3f28e79b2313ec138a15db60176a8b748d8ab863d8413132358650529ddc98",
       "trace_id": "ecosystem_17894200cdd5"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "077efca64544a3661326dc30c342bbc02b5c53c5a309bddfd5e4647a06dcb4af",
+      "interpretation_hash": "684f9eea560f353845ba3f9ea9a540560a6d06dd5b2693e5a0022492699d0a43",
+      "previous_event_hash": "fa4c7d3034f2113cb91d3e71a0ae414139355f2d4c75bf645791531283e22d61",
+      "retrieval_truth_hash": "55e1a04e715879e28b5b463a4ce6c5e3a84d24109b07583c33824826d52ca45e",
+      "trace_id": "ecosystem_0c6ad4a30dda"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
+      "interpretation_hash": "b8500269b941011f9dd8b9f1cd491eaa01af9f3c556f00293295d38a972142cc",
+      "previous_event_hash": "077efca64544a3661326dc30c342bbc02b5c53c5a309bddfd5e4647a06dcb4af",
+      "retrieval_truth_hash": "5fa94f3c649f50e4dbbc64ab825b4fb4662e78a8329827d9284641b6c26543fc",
+      "trace_id": "ecosystem_replay_test"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
+      "interpretation_hash": "43154b720239775300c0ac1311b964b2cf7d1e7b608cc5f01f276d3e516cfc93",
+      "previous_event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
+      "retrieval_truth_hash": "3a0ea701fefe797979825617a9f33990eb3ed66f08893038960fe1a39f7434e2",
+      "trace_id": "ecosystem_mitra_test"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "interpretation_hash": "83a3145041045b00abaa8628f6e2f4d511d0888a3f006817c64c0066d8aad7e2",
+      "previous_event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
+      "retrieval_truth_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38",
+      "trace_id": "tantra_sdk_runtime_test"
+    },
+    {
+      "classification": "canonical",
+      "event_hash": "2f73febbf6a650462a32d2365e779d478547e8a5ccefa6903fc405b72558ba6c",
+      "interpretation_hash": "4da332ee90cd1cfef0637450e59cafa3f30af85756347380cf3db7d918d077ea",
+      "previous_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "retrieval_truth_hash": "f33d6853adbf5cd37df512d6695a2aa41875d470936fd83bb6bcdc4a64c06d6e",
+      "trace_id": "ecosystem_00b0f8ea13a2"
+    },
+    {
+      "classification": "canonical",
+      "event_hash": "07e8bf03cfe0c6c31e5e1f0bd95686e96deb8c9e1a8852d3a86cac2d9e28a865",
+      "interpretation_hash": "4a4e8c598e3dbb27147286d919cf630023f5209bb4ec77b9c07f05496b076178",
+      "previous_event_hash": "2f73febbf6a650462a32d2365e779d478547e8a5ccefa6903fc405b72558ba6c",
+      "retrieval_truth_hash": "5b0fca73a92f9556cda47a93646678aeb40c14d0ed43f199b10ba34073e85767",
+      "trace_id": "ecosystem_replay_55e3d47e8734"
+    },
+    {
+      "classification": "canonical",
+      "event_hash": "a07a414b287366b1bb0171a2631257111ef9b2ee39ab39a6d8f50ddc017f62bd",
+      "interpretation_hash": "24aafdb251d1bf3a7d907bef98ef6a49076c2d3613370a81782519c53af0d0ff",
+      "previous_event_hash": "07e8bf03cfe0c6c31e5e1f0bd95686e96deb8c9e1a8852d3a86cac2d9e28a865",
+      "retrieval_truth_hash": "f7bc83de6823484db5daebc2e12c14f14df593454b271397f144282e9bb319c0",
+      "trace_id": "ecosystem_2712b5678bc8"
+    },
+    {
+      "classification": "canonical",
+      "event_hash": "9eed778012c1cfab272290ebcf9a40131a81518d72b7a1dde4b3669bc472f76d",
+      "interpretation_hash": "a3333f39e8f13ecb8d3a54feda1d2a52dd53cda110efcf4e9787b0079ed7c138",
+      "previous_event_hash": "a07a414b287366b1bb0171a2631257111ef9b2ee39ab39a6d8f50ddc017f62bd",
+      "retrieval_truth_hash": "9c019daf7ddfb9e522c4acf78a986643f7dbd478415da7272c11c5d42c20dfb3",
+      "trace_id": "ecosystem_f4fb47880b0f"
     }
   ],
   "replay_integrity": {
     "hash_chain_ok": false,
-    "last_event_hash": "fa4c7d3034f2113cb91d3e71a0ae414139355f2d4c75bf645791531283e22d61",
+    "last_event_hash": "9eed778012c1cfab272290ebcf9a40131a81518d72b7a1dde4b3669bc472f76d",
     "rollback_target": null
   },
   "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_RECONSTRUCTION_V1",
-  "state_hash": "4e358a4effa267ea0eb72e904b6b730bdf68e5c291b369431621ced8b87d2aa8",
+  "state_hash": "8e8e0cd90f8e9fcf079ace1884c0218d51ee022ab9e705c563d8168ba6305d0e",
   "transient_memory": [
     {
       "classification": "transient",
@@ -10196,6 +10304,46 @@
         "confidence_below_canonical_floor"
       ],
       "trace_id": "ecosystem_17894200cdd5"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "077efca64544a3661326dc30c342bbc02b5c53c5a309bddfd5e4647a06dcb4af",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_0c6ad4a30dda"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "c153f9b37dfff6302e57dbc3d31ed78a2c341f1e873c27ac40fabfc2e5f0883c",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_replay_test"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "b62d7cbb92658224341424f571e9a37214b18a049dac36609d267cc6fad4749a",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "ecosystem_mitra_test"
+    },
+    {
+      "classification": "transient",
+      "event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "reasons": [
+        "verification_status_not_verified",
+        "no_accepted_signals",
+        "confidence_below_canonical_floor"
+      ],
+      "trace_id": "tantra_sdk_runtime_test"
     }
   ]
 }
