@@ -20,6 +20,8 @@ Every execution writes a deterministic proof file to `review_packets/integration
 ### 6. What to verify independently
 - Run `pytest backend/tests/test_sanskrit_decoder.py` — should pass with zero external dependencies
 - Run `pytest backend/tests/test_sanskrit_ecosystem_integration.py` — should pass locally
+- Launch frontend `npm run dev` and navigate to `/sanskrit-decoder` (or click Sanskrit Decoder under Tools menu)
+- Enter "dharma", "karma", or "prana" — verify 8-stage pipeline, 35 knowledge layers, SVG knowledge graph, Pāṇini sūtras, and replay safety badge
 - Hit `GET https://uniguru-ai-2.onrender.com/health/ecosystem` — shows InsightCore live status
 - Hit `POST https://uniguru-ai-2.onrender.com/v2/runtime/sanskrit/decode` with `{"query": "dharma"}` — returns full 8-stage decoder output
 

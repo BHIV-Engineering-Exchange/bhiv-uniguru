@@ -9,8 +9,8 @@
 **Does UniGuru execute the canonical decoder pipeline when a Sanskrit concept is queried?**
 YES. `decode_sanskrit_concept()` in `backend/ontology/sanskrit_decoder.py` executes all 8 stages: śabda → dhātu → vyākaraṇa → nirukta → bīja → tattva → śakti → functional_meaning. Verified by `test_sanskrit_decoder.py`.
 
-**Are all 6 Sanskar source documents loaded and parsed correctly?**
-YES. `load_sanskar_registry()` loads dharma, karma, yoga, moksha, atman, brahman from `backend/knowledge/sanskrit/*.md`. All 6 concepts register successfully.
+**Are all Sanskrit source documents loaded and parsed correctly?**
+YES. `load_sanskar_registry()` loads 23 concept records + Lokas + Koshas + Chakras from `backend/knowledge/sanskrit/*.md`, Pāṇini sūtras from `grammar.md`, and Śikṣā phonetics from `bija_phonetics.json`.
 
 **Is every layer exposed deterministically?**
 YES. The same query produces the same `result_hash` on every execution. Verified by replay test: `result_hash` of `decode_sanskrit_concept("dharma")` equals `decode_sanskrit_concept("धर्म")`.
@@ -19,19 +19,19 @@ YES. The same query produces the same `result_hash` on every execution. Verified
 YES. Every pipeline stage includes `lineage` with `concept_id`, `source_path`, and `content_hash`.
 
 **Is every statement evidence-classified?**
-YES. `EvidenceType` enum classifies each source (BHAGAVAD_GITA, UPANISHAD, PRIMARY_CANON, TRADITION). Classification is derived from source document names, not inferred.
+YES. `EvidenceType` enum classifies each source (BHAGAVAD_GITA, UPANISHAD, PANINI, VEDA, NIRUKTA, COMMENTARY, PRIMARY_CANON, TRADITION). Classification is derived from source documents and maps, not inferred.
 
-**Does the knowledge graph exist?**
-YES. `_graph()` builds nodes and edges from `related_concepts` in each source document. Graph consistency is validated — edges reference only registered nodes.
+**Does the knowledge graph exist and support multi-hop traversal?**
+YES. `_graph()` and `traverse_concept_graph()` build and walk nodes and edges (concepts, koshas, chakras, bija, lokas, deities, shastras). Graph consistency is validated — edges reference only registered nodes.
 
 **Is every execution replay-safe?**
 YES. `result_hash` is deterministic. `verify_ecosystem_replay()` confirms `sanskrit_decoder_result_stable: true`.
 
 **Is every output provenance-backed?**
-YES. `Provenance` dataclass now includes `trace_id` and `artifact_hash`. Source documents are listed per concept.
+YES. `Provenance` dataclass includes `trace_id`, `content_hash`, and `source_path`.
 
-**Is the decoder integrated into UniGuru?**
-YES. `POST /v2/runtime/sanskrit/decode` is live. `execute_ecosystem_runtime()` calls `_attach_sanskrit_decoder()` on every ecosystem execution.
+**Is the decoder integrated into UniGuru end-to-end with a user interface?**
+YES. `POST /v2/runtime/sanskrit/decode` and `/v2/runtime/sanskrit/graph/traverse` endpoints are live. React UI component `SanskritDecoder.tsx`, SVG graph renderer `SanskritDecoderGraph.tsx`, API client `sanskritDecoderApi.ts`, route `/sanskrit-decoder`, and navigation entries in `LeftSidebar.tsx` and `ToolsPage.tsx` provide a full native user experience.
 
 ---
 

@@ -63,6 +63,39 @@ const ToolsPage: React.FC = () => {
 
           {/* Tools Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Sanskrit Knowledge Decoder Tool */}
+            <div className="bg-purple-950/30 backdrop-blur-sm border border-purple-600/50 rounded-lg p-6 hover:bg-purple-900/40 transition-all duration-200 col-span-1 md:col-span-2 shadow-lg shadow-purple-950/50">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="w-10 h-10 rounded-lg bg-purple-800 flex items-center justify-center text-xl text-purple-200 mr-3 font-bold">
+                    ॐ
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-white flex items-center gap-2">
+                      Sanskrit Knowledge Decoder
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-700 font-medium">
+                        LIVE FEATURE
+                      </span>
+                    </h2>
+                    <p className="text-purple-300 text-xs">UniGuru Native Civilizational Intelligence Capability</p>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                Decode Sanskrit concepts through their own epistemology — Śabda, Dhātu, Vyākaraṇa (Pāṇini), Nirukta, Bīja, Tattva, Śakti, and 35 civilizational knowledge layers backed by evidence classification and deterministic replay.
+              </p>
+              <BubblyButton
+                variant="primary"
+                className="px-6 py-2.5 font-semibold text-sm"
+                style={{
+                  background: 'linear-gradient(135deg, #7c3aed, #4c1d95)',
+                  color: 'white'
+                }}
+                onClick={() => navigate("/sanskrit-decoder")}
+              >
+                Launch Decoder Engine ॐ
+              </BubblyButton>
+            </div>
             {/* Select Model Tool */}
             <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:bg-gray-800/50 transition-all duration-200">
               <div className="flex items-center mb-4">

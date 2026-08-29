@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-10T18:10:37.641993Z",
+  "generated_at": "2026-08-29T05:11:57.313278Z",
   "passed": 6,
   "schema": "UNIGURU_FAULT_INJECTION_REPORT_V1",
   "tests": [
     {
       "description": "Whitespace-only query must be rejected with 4xx",
-      "elapsed_ms": 18.74,
+      "elapsed_ms": 22.11,
       "name": "empty_query",
       "note": "Pydantic min_length=1 or normalise validator expected to reject",
       "passed": true,
@@ -13,7 +13,7 @@
     },
     {
       "description": "Query >2000 chars must be rejected with 4xx",
-      "elapsed_ms": 4.38,
+      "elapsed_ms": 4.14,
       "name": "oversized_query",
       "note": "Pydantic max_length=2000 expected to reject",
       "passed": true,
@@ -21,7 +21,7 @@
     },
     {
       "description": "Out-of-domain query must return 200 with valid replay-safe vijay_validation",
-      "elapsed_ms": 230.77,
+      "elapsed_ms": 1518.24,
       "name": "out_of_domain_query",
       "passed": true,
       "status_code": 200,
@@ -43,11 +43,11 @@
       "all_replay_safe": true,
       "description": "5 concurrent requests must all return 200 with replay_safe=true",
       "latencies_ms": [
-        732.77,
-        881.44,
-        888.48,
-        895.2,
-        898.68
+        2577.92,
+        2650.71,
+        2664.07,
+        2672.62,
+        2693.61
       ],
       "name": "concurrent_execution",
       "passed": true,
@@ -55,7 +55,7 @@
     },
     {
       "description": "GET /health must return 200 ok with sub-100ms latency",
-      "elapsed_ms": 4.95,
+      "elapsed_ms": 10.33,
       "name": "health_under_load",
       "passed": true,
       "status_code": 200,

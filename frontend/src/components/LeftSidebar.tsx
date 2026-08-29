@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MessageSquarePlus } from "lucide-react";
 import {
@@ -1174,6 +1175,32 @@ const LeftSidebar: React.FC<LeftSidebarProps> = ({ onCreateNewChat, isCreatingCh
 
                   {isToolsExpanded && (
                     <div className="space-y-2">
+                      {/* Sanskrit Knowledge Decoder Tool */}
+                      <div
+                        key="sanskrit-decoder"
+                        id="sidebar-sanskrit-decoder"
+                        className="relative backdrop-blur-sm rounded-xl p-3 border border-violet-500/30 hover:border-violet-400/70 transition-all duration-200 ease-out cursor-pointer group overflow-hidden hover:scale-[1.02]"
+                        style={{ background: "rgba(109, 40, 217, 0.08)" }}
+                        onClick={() => {
+                          const nav = (window as unknown as Record<string, unknown>).__sidebarNavigate as ((path: string) => void) | undefined;
+                          if (nav) nav("/sanskrit-decoder");
+                          else window.location.href = "/sanskrit-decoder";
+                        }}
+                        title="Sanskrit Knowledge Decoder — Civilizational Intelligence Engine"
+                      >
+                        <div className="absolute inset-0 bg-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-xl" />
+                        <div className="flex items-center gap-3 relative z-10">
+                          <div className="text-violet-300 text-lg transition-transform duration-200 group-hover:scale-110 select-none">ॐ</div>
+                          <div>
+                            <h4 className="text-white font-semibold text-sm transition-colors duration-200">Sanskrit Decoder</h4>
+                            <p className="text-violet-300 text-xs transition-colors duration-200 group-hover:text-violet-200">Civilizational Knowledge Engine</p>
+                          </div>
+                          <div className="ml-auto">
+                            <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 border border-violet-700/40 font-medium">LIVE</span>
+                          </div>
+                        </div>
+                      </div>
+
                       {/* AI Assistant Tool */}
                       <div
                         key="ai-assistant"

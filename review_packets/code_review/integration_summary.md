@@ -7,6 +7,12 @@
 - When a Sanskrit concept is matched, the decoder output replaces the generic pipeline answer
 - Domain is set to `"sanskrit"`, confidence to `0.65`, verification_status to `PARTIAL_VERIFIED_SAMPLE`
 
+### Sanskrit Decoder UI → Runtime API
+- Frontend React component `SanskritDecoder.tsx` calls `/v2/runtime/sanskrit/decode` via `sanskritDecoderApi.ts`
+- SVG Knowledge Graph component `SanskritDecoderGraph.tsx` renders force-directed multi-node graphs from `/v2/runtime/sanskrit/graph/traverse`
+- Route `/sanskrit-decoder` registered in `App.tsx` and accessible via LeftSidebar and ToolsPage
+- Exposes 8-stage pipeline, 35 knowledge layers, evidence classification, Pāṇini sūtras, Śikṣā phonetics, and replay safety status to end users
+
 ### Sanskrit Decoder → TANTRA Contract
 - `execution_event.v1.0.0` payload is built by `TantraSdkAdapter` and includes the Sanskrit domain
 - `result_hash` from the decoder is included in `pipeline_summary.sanskrit_decoder`

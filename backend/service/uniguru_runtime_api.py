@@ -405,6 +405,33 @@ def mitra_ecosystem_ask(request: EcosystemRuntimeRequest) -> Dict[str, Any]:
     }
 
 
+@app.get("/v2/convergence/authority_map")
+def get_convergence_authority_map() -> Dict[str, Any]:
+    from convergence.authority_contract import get_authority_map
+    return get_authority_map().to_dict()
+
+
+class EvidenceValidationRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=2000)
+    synthesized_answer: str = Field(..., min_length=1, max_length=5000)
+    candidates: List[Dict[str, Any]] = Field(default_factory=list)
+
+
+@app.post("/v2/convergence/validate_evidence")
+def validate_convergence_evidence(req: EvidenceValidationRequest) -> Dict[str, Any]:
+    from convergence.convergence_runtime import run_convergence_pipeline
+    record, deduped = run_convergence_pipeline(
+        query=req.query,
+        candidates=req.candidates,
+        synthesized_answer=req.synthesized_answer,
+    )
+    return {
+        "retrieval_run_record": record.to_dict(),
+        "deduplicated_candidates": deduped,
+        "valid": record.verification_status != "NO_VERIFIED_KNOWLEDGE",
+    }
+
+
 @app.get("/health")
 def health() -> Dict[str, Any]:
     return {
@@ -416,6 +443,8 @@ def health() -> Dict[str, Any]:
             "ecosystem_execute",
             "ecosystem_replay",
             "mitra_governed_ask",
+            "sanskrit_decoder",
+            "knowledge_convergence",
         ],
     }
 

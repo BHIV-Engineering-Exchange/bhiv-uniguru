@@ -1,17 +1,17 @@
 {
   "errors": 0,
-  "generated_at": "2026-07-10T18:10:48.334279Z",
+  "generated_at": "2026-08-29T05:11:29.773221Z",
   "latency_stats": {
-    "avg_first_10_ms": 193.73,
-    "avg_last_10_ms": 185.78,
-    "drift_pct": 4.1,
-    "p50_ms": 182.98,
-    "p95_ms": 222.29,
-    "p99_ms": 256.57
+    "avg_first_10_ms": 1305.1,
+    "avg_last_10_ms": 927.46,
+    "drift_pct": 28.9,
+    "p50_ms": 997.79,
+    "p95_ms": 1895.76,
+    "p99_ms": 2012.56
   },
   "runs": [
     {
-      "elapsed_ms": 256.57,
+      "elapsed_ms": 2012.56,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -25,7 +25,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 198.67,
+      "elapsed_ms": 1377.96,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -39,7 +39,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 209.1,
+      "elapsed_ms": 1439.28,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -48,12 +48,12 @@
       "run": 3,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 176.59,
+      "elapsed_ms": 1895.76,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -62,12 +62,12 @@
       "run": 4,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 189.62,
+      "elapsed_ms": 997.79,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -81,7 +81,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 182.94,
+      "elapsed_ms": 1226.16,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -90,12 +90,12 @@
       "run": 6,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 185.1,
+      "elapsed_ms": 1162.06,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -109,7 +109,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 194.87,
+      "elapsed_ms": 1016.68,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -123,7 +123,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 170.89,
+      "elapsed_ms": 998.42,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -132,12 +132,12 @@
       "run": 9,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 172.98,
+      "elapsed_ms": 924.29,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -146,12 +146,12 @@
       "run": 10,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 176.84,
+      "elapsed_ms": 892.36,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -160,12 +160,12 @@
       "run": 11,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 185.99,
+      "elapsed_ms": 957.32,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -174,12 +174,12 @@
       "run": 12,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 170.35,
+      "elapsed_ms": 869.65,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -193,7 +193,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 182.2,
+      "elapsed_ms": 841.38,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -207,7 +207,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 175.73,
+      "elapsed_ms": 1146.77,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -221,7 +221,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 222.29,
+      "elapsed_ms": 1257.53,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -235,7 +235,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 171.96,
+      "elapsed_ms": 1579.08,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -249,7 +249,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 189.35,
+      "elapsed_ms": 880.95,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -263,7 +263,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 174.42,
+      "elapsed_ms": 893.22,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -277,7 +277,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 183.13,
+      "elapsed_ms": 896.81,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -286,12 +286,12 @@
       "run": 20,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 180.3,
+      "elapsed_ms": 882.27,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -305,7 +305,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 190.91,
+      "elapsed_ms": 931.68,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -314,12 +314,12 @@
       "run": 22,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 217.49,
+      "elapsed_ms": 897.85,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -333,7 +333,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 171.96,
+      "elapsed_ms": 898.9,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -342,12 +342,12 @@
       "run": 24,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 175.96,
+      "elapsed_ms": 812.85,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -356,12 +356,12 @@
       "run": 25,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 187.62,
+      "elapsed_ms": 917.44,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -375,7 +375,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 196.55,
+      "elapsed_ms": 812.47,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -384,12 +384,12 @@
       "run": 27,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 175.7,
+      "elapsed_ms": 1020.32,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -403,7 +403,7 @@
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 178.32,
+      "elapsed_ms": 1054.04,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -412,12 +412,12 @@
       "run": 29,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     },
     {
-      "elapsed_ms": 182.98,
+      "elapsed_ms": 1046.74,
       "error": null,
       "gc_authority_enforced": true,
       "insightflow_trace_complete": true,
@@ -426,7 +426,7 @@
       "run": 30,
       "status_code": 200,
       "tantra_contract_bound": true,
-      "verification_status": "NO_VERIFIED_KNOWLEDGE",
+      "verification_status": "VERIFIED",
       "vijay_hash_chain_ok": true,
       "vijay_replay_safe": true
     }

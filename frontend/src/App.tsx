@@ -8,6 +8,7 @@ import SignupPage from "./routes/SignupPage";
 import ForgotPasswordPage from "./routes/ForgotPasswordPage";
 import ResetPasswordPage from "./routes/ResetPasswordPage";
 import ToolsPage from "./routes/ToolsPage";
+import SanskritDecoderPage from "./routes/SanskritDecoderPage";
 import AboutPage from "./routes/AboutPage";
 import NotFoundPage from "./routes/NotFoundPage";
 
@@ -150,6 +151,14 @@ function App() {
                   <ToolsPage />
                 </div>
               </div>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/sanskrit-decoder"
+          element={
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <SanskritDecoderPage />
             </ProtectedRoute>
           }
         />

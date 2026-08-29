@@ -19,6 +19,7 @@ from kosha.kosha_loader import KoshaLoader
 from kosha.kosha_retriever import KoshaRetriever
 from kosha.kosha_enforcer import KoshaEnforcer
 from kosha.signal_validator import SignalValidator, AnswerSynthesizer, NO_KNOWLEDGE_RESPONSE
+from convergence.convergence_runtime import run_convergence_pipeline
 from kosha.semantic_boundary import (
     build_interpretation_payload,
     build_retrieval_truth_payload,
@@ -333,7 +334,26 @@ def run_deterministic_pipeline(
         interpretation_hash=interpretation_payload.get("artifact_hash"),
         truth_interpretation_link=truth_interpretation_link,
         confidence=float(synthesis.get("confidence") or confidence_breakdown.get("overall") or 0.0),
-        ontology_lineage=semantic_path,
+        ontology_lineage=semantic_path,    # Execute Knowledge Convergence Runtime
+    )
+    candidate_objects = [
+        {
+            "content": s.get("content") or s.get("clean_content") or "",
+            "source": s.get("source") or s.get("knowledge_id") or "KOSHA",
+            "concept": s.get("concept") or s.get("domain") or "general",
+            "domain": s.get("domain"),
+            "tags": s.get("tags", []),
+            "confidence": s.get("confidence", 0.85),
+            "authority_tier": "CANONICAL",
+        }
+        for s in raw_signals
+    ]
+    convergence_record, deduped_candidates = run_convergence_pipeline(
+        query=query,
+        candidates=candidate_objects,
+        synthesized_answer=synthesis["answer"],
+        trace_id=trace_id,
+        canonical_concept_id=detected_domain or "general",
     )
 
     payload = {
@@ -341,6 +361,9 @@ def run_deterministic_pipeline(
         "query": query,
         "answer": synthesis["answer"],
         "verification_status": synthesis["verification_status"],
+        "retrieval_run_record": convergence_record.to_dict(),
+        "claim_evidence_bindings": [b.to_dict() for b in convergence_record.claim_bindings],
+        "selected_evidence": [e.to_dict() for e in convergence_record.selected_evidence],
         "retrieval_truth_payload": retrieval_truth,
         "interpretation_payload": interpretation_payload,
         "truth_interpretation_link": truth_interpretation_link,
