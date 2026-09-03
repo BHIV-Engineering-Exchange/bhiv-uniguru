@@ -1297,6 +1297,18 @@
       "unresolved_thread_opened": true,
       "updated_at": "2026-08-29T05:11:55.981222Z",
       "user_id": "ecosystem_runtime"
+    },
+    {
+      "canonical_authority_granted": false,
+      "constitutional_event_hash": "0c55d9f5c99aad5105b929ec181580423fed966fca0a19d62e80b8701c878d5b",
+      "contradiction_pressure": 0.0,
+      "entities_touched": [],
+      "event": "semantic_memory_update",
+      "memory_classification": "transient",
+      "trace_id": "tantra_sdk_runtime_test",
+      "unresolved_thread_opened": true,
+      "updated_at": "2026-09-03T05:38:31.441437Z",
+      "user_id": "ecosystem_runtime"
     }
   ],
   "load_warning": "Previous memory state was unreadable; started observable empty state.",
@@ -1951,9 +1963,19 @@
       "updated_at": "2026-08-29T05:11:53.773933Z",
       "user_id": "ecosystem_runtime",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
+    },
+    "ecosystem_runtime:tantra_sdk_runtime_test": {
+      "contradiction_pressure": 0.0,
+      "query": "What is the Bhagavad Gita?",
+      "rejected_signal_count": 12,
+      "state": "open",
+      "trace_id": "tantra_sdk_runtime_test",
+      "updated_at": "2026-09-03T05:38:31.441437Z",
+      "user_id": "ecosystem_runtime",
+      "verification_status": "NO_VERIFIED_KNOWLEDGE"
     }
   },
-  "updated_at": "2026-08-29T05:11:55.981222Z",
+  "updated_at": "2026-09-03T05:38:31.441437Z",
   "users": {
     "anonymous": {
       "continuity_score": 1.0,
@@ -1994,8 +2016,8 @@
     },
     "ecosystem_runtime": {
       "continuity_score": 1.0,
-      "last_seen": "2026-08-29T05:11:55.981222Z",
-      "queries": 36,
+      "last_seen": "2026-09-03T05:38:31.441437Z",
+      "queries": 37,
       "trace_ids": [
         "ecosystem_81b0e8013622",
         "ecosystem_c928b7617b43",
@@ -2031,7 +2053,8 @@
         "fault_injection_determinism_check",
         "ecosystem_ab933d1e0bd2",
         "ecosystem_22a12850f7ac",
-        "ecosystem_54aa97cc5775"
+        "ecosystem_54aa97cc5775",
+        "tantra_sdk_runtime_test"
       ]
     }
   }
