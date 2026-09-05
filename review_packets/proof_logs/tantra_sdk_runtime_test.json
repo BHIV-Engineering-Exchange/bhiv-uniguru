@@ -27,7 +27,7 @@
       "memory_classification": "transient",
       "trace_id": "tantra_sdk_runtime_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-03T05:38:31.441437Z",
+      "updated_at": "2026-09-05T18:18:18.195286Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -46,7 +46,7 @@
     ],
     "retrieval_truth_hash": "c621411b9cf33ae50475394da8f4f7230bac033102788f29bc95aa522233bc38",
     "semantic_path": [],
-    "timestamp": "2026-09-03T05:38:31.220107Z",
+    "timestamp": "2026-09-05T18:18:18.021992Z",
     "trace_continuity": {
       "bucket_proof": "tantra_sdk_runtime_test",
       "contract_emission": "tantra_sdk_runtime_test",
@@ -125,7 +125,7 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-03T05:38:31.220107Z",
+  "generated_at": "2026-09-05T18:18:18.021992Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "83a3145041045b00abaa8628f6e2f4d511d0888a3f006817c64c0066d8aad7e2",
@@ -1232,7 +1232,7 @@
       ],
       "method": "canonical_text_entity"
     },
-    "generated_at": "2026-09-03T05:38:31.220107Z",
+    "generated_at": "2026-09-05T18:18:18.021992Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -2304,14 +2304,14 @@
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "89a51c7331ecf66263d8c0bb71e11c3463ec5e430f95600f187a5997cb7232c4",
+        "last_event_hash": "7c42e7bb857a51a838a39758a4df985a6d0926109225a3da213bbb11bc5edaa2",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "7101c3debb8eb49a3ce37809f6ba32d4059c557ae7a9c6fbc487cddfca8e0898",
-      "transient_event_count": 518
+      "state_hash": "4d88bf0c37c3416ea26486666f77a613086bec86f7f70c99645bd82eae29e40f",
+      "transient_event_count": 536
     },
     "entity_continuity": {},
     "event": {
@@ -2323,7 +2323,7 @@
       "memory_classification": "transient",
       "trace_id": "tantra_sdk_runtime_test",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-03T05:38:31.441437Z",
+      "updated_at": "2026-09-05T18:18:18.195286Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -2337,24 +2337,16 @@
         "rejected_signal_count": 12,
         "state": "open",
         "trace_id": "tantra_sdk_runtime_test",
-        "updated_at": "2026-09-03T05:38:31.441437Z",
+        "updated_at": "2026-09-05T18:18:18.195286Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-03T05:38:31.441437Z",
-      "queries": 37,
+      "last_seen": "2026-09-05T18:18:18.195286Z",
+      "queries": 167,
       "trace_ids": [
-        "ecosystem_81b0e8013622",
-        "ecosystem_c928b7617b43",
-        "ecosystem_3981f31e6ede",
-        "ecosystem_bbe95214b5c5",
-        "ecosystem_fefcaaff7d6d",
-        "ecosystem_b47954192a92",
-        "ecosystem_7618e32fe4f4",
-        "ecosystem_b94a5b17c2aa",
         "ecosystem_567017d0719e",
         "ecosystem_8bfc06bdaa4a",
         "ecosystem_ff5262118c8c",
@@ -2382,7 +2374,29 @@
         "ecosystem_ab933d1e0bd2",
         "ecosystem_22a12850f7ac",
         "ecosystem_54aa97cc5775",
-        "tantra_sdk_runtime_test"
+        "tantra_sdk_runtime_test",
+        "ecosystem_b7f98a0d5073",
+        "ecosystem_469a064e2981",
+        "ecosystem_replay_test",
+        "ecosystem_mitra_test",
+        "test_sanskrit_dharma",
+        "ecosystem_acceptance_live",
+        "ecosystem_02d2f408057f",
+        "ecosystem_a43f39855627",
+        "phase2_e2e_test",
+        "phase2_replay_test",
+        "phase2_mitra_test",
+        "phase2_proof_emit_test",
+        "phase2_replay_emit_test",
+        "contract_trace_abc",
+        "mitra_trace_xyz",
+        "phase2_determinism_test",
+        "phase2_hash_chain_test",
+        "schema_stable_1",
+        "ecosystem_5626eaffcd74",
+        "ecosystem_3df5a7eaa20e",
+        "ecosystem_e9148dc8f9c3",
+        "ecosystem_e670d357af03"
       ]
     }
   },

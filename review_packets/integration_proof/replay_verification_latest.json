@@ -9,16 +9,16 @@
     "vijay_last_event_hash_stable": true,
     "vijay_runtime_hash_stable": true
   },
-  "generated_at": "2026-08-04T14:56:44.041381Z",
-  "query_hash": "b4e7732c6611e739",
+  "generated_at": "2026-09-05T18:02:54.685603Z",
+  "query_hash": "b6e4475a17c1c770",
   "replay_verified": true,
   "schema": "UNIGURU_ECOSYSTEM_REPLAY_VERIFICATION_V1",
   "stable_fields": {
     "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
-    "last_event_hash": "e93af03a86c7df0edcb99a8bc15f811fa64ab7bc3107e5cbf249e6e63bf4f425",
-    "lineage_hash": "d7abf47a38407e5fb780d93c29545ead0a076fd8bdfa1473cfdc8833e8dea9b4",
-    "runtime_hash": "cd10bfc9da442b839239f00b321b104ab9e5cd1e98fa9898fd89c06ce4b58f30"
+    "last_event_hash": "0ab35aeb1083e4d44f8390be85cdbedfc19dcde00776af876c7d6f31d5ff39a1",
+    "lineage_hash": "8f05e2335ee41eab66a8f0fd8394dece94481e2e2857e2c911e0f674e9c2a7ca",
+    "runtime_hash": "0cd34548d3d2d73922605f708b4ca97d34e880883cd81e9d2319271b2b6bccf0"
   },
-  "trace_id": "isha_sanskrit_dharma_v1",
-  "verification_hash": "5cfbbb392145ace789842cd35167d06488b4f772d3e6cd33df3127a76b1b6cd3"
+  "trace_id": "ecosystem_acceptance_live",
+  "verification_hash": "6181a1e2e80608875910a137b946f2ad6a8c746dc2d10c897b8e988a1dc11055"
 }

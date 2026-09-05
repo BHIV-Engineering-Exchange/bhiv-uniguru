@@ -701,7 +701,22 @@ async def observability_and_throttle(request: Request, call_next):
                 },
             )
 
-    response = await call_next(request)
+    try:
+        response = await call_next(request)
+    except Exception:
+        latency_ms = (time.perf_counter() - started) * 1000
+        request_id = str(uuid.uuid4())
+        if _metrics_collector is not None:
+            _metrics_collector.record_request_latency(latency_ms, route=request.url.path)
+            _metrics_collector.record_failure("internal_error")
+        logger.exception("Unhandled request failure request_id=%s path=%s", request_id, request.url.path)
+        response = JSONResponse(
+            status_code=500,
+            content={
+                "detail": "An internal error occurred.",
+                "request_id": request_id,
+            },
+        )
     latency_ms = (time.perf_counter() - started) * 1000
     with _METRICS_LOCK:
         _METRICS["requests_total"] += 1

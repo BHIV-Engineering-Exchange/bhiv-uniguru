@@ -240,6 +240,7 @@ def main() -> None:
             "metrics_contains_runtime_ready": checks["metrics_exposed"],
             "accepted": summary["verdict"] == "ACCEPTED",
             "trace_id": TRACE_ID,
+            "checks": checks,
         },
     )
     _write_screenshot_notes(summary)

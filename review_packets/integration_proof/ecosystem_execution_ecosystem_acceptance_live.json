@@ -1,29 +1,51 @@
 {
   "answer": "I do not have verified knowledge to answer this question.",
   "bucket_telemetry": {
-    "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru_v2-main-main\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
+    "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
     "decision": "block",
     "emitted": true,
     "event": "ecosystem_runtime_execution",
+    "live_emitted": false,
+    "live_endpoint": null,
     "ontology_reference": {
       "domain": "gitas",
       "trace_id": "ecosystem_acceptance_live"
     },
     "query_hash": "b6e4475a17c1c770",
     "route": "TANTRA_ECOSYSTEM",
-    "timestamp": "2026-07-10T18:08:00.277051Z",
+    "timestamp": "2026-09-05T18:02:55.101995Z",
     "trace_id": "ecosystem_acceptance_live",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
   "confidence": 0.0,
-  "execution_hash": "82e71d3a96d6f87e5155590574136e6135b74a7a8a5ad53001d07bb862e30ea8",
+  "execution_hash": "5b2845e5c8d155729c2927e6f7b0875c5935e5b65be95aa1d7d6c9dba02b4c55",
   "gc_validation": {
     "authority_enforced": true,
     "canonical_authority_granted": false,
     "governance_note": "Constitutional authority remains read-only and enforcement is preserved through replay-safe hashing.",
+    "live_authority_validation": {
+      "live": false,
+      "path": "/gc/validate/authority",
+      "reason": "not_configured"
+    },
+    "live_hidden_state_validation": {
+      "live": false,
+      "path": "/gc/validate/hidden-state",
+      "reason": "not_configured"
+    },
     "trace_id": "ecosystem_acceptance_live"
   },
   "insightflow_observability": {
+    "live_decision": {
+      "live": false,
+      "path": "/telemetry/ingest",
+      "reason": "not_configured"
+    },
+    "live_trace": {
+      "live": false,
+      "path": "/telemetry/ingest",
+      "reason": "not_configured"
+    },
     "observability_state": "live_runtime_trace_complete",
     "pipeline_status": "NO_VERIFIED_KNOWLEDGE",
     "replay_safe": true,
@@ -36,15 +58,29 @@
       "chapter": "gitas",
       "edition": "2026",
       "evidence_id": "2fe6b9c2-110e-5f19-9886-35ce249b31b8",
-      "lineage_hash": "fbe0f2848f468a73e046742147880b616784d34baf9ad5e78dd842164dc8202e",
+      "lineage_hash": "8f05e2335ee41eab66a8f0fd8394dece94481e2e2857e2c911e0f674e9c2a7ca",
       "page_numbers": [
         1
       ],
-      "retrieval_hash": "4868f9e13c8ec41bf30872c4253617743acbbd8ea1f6ee14641b1e6f2f4adb8a",
+      "retrieval_hash": "5af6bad6daa2824177511533b7acc565b3fd4ae8f75d60f3b939bcd3a7374772",
       "section": "runtime_convergence",
-      "source_hash": "33d44d0cdc577d53edb2fcbaa93ad62def2528645735f16da6f2ccc0598589e5",
+      "source_hash": "77093a0223001073c25bd38f4ad922c5dd43d190bb8699b1c7d816588ff43297",
       "textbook_id": "bhiv_internal_intelligence_platform",
       "verification_status": "UNVERIFIED"
+    },
+    "live_provenance_validation": {
+      "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+      "lineage_hash": null,
+      "live": false,
+      "reason": "not_configured",
+      "runtime_hash": "0cd34548d3d2d73922605f708b4ca97d34e880883cd81e9d2319271b2b6bccf0",
+      "trace_id": "ecosystem_acceptance_live"
+    },
+    "live_schema_validation": {
+      "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+      "live": false,
+      "reason": "not_configured",
+      "trace_id": "2fe6b9c2-110e-5f19-9886-35ce249b31b8"
     },
     "missing_fields": [],
     "provenance_continuity": true,
@@ -79,7 +115,8 @@
       "governance_contract_emission",
       "bucket_proof_ready"
     ],
-    "rejected_signals": 12
+    "rejected_signals": 12,
+    "sanskrit_decoder": null
   },
   "query": "What is the Bhagavad Gita?",
   "tantra_contract": {
@@ -96,7 +133,66 @@
     "trace_id": "ecosystem_acceptance_live",
     "verification_status": "NO_VERIFIED_KNOWLEDGE"
   },
-  "timestamp": "2026-07-10T18:08:00.279186Z",
+  "tantra_ecosystem_fabric": {
+    "http_status": 200,
+    "insightcore_auth": false,
+    "live": true,
+    "response": {
+      "request_id": "ecosystem_acceptance_live",
+      "status": "success"
+    },
+    "status": "ingested",
+    "trace_id": "ecosystem_acceptance_live"
+  },
+  "tantra_sdk_contracts": {
+    "execution_event": {
+      "command": "What is the Bhagavad Gita?",
+      "compatibility": {
+        "adapter": "TantraSdkAdapter",
+        "supported_schema": "execution_event.v1.0.0"
+      },
+      "duration_ms": 12,
+      "execution_id": "exec_ecosystem_acceptance_live",
+      "outcome": {
+        "answer": "I do not have verified knowledge to answer this question.",
+        "domain": "gitas",
+        "verification_status": "NO_VERIFIED_KNOWLEDGE"
+      },
+      "ownership": "uniguru",
+      "provenance": {
+        "environment": "local",
+        "schema_source": "embedded_fallback",
+        "source_system": "uniguru_backend",
+        "version": "1.0.0"
+      },
+      "related_trace_ids": [
+        "ecosystem_acceptance_live"
+      ],
+      "schema_version": "execution_event.v1.0.0",
+      "status": "completed",
+      "subject_id": "uniguru_runtime",
+      "timestamp": "2026-09-05T18:02:55.105001Z",
+      "trace_id": "ecosystem_acceptance_live",
+      "validation_status": "valid"
+    },
+    "live_authority_validation": {
+      "live": false,
+      "path": "/runtime/authority/validate",
+      "reason": "not_configured"
+    },
+    "live_execution_submission": {
+      "live": false,
+      "path": "/runtime/execution-event",
+      "reason": "not_configured"
+    },
+    "live_trace_submission": {
+      "live": false,
+      "path": "/runtime/trace",
+      "reason": "not_configured"
+    },
+    "tantra_sdk_live": false
+  },
+  "timestamp": "2026-09-05T18:02:56.100011Z",
   "trace_id": "ecosystem_acceptance_live",
   "verification_status": "NO_VERIFIED_KNOWLEDGE",
   "vijay_validation": {

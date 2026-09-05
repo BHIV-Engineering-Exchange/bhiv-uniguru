@@ -1,12 +1,27 @@
 {
   "accepted": true,
-  "generated_at": "2026-07-10T18:08:00.283924Z",
+  "checks": {
+    "bucket_emitted": true,
+    "cross_service_replay_verified": true,
+    "gc_authority_enforced": true,
+    "health_ok": true,
+    "insightflow_trace_complete": true,
+    "mdu_schema_compatible": true,
+    "metrics_exposed": true,
+    "mitra_payload_redacted": true,
+    "ready_ok": true,
+    "tantra_contract_bound": true,
+    "vijay_replay_safe": true
+  },
+  "generated_at": "2026-09-05T18:02:56.107005Z",
   "health_status": {
     "capabilities": [
       "runtime_execute",
       "ecosystem_execute",
       "ecosystem_replay",
-      "mitra_governed_ask"
+      "mitra_governed_ask",
+      "sanskrit_decoder",
+      "knowledge_convergence"
     ],
     "schema_version": "UNIGURU_RUNTIME_RESPONSE_CONTRACT_V1",
     "service": "uniguru-ecosystem-runtime",
@@ -15,7 +30,7 @@
   "metrics_contains_runtime_ready": true,
   "ready_status": {
     "masterdb_present": true,
-    "proof_dir": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru_v2-main-main\\review_packets\\proof_logs",
+    "proof_dir": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\proof_logs",
     "status": "ready"
   },
   "schema": "UNIGURU_ECOSYSTEM_DEPLOYMENT_VALIDATION_V1",

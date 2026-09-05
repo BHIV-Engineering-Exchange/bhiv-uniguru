@@ -7,17 +7,20 @@ import { BrowserRouter } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import { GuruProvider } from './context/GuruContext'
 import { ChatProvider } from './context/ChatContext'
+import ErrorBoundary from './components/ErrorBoundary'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <GuruProvider>
-          <ChatProvider>
-            <App />
-          </ChatProvider>
-        </GuruProvider>
-      </AuthProvider>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <AuthProvider>
+          <GuruProvider>
+            <ChatProvider>
+              <App />
+            </ChatProvider>
+          </GuruProvider>
+        </AuthProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   </StrictMode>,
 )

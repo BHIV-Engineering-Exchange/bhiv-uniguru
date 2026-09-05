@@ -1,5 +1,5 @@
 {
-  "acceptance_hash": "b70a39eb2d21c8f7d2e59d4aa0dd1edb89c2d744aab525455e8cc2e10ecade30",
+  "acceptance_hash": "ea353a74f571cd7502e6ee6576d3e25f7469a49fa1dccdf78dff2595bc84afca",
   "checks": {
     "bucket_emitted": true,
     "cross_service_replay_verified": true,
@@ -17,29 +17,51 @@
     "body": {
       "answer": "I do not have verified knowledge to answer this question.",
       "bucket_telemetry": {
-        "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru_v2-main-main\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
+        "bucket_path": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
         "decision": "block",
         "emitted": true,
         "event": "ecosystem_runtime_execution",
+        "live_emitted": false,
+        "live_endpoint": null,
         "ontology_reference": {
           "domain": "gitas",
           "trace_id": "ecosystem_acceptance_live"
         },
         "query_hash": "b6e4475a17c1c770",
         "route": "TANTRA_ECOSYSTEM",
-        "timestamp": "2026-07-10T18:07:59.914033Z",
+        "timestamp": "2026-09-05T18:02:50.543743Z",
         "trace_id": "ecosystem_acceptance_live",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       },
       "confidence": 0.0,
-      "execution_hash": "82e71d3a96d6f87e5155590574136e6135b74a7a8a5ad53001d07bb862e30ea8",
+      "execution_hash": "5b2845e5c8d155729c2927e6f7b0875c5935e5b65be95aa1d7d6c9dba02b4c55",
       "gc_validation": {
         "authority_enforced": true,
         "canonical_authority_granted": false,
         "governance_note": "Constitutional authority remains read-only and enforcement is preserved through replay-safe hashing.",
+        "live_authority_validation": {
+          "live": false,
+          "path": "/gc/validate/authority",
+          "reason": "not_configured"
+        },
+        "live_hidden_state_validation": {
+          "live": false,
+          "path": "/gc/validate/hidden-state",
+          "reason": "not_configured"
+        },
         "trace_id": "ecosystem_acceptance_live"
       },
       "insightflow_observability": {
+        "live_decision": {
+          "live": false,
+          "path": "/telemetry/ingest",
+          "reason": "not_configured"
+        },
+        "live_trace": {
+          "live": false,
+          "path": "/telemetry/ingest",
+          "reason": "not_configured"
+        },
         "observability_state": "live_runtime_trace_complete",
         "pipeline_status": "NO_VERIFIED_KNOWLEDGE",
         "replay_safe": true,
@@ -52,15 +74,29 @@
           "chapter": "gitas",
           "edition": "2026",
           "evidence_id": "2fe6b9c2-110e-5f19-9886-35ce249b31b8",
-          "lineage_hash": "fbe0f2848f468a73e046742147880b616784d34baf9ad5e78dd842164dc8202e",
+          "lineage_hash": "8f05e2335ee41eab66a8f0fd8394dece94481e2e2857e2c911e0f674e9c2a7ca",
           "page_numbers": [
             1
           ],
-          "retrieval_hash": "4868f9e13c8ec41bf30872c4253617743acbbd8ea1f6ee14641b1e6f2f4adb8a",
+          "retrieval_hash": "5af6bad6daa2824177511533b7acc565b3fd4ae8f75d60f3b939bcd3a7374772",
           "section": "runtime_convergence",
-          "source_hash": "33d44d0cdc577d53edb2fcbaa93ad62def2528645735f16da6f2ccc0598589e5",
+          "source_hash": "77093a0223001073c25bd38f4ad922c5dd43d190bb8699b1c7d816588ff43297",
           "textbook_id": "bhiv_internal_intelligence_platform",
           "verification_status": "UNVERIFIED"
+        },
+        "live_provenance_validation": {
+          "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+          "lineage_hash": null,
+          "live": false,
+          "reason": "not_configured",
+          "runtime_hash": "0cd34548d3d2d73922605f708b4ca97d34e880883cd81e9d2319271b2b6bccf0",
+          "trace_id": "ecosystem_acceptance_live"
+        },
+        "live_schema_validation": {
+          "canonical_id": "BHIV-DS-UNIGURU-RUNTIME-001",
+          "live": false,
+          "reason": "not_configured",
+          "trace_id": "2fe6b9c2-110e-5f19-9886-35ce249b31b8"
         },
         "missing_fields": [],
         "provenance_continuity": true,
@@ -95,7 +131,8 @@
           "governance_contract_emission",
           "bucket_proof_ready"
         ],
-        "rejected_signals": 12
+        "rejected_signals": 12,
+        "sanskrit_decoder": null
       },
       "query": "What is the Bhagavad Gita?",
       "tantra_contract": {
@@ -112,7 +149,66 @@
         "trace_id": "ecosystem_acceptance_live",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       },
-      "timestamp": "2026-07-10T18:07:59.914033Z",
+      "tantra_ecosystem_fabric": {
+        "http_status": 200,
+        "insightcore_auth": false,
+        "live": true,
+        "response": {
+          "request_id": "ecosystem_acceptance_live",
+          "status": "success"
+        },
+        "status": "ingested",
+        "trace_id": "ecosystem_acceptance_live"
+      },
+      "tantra_sdk_contracts": {
+        "execution_event": {
+          "command": "What is the Bhagavad Gita?",
+          "compatibility": {
+            "adapter": "TantraSdkAdapter",
+            "supported_schema": "execution_event.v1.0.0"
+          },
+          "duration_ms": 12,
+          "execution_id": "exec_ecosystem_acceptance_live",
+          "outcome": {
+            "answer": "I do not have verified knowledge to answer this question.",
+            "domain": "gitas",
+            "verification_status": "NO_VERIFIED_KNOWLEDGE"
+          },
+          "ownership": "uniguru",
+          "provenance": {
+            "environment": "local",
+            "schema_source": "embedded_fallback",
+            "source_system": "uniguru_backend",
+            "version": "1.0.0"
+          },
+          "related_trace_ids": [
+            "ecosystem_acceptance_live"
+          ],
+          "schema_version": "execution_event.v1.0.0",
+          "status": "completed",
+          "subject_id": "uniguru_runtime",
+          "timestamp": "2026-09-05T18:02:50.545525Z",
+          "trace_id": "ecosystem_acceptance_live",
+          "validation_status": "valid"
+        },
+        "live_authority_validation": {
+          "live": false,
+          "path": "/runtime/authority/validate",
+          "reason": "not_configured"
+        },
+        "live_execution_submission": {
+          "live": false,
+          "path": "/runtime/execution-event",
+          "reason": "not_configured"
+        },
+        "live_trace_submission": {
+          "live": false,
+          "path": "/runtime/trace",
+          "reason": "not_configured"
+        },
+        "tantra_sdk_live": false
+      },
+      "timestamp": "2026-09-05T18:02:52.011815Z",
       "trace_id": "ecosystem_acceptance_live",
       "verification_status": "NO_VERIFIED_KNOWLEDGE",
       "vijay_validation": {
@@ -144,32 +240,34 @@
         "trace_id": "ecosystem_acceptance_live"
       }
     },
-    "elapsed_ms": 165.39,
+    "elapsed_ms": 1796.53,
     "method": "POST",
     "path": "/runtime/ecosystem/execute",
     "status_code": 200
   },
-  "generated_at": "2026-07-10T18:08:00.283924Z",
+  "generated_at": "2026-09-05T18:02:56.107005Z",
   "health": {
     "body": {
       "capabilities": [
         "runtime_execute",
         "ecosystem_execute",
         "ecosystem_replay",
-        "mitra_governed_ask"
+        "mitra_governed_ask",
+        "sanskrit_decoder",
+        "knowledge_convergence"
       ],
       "schema_version": "UNIGURU_RUNTIME_RESPONSE_CONTRACT_V1",
       "service": "uniguru-ecosystem-runtime",
       "status": "ok"
     },
-    "elapsed_ms": 19.49,
+    "elapsed_ms": 21.04,
     "method": "GET",
     "path": "/health",
     "status_code": 200
   },
   "metrics": {
     "body": "# HELP uniguru_ecosystem_runtime_info Ecosystem runtime capability metadata\n# TYPE uniguru_ecosystem_runtime_info gauge\nuniguru_ecosystem_runtime_info{service=\"uniguru\",capability=\"bhiv_ecosystem\"} 1\n# HELP uniguru_ecosystem_runtime_ready Runtime readiness flag\n# TYPE uniguru_ecosystem_runtime_ready gauge\nuniguru_ecosystem_runtime_ready 1\n",
-    "elapsed_ms": 5.39,
+    "elapsed_ms": 4.95,
     "method": "GET",
     "path": "/metrics",
     "status_code": 200
@@ -182,7 +280,7 @@
       "decision": "block",
       "downstream_consumable": true,
       "evidence": {
-        "bucket_proof": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru_v2-main-main\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
+        "bucket_proof": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\integration_proof\\bucket_ecosystem_acceptance_live.json",
         "ecosystem_proof": "review_packets/integration_proof/ecosystem_execution_latest.json"
       },
       "observability_state": "live_runtime_trace_complete",
@@ -190,7 +288,7 @@
       "trace_id": "ecosystem_acceptance_live",
       "verification_status": "NO_VERIFIED_KNOWLEDGE"
     },
-    "elapsed_ms": 129.53,
+    "elapsed_ms": 1415.88,
     "method": "POST",
     "path": "/mitra/ecosystem/ask",
     "status_code": 200
@@ -199,10 +297,10 @@
   "ready": {
     "body": {
       "masterdb_present": true,
-      "proof_dir": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru_v2-main-main\\review_packets\\proof_logs",
+      "proof_dir": "C:\\Users\\Isha Singh\\Desktop\\uniguru 3\\uniguru\\review_packets\\proof_logs",
       "status": "ready"
     },
-    "elapsed_ms": 5.96,
+    "elapsed_ms": 5.91,
     "method": "GET",
     "path": "/ready",
     "status_code": 200
@@ -212,26 +310,27 @@
       "checks": {
         "gc_authority_enforcement_stable": true,
         "mdu_lineage_hash_stable": true,
+        "sanskrit_decoder_result_stable": true,
         "tantra_contract_schema_stable": true,
         "tantra_trace_continuity_stable": true,
         "trace_id_stable": true,
         "vijay_last_event_hash_stable": true,
         "vijay_runtime_hash_stable": true
       },
-      "generated_at": "2026-07-10T18:08:00.143375Z",
+      "generated_at": "2026-09-05T18:02:54.685603Z",
       "query_hash": "b6e4475a17c1c770",
       "replay_verified": true,
       "schema": "UNIGURU_ECOSYSTEM_REPLAY_VERIFICATION_V1",
       "stable_fields": {
         "contract_schema": "TANTRA_UNIGURU_INTELLIGENCE_CONTRACT_V1",
         "last_event_hash": "0ab35aeb1083e4d44f8390be85cdbedfc19dcde00776af876c7d6f31d5ff39a1",
-        "lineage_hash": "fbe0f2848f468a73e046742147880b616784d34baf9ad5e78dd842164dc8202e",
+        "lineage_hash": "8f05e2335ee41eab66a8f0fd8394dece94481e2e2857e2c911e0f674e9c2a7ca",
         "runtime_hash": "0cd34548d3d2d73922605f708b4ca97d34e880883cd81e9d2319271b2b6bccf0"
       },
       "trace_id": "ecosystem_acceptance_live",
-      "verification_hash": "327b69781201e677943418eede3872fcfec84b55e5f583252121d615f35a79a1"
+      "verification_hash": "6181a1e2e80608875910a137b946f2ad6a8c746dc2d10c897b8e988a1dc11055"
     },
-    "elapsed_ms": 229.8,
+    "elapsed_ms": 2671.82,
     "method": "POST",
     "path": "/runtime/ecosystem/replay",
     "status_code": 200

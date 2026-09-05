@@ -7,6 +7,7 @@ from pathlib import Path
 from fastapi.testclient import TestClient
 
 from service.ecosystem_runtime import execute_ecosystem_runtime
+from service.api import app as service_app
 from service.uniguru_runtime_api import app
 
 
@@ -67,3 +68,18 @@ def test_mitra_endpoint_redacts_internal_governance_details():
     assert "vijay_validation" not in payload
     assert "gc_validation" not in payload
     assert "mdu_validation" not in payload
+
+
+def test_unhandled_service_errors_are_sanitized_and_traceable():
+    @service_app.get("/__test__/unhandled-error")
+    def unhandled_error():
+        raise RuntimeError("secret implementation detail")
+
+    client = TestClient(service_app, raise_server_exceptions=False)
+    response = client.get("/__test__/unhandled-error")
+
+    assert response.status_code == 500
+    payload = response.json()
+    assert payload["detail"] == "An internal error occurred."
+    assert payload["request_id"]
+    assert "secret implementation detail" not in response.text

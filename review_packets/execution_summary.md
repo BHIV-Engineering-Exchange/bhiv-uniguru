@@ -1,44 +1,25 @@
-# Execution Summary — UniGuru Knowledge Runtime
+# Execution Summary
 
-**Owner:** Isha Singh  
-**Architecture:** Unified Sanskrit Decoder & Knowledge Convergence Engine  
+## Live ecosystem execution
+- Generated at: `2026-09-05T18:02:56.107005Z`
+- Verdict: `ACCEPTED`
+- Trace id: `ecosystem_acceptance_live`
+- Runtime endpoint: `POST /runtime/ecosystem/execute`
+- Replay endpoint: `POST /runtime/ecosystem/replay`
+- Mitra endpoint: `POST /mitra/ecosystem/ask`
 
----
+## Acceptance evidence
+- Vijay replay safe: `True`
+- TANTRA contract bound: `True`
+- Bucket telemetry emitted: `True`
+- InsightFlow trace complete: `True`
+- GC authority enforced: `True`
+- MDU schema compatible: `True`
+- Cross-service replay verified: `True`
+- Mitra downstream consumable: `True`
 
-## 1. Request Execution Lifecycle
-
-```
-User Query
-    │
-    ▼
-1. Query Normalization & Language Adapter
-    │
-    ▼
-2. Candidate Retrieval & Source Scope Resolution
-    │
-    ▼
-3. Candidate Deduplication & Authority Tiering [AuthorityTier]
-    │
-    ▼
-4. Epistemological Pipeline / Sanskrit Decoder (Śabda → Dhātu → Vyākaraṇa → Nirukta → Bīja → Tattva → Śakti → Functional Meaning)
-    │
-    ▼
-5. Knowledge Graph Multi-Hop Traversal (BFS outward walk)
-    │
-    ▼
-6. Claim-to-Evidence Binding [ClaimEvidenceBinding]
-    │
-    ▼
-7. Deterministic Replay ID & Provenance Hash Sealing
-    │
-    ▼
-8. Governed Response Output
-```
-
----
-
-## 2. Execution Guarantees
-
-- **No Hidden Fallback**: Every response is either backed by canonical evidence (`VERIFIED`/`DERIVED`) or explicitly marked `NO_VERIFIED_KNOWLEDGE` / `UNVERIFIED_FALLBACK`.
-- **Deterministic Hash**: `result_hash` and `replay_id` remain identical across multiple runs.
-- **Traceability**: Every output sentence is bound to a `canonical_object_id` and SHA-256 `provenance_hash`.
+## Proof locations
+- `review_packets/integration_proof/ecosystem_execution_latest.json`
+- `review_packets/integration_proof/replay_verification_latest.json`
+- `review_packets/validation_reports/ecosystem_acceptance_report.json`
+- `review_packets/logs/ecosystem_acceptance_api_responses.json`
