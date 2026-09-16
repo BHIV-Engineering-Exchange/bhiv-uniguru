@@ -1,0 +1,313 @@
+{
+  "schema_version": "UNIGURU_CIVILIZATIONAL_GRAPH_EXPANSION_V1",
+  "authority_tier": "CANONICAL",
+  "generated_at": "2026-09-08T00:00:00Z",
+  "provenance_note": "All edges are derived from existing canonical source documents in backend/knowledge/sanskrit/. No invented associations. Edge evidence_type reflects the source classification of the underlying document.",
+  "edge_types": {
+    "dhatu_root": "Shared verbal root (dhatu) — Panini Ashtadhyayi",
+    "vyakarana_link": "Grammatical derivation relationship — Panini Ashtadhyayi",
+    "nirukta_link": "Etymological relationship — Yaska Nirukta",
+    "bija_link": "Shared or related bija syllable — Panini Shiksha / Taittiriya Pratisakhya",
+    "tattva_link": "Shared tattva principle — Samkhya / Vedanta shastra",
+    "shakti_link": "Shakti manifestation relationship — Shakta Tantra / Kashmir Shaivism",
+    "related_deity": "Deity association — Puranas / Agamas",
+    "related_loka": "Loka association — Puranas / Bhagavad Gita",
+    "related_kosha": "Kosha association — Taittiriya Upanishad",
+    "related_chakra": "Chakra association — Yoga / Tantra shastra",
+    "related_yantra": "Yantra association — Tantrasara / Sharadatilaka Tantra",
+    "related_mantra": "Mantra association — Veda / Tantra",
+    "darsana_link": "Darsana (philosophical school) cross-reference — commentarial tradition",
+    "shastra_link": "Shastra cross-reference — primary canon",
+    "canonical_cross_reference": "Explicit cross-reference in source document — DERIVED"
+  },
+  "edges": [
+    {
+      "from": "sanskar:sanskrit:dharma",
+      "to": "sanskar:sanskrit:karma",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/dharma.md",
+      "note": "Dharma and Karma are explicitly cross-referenced in dharma.md Cross References section"
+    },
+    {
+      "from": "sanskar:sanskrit:dharma",
+      "to": "sanskar:sanskrit:rta",
+      "type": "dhatu_root",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/dharma.md",
+      "note": "Rta is the Vedic precursor to Dharma; both derive from the principle of cosmic order"
+    },
+    {
+      "from": "sanskar:sanskrit:dharma",
+      "to": "sanskar:sanskrit:yajna",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/dharma.md",
+      "note": "Yajna is the primary ritual expression of dharma per dharma.md Ritual section"
+    },
+    {
+      "from": "sanskar:sanskrit:dharma",
+      "to": "chakra_ref:anahata",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/dharma.md",
+      "note": "Anahata is the seat of dharmic compassion per dharma.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:dharma",
+      "to": "chakra_ref:ajna",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/dharma.md",
+      "note": "Ajna is the seat of dharmic wisdom per dharma.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:karma",
+      "to": "sanskar:sanskrit:dharma",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/karma.md",
+      "note": "Karma and Dharma are explicitly cross-referenced in karma.md"
+    },
+    {
+      "from": "sanskar:sanskrit:karma",
+      "to": "sanskar:sanskrit:moksha",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/karma.md",
+      "note": "Moksha is the liberation from karma per karma.md Cross References"
+    },
+    {
+      "from": "sanskar:sanskrit:karma",
+      "to": "chakra_ref:manipura",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/karma.md",
+      "note": "Manipura is the seat of karmic agency per karma.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:shakti",
+      "to": "sanskar:sanskrit:brahman",
+      "type": "tattva_link",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/shakti.md",
+      "note": "Shakti is Brahman as dynamic power per shakti.md Tattva section"
+    },
+    {
+      "from": "sanskar:sanskrit:shakti",
+      "to": "sanskar:sanskrit:prakrti",
+      "type": "tattva_link",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/shakti.md",
+      "note": "Prakrti is the Samkhya equivalent of Shakti per shakti.md Ontology"
+    },
+    {
+      "from": "sanskar:sanskrit:shakti",
+      "to": "yantra:sri_yantra",
+      "type": "related_yantra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/shakti.md",
+      "note": "Sri Yantra is the primary yantra of Shakti per shakti.md Related Yantras"
+    },
+    {
+      "from": "sanskar:sanskrit:shakti",
+      "to": "chakra_ref:muladhara",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/shakti.md",
+      "note": "Muladhara is the seat of dormant kundalini-shakti per shakti.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:mantra",
+      "to": "sanskar:sanskrit:yantra",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/mantra.md",
+      "note": "Mantra is the sonic body of the deity; yantra is the geometric body — explicitly cross-referenced"
+    },
+    {
+      "from": "sanskar:sanskrit:mantra",
+      "to": "sanskar:sanskrit:om",
+      "type": "bija_link",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/mantra.md",
+      "note": "Om is the maha-bija root of all mantras per mantra.md Bija section"
+    },
+    {
+      "from": "sanskar:sanskrit:mantra",
+      "to": "sanskar:sanskrit:prana",
+      "type": "shakti_link",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/mantra.md",
+      "note": "Mantra operates through prana per mantra.md Related Koshas"
+    },
+    {
+      "from": "sanskar:sanskrit:mantra",
+      "to": "chakra_ref:visuddha",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/mantra.md",
+      "note": "Visuddha is the primary seat of mantra and speech per mantra.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:yantra",
+      "to": "sanskar:sanskrit:mantra",
+      "type": "canonical_cross_reference",
+      "evidence_type": "DERIVED",
+      "source": "backend/knowledge/sanskrit/yantra.md",
+      "note": "Yantra is the geometric counterpart of mantra per yantra.md Functional Meaning"
+    },
+    {
+      "from": "sanskar:sanskrit:yantra",
+      "to": "sanskar:sanskrit:shakti",
+      "type": "shakti_link",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/yantra.md",
+      "note": "Sri Yantra is the geometric form of Shakti per yantra.md Shakti section"
+    },
+    {
+      "from": "sanskar:sanskrit:yantra",
+      "to": "chakra_ref:sahasrara",
+      "type": "related_chakra",
+      "evidence_type": "TRADITION",
+      "source": "backend/knowledge/sanskrit/yantra.md",
+      "note": "Sri Yantra corresponds to Sahasrara per yantra.md Related Chakras"
+    },
+    {
+      "from": "sanskar:sanskrit:om",
+      "to": "sanskar:sanskrit:brahman",
+      "type": "tattva_link",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/om.md",
+      "note": "Om is the sonic form of Brahman per Mandukya Upanishad"
+    },
+    {
+      "from": "sanskar:sanskrit:prana",
+      "to": "sanskar:sanskrit:akasha",
+      "type": "tattva_link",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/prana.md",
+      "note": "Prana and Akasha are the two primary tattvas per Chandogya Upanishad"
+    },
+    {
+      "from": "sanskar:sanskrit:prana",
+      "to": "kosha_ref:pranamaya_kosha",
+      "type": "related_kosha",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/prana.md",
+      "note": "Pranamaya Kosha is the energy sheath of prana per Taittiriya Upanishad"
+    },
+    {
+      "from": "sanskar:sanskrit:atman",
+      "to": "sanskar:sanskrit:brahman",
+      "type": "tattva_link",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/atman.md",
+      "note": "Atman is Brahman per Chandogya Upanishad tat tvam asi"
+    },
+    {
+      "from": "sanskar:sanskrit:brahman",
+      "to": "sanskar:sanskrit:atman",
+      "type": "tattva_link",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/brahman.md",
+      "note": "Brahman is Atman per Mandukya Upanishad"
+    },
+    {
+      "from": "sanskar:sanskrit:yoga",
+      "to": "sanskar:sanskrit:prana",
+      "type": "canonical_cross_reference",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/yoga.md",
+      "note": "Pranayama is a primary limb of yoga per Yoga Sutras"
+    },
+    {
+      "from": "sanskar:sanskrit:moksha",
+      "to": "sanskar:sanskrit:vidya",
+      "type": "canonical_cross_reference",
+      "evidence_type": "UPANISHAD",
+      "source": "backend/knowledge/sanskrit/moksha.md",
+      "note": "Vidya (knowledge) is the means to moksha per Upanishads"
+    },
+    {
+      "from": "sanskar:sanskrit:rta",
+      "to": "sanskar:sanskrit:dharma",
+      "type": "dhatu_root",
+      "evidence_type": "VEDA",
+      "source": "backend/knowledge/sanskrit/rta.md",
+      "note": "Rta is the Vedic precursor to Dharma per Rgveda"
+    },
+    {
+      "from": "sanskar:sanskrit:samskara",
+      "to": "sanskar:sanskrit:karma",
+      "type": "canonical_cross_reference",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/samskara.md",
+      "note": "Karma creates samskaras per Yoga Sutras 2.12-14"
+    },
+    {
+      "from": "sanskar:sanskrit:maya",
+      "to": "sanskar:sanskrit:brahman",
+      "type": "tattva_link",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/maya.md",
+      "note": "Maya is Brahman's creative power per Advaita Vedanta"
+    },
+    {
+      "from": "sanskar:sanskrit:prakrti",
+      "to": "sanskar:sanskrit:purusha",
+      "type": "tattva_link",
+      "evidence_type": "PRIMARY_CANON",
+      "source": "backend/knowledge/sanskrit/prakrti.md",
+      "note": "Prakriti and Purusha are the two fundamental principles of Samkhya"
+    }
+  ],
+  "darsana_cross_references": {
+    "advaita": {
+      "key_concepts": ["brahman", "atman", "maya", "moksha", "vidya"],
+      "primary_shastra": "Brahma Sutra Bhashya (Shankara)",
+      "authority_tier": "CANONICAL"
+    },
+    "vishishtadvaita": {
+      "key_concepts": ["brahman", "atman", "karma", "moksha", "shakti"],
+      "primary_shastra": "Sri Bhashya (Ramanuja)",
+      "authority_tier": "CANONICAL"
+    },
+    "dvaita": {
+      "key_concepts": ["brahman", "atman", "karma", "dharma"],
+      "primary_shastra": "Brahma Sutra Bhashya (Madhva)",
+      "authority_tier": "CANONICAL"
+    },
+    "samkhya": {
+      "key_concepts": ["prakrti", "purusha", "karma", "moksha"],
+      "primary_shastra": "Samkhya Karika (Ishvarakrishna)",
+      "authority_tier": "CANONICAL"
+    },
+    "yoga": {
+      "key_concepts": ["yoga", "prana", "samskara", "karma", "moksha"],
+      "primary_shastra": "Yoga Sutras (Patanjali)",
+      "authority_tier": "CANONICAL"
+    },
+    "mimamsa": {
+      "key_concepts": ["dharma", "karma", "yajna", "mantra"],
+      "primary_shastra": "Mimamsa Sutras (Jaimini)",
+      "authority_tier": "CANONICAL"
+    },
+    "kashmir_shaivism": {
+      "key_concepts": ["shakti", "mantra", "yantra", "brahman"],
+      "primary_shastra": "Tantrasara (Abhinavagupta)",
+      "authority_tier": "CANONICAL"
+    },
+    "shakta": {
+      "key_concepts": ["shakti", "yantra", "mantra", "maya"],
+      "primary_shastra": "Devi Mahatmya / Lalita Sahasranama",
+      "authority_tier": "CANONICAL"
+    }
+  },
+  "metadata": {
+    "total_edges": 30,
+    "concepts_covered": ["dharma", "karma", "shakti", "mantra", "yantra", "om", "prana", "atman", "brahman", "yoga", "moksha", "rta", "samskara", "maya", "prakrti"],
+    "edge_types_used": ["canonical_cross_reference", "dhatu_root", "tattva_link", "shakti_link", "bija_link", "related_chakra", "related_yantra", "related_kosha"],
+    "graph_hash": "UNIGURU_CIVILIZATIONAL_GRAPH_EXPANSION_V1_2026"
+  }
+}

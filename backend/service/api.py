@@ -35,6 +35,7 @@ from service.query_classifier import QueryType, classify_query
 from service.guru_models import Guru, CreateGuruRequest, guru_storage
 from service.supabase_auth import supabase_auth
 from stt import STTEngine, STTUnavailableError
+from security import AuditEmitter, JWTClaims, RBACEnforcer, ReplayMitigationTable, RS256Verifier
 
 # Production observability — structured logging + extended metrics
 try:
@@ -145,6 +146,33 @@ if _API_AUTH_REQUIRED and not _API_TOKENS:
     logger.warning(
         "UNIGURU_API_AUTH_REQUIRED=true but no tokens configured. Falling back to demo mode auth bypass."
     )
+_JWT_AUTH_REQUIRED = os.getenv("UNIGURU_JWT_AUTH_REQUIRED", "false").strip().lower() in {"1", "true", "yes", "on"}
+_JWT_PUBLIC_KEY_CONFIGURED = bool(
+    os.getenv("UNIGURU_JWT_PUBLIC_KEY", "").strip()
+    or os.getenv("UNIGURU_JWT_PUBLIC_KEY_PATH", "").strip()
+)
+_JWT_VERIFIER: Optional[RS256Verifier] = None
+if _JWT_PUBLIC_KEY_CONFIGURED:
+    try:
+        _JWT_VERIFIER = RS256Verifier()
+        _AUTH_MODE = "jwt-rs256"
+    except ValueError as exc:
+        logger.error("Invalid JWT security configuration: %s", exc)
+        if _JWT_AUTH_REQUIRED:
+            raise
+elif _JWT_AUTH_REQUIRED:
+    raise RuntimeError("UNIGURU_JWT_AUTH_REQUIRED=true requires an RS256 public key.")
+_JWT_RBAC = RBACEnforcer(min_role=os.getenv("UNIGURU_JWT_MIN_ROLE", "viewer"))
+_SECURITY_REPLAY = ReplayMitigationTable(
+    persist_path=os.getenv("UNIGURU_REPLAY_TABLE_PATH", "").strip() or None,
+    leeway_seconds=int(os.getenv("UNIGURU_JWT_LEEWAY_SECONDS", "10")),
+)
+_SECURITY_AUDIT = AuditEmitter(
+    os.getenv(
+        "UNIGURU_SECURITY_AUDIT_PATH",
+        str(Path(__file__).parent.parent / "logs" / "security_audit.jsonl"),
+    )
+)
 _ALLOWED_CALLERS = {
     caller.strip()
     for caller in os.getenv(
@@ -342,14 +370,47 @@ def _extract_service_token(request: Request) -> Optional[str]:
     return None
 
 
-def _enforce_service_auth(request: Request) -> None:
+def _emit_security_audit(event: str, actor: str, resource: str, outcome: str, metadata: Dict[str, Any]) -> None:
+    _SECURITY_AUDIT.emit(
+        event=event,
+        actor=actor,
+        resource=resource,
+        outcome=outcome,
+        metadata=metadata,
+    )
+
+
+def _enforce_service_auth(request: Request) -> Optional[JWTClaims]:
     if _is_pytest_runtime():
-        return
+        return None
     if not _API_AUTH_REQUIRED:
-        return
+        return None
     token = _extract_service_token(request)
+    resource = request.url.path
+    if _JWT_VERIFIER is not None:
+        if not token:
+            _emit_security_audit("jwt_verification_failed", "unknown", resource, "DENY", {"reason": "missing bearer token"})
+            raise HTTPException(status_code=401, detail="Bearer JWT required")
+        try:
+            claims = _JWT_VERIFIER.verify(token)
+            _JWT_RBAC.enforce(claims)
+        except (PermissionError, ValueError) as exc:
+            _emit_security_audit("jwt_verification_failed", "unknown", resource, "DENY", {"reason": str(exc)})
+            raise HTTPException(status_code=401, detail="Invalid or unauthorized JWT") from exc
+        if not _SECURITY_REPLAY.try_consume(claims.jti, exp=claims.exp):
+            _emit_security_audit("replay_blocked", claims.sub, resource, "DENY", {"jti": claims.jti})
+            raise HTTPException(status_code=401, detail="JWT replay detected")
+        _emit_security_audit(
+            "jwt_verified",
+            claims.sub,
+            resource,
+            "ALLOW",
+            {"jti": claims.jti, "role": claims.role},
+        )
+        return claims
     if token not in _API_TOKENS:
         raise HTTPException(status_code=401, detail="Unauthorized")
+    return None
 
 
 def _resolve_caller(request: AskRequest, raw_request: Request) -> str:
@@ -787,6 +848,10 @@ def ask(request: AskRequest, raw_request: Request) -> Dict[str, Any]:
             response["answer"] = SAFE_FALLBACK_PREFIX
         return response
     except HTTPException as exc:
+        if exc.status_code in {401, 403}:
+            raise
+        if exc.status_code in {401, 403}:
+            raise
         return _build_safe_fallback_response(
             query=request.query,
             session_id=request.session_id,

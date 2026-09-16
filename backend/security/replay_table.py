@@ -12,6 +12,7 @@ import json
 import os
 import threading
 import time
+import tempfile
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -60,13 +61,14 @@ class ReplayMitigationTable:
 
         Raises ``ValueError`` if the jti was already consumed (replay detected).
         """
-        self._evict_expired()
-        expiry = float(exp + self._leeway) if exp else time.time() + self._default_ttl
         with self._lock:
+            now = time.time()
+            self._evict_expired_locked(now)
             if jti in self._seen:
                 raise ValueError(f"Replay detected: jti '{jti}' has already been used.")
+            expiry = float(exp + self._leeway) if exp else now + self._default_ttl
             self._seen[jti] = expiry
-        self._flush()
+            self._flush_locked()
 
     def try_consume(self, jti: str, exp: Optional[int] = None) -> bool:
         """Consume jti if not replayed. Returns False (without raising) on replay."""
@@ -86,7 +88,7 @@ class ReplayMitigationTable:
         """Remove all entries (test/admin use only)."""
         with self._lock:
             self._seen.clear()
-        self._flush()
+            self._flush_locked()
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -95,19 +97,38 @@ class ReplayMitigationTable:
     def _evict_expired(self) -> None:
         now = time.time()
         with self._lock:
-            expired = [jti for jti, exp in self._seen.items() if exp <= now]
-            for jti in expired:
-                del self._seen[jti]
+            self._evict_expired_locked(now)
+
+    def _evict_expired_locked(self, now: float) -> None:
+        expired = [jti for jti, exp in self._seen.items() if exp <= now]
+        for jti in expired:
+            del self._seen[jti]
 
     def _flush(self) -> None:
         if not self._persist_path:
             return
-        self._persist_path.parent.mkdir(parents=True, exist_ok=True)
         with self._lock:
-            snapshot = dict(self._seen)
-        self._persist_path.write_text(
-            json.dumps(snapshot, ensure_ascii=True, sort_keys=True), encoding="utf-8"
+            self._flush_locked()
+
+    def _flush_locked(self) -> None:
+        if not self._persist_path:
+            return
+        self._persist_path.parent.mkdir(parents=True, exist_ok=True)
+        snapshot = dict(self._seen)
+        fd, temp_name = tempfile.mkstemp(
+            prefix=f".{self._persist_path.name}.",
+            suffix=".tmp",
+            dir=str(self._persist_path.parent),
         )
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as handle:
+                handle.write(json.dumps(snapshot, ensure_ascii=True, sort_keys=True))
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.replace(temp_name, self._persist_path)
+        finally:
+            if os.path.exists(temp_name):
+                os.unlink(temp_name)
 
     def _load(self) -> None:
         try:

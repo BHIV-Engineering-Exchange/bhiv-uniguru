@@ -12,8 +12,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import threading
 import time
+import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -138,6 +140,8 @@ class AuditEmitter:
     ) -> AuditEntry:
         """Append an immutable audit entry and return it."""
         with self._lock:
+            if self._path.exists() and not self.verify_chain()["valid"]:
+                raise ValueError("Cannot append to an invalid audit chain.")
             entry = AuditEntry(
                 seq=self._seq,
                 event=event,
@@ -159,47 +163,15 @@ class AuditEmitter:
         Returns a dict with ``valid`` (bool), ``entry_count``, and
         ``broken_at_seq`` (None if chain is intact).
         """
-        entries = self._read_all()
+        try:
+            entries = self._read_all()
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+            return {"valid": False, "entry_count": 0, "broken_at_seq": None, "reason": "malformed_entry"}
         if not entries:
             return {"valid": True, "entry_count": 0, "broken_at_seq": None}
-
-        prev = _GENESIS_HASH
-        for entry in entries:
-            if entry.prev_hash != prev:
-                return {
-                    "valid": False,
-                    "entry_count": len(entries),
-                    "broken_at_seq": entry.seq,
-                    "expected_prev": prev,
-                    "found_prev": entry.prev_hash,
-                }
-            # Recompute entry_hash to detect tampering
-            recomputed = _sha256(
-                json.dumps(
-                    {
-                        "seq": entry.seq,
-                        "event": entry.event,
-                        "actor": entry.actor,
-                        "resource": entry.resource,
-                        "outcome": entry.outcome,
-                        "metadata": entry.metadata,
-                        "timestamp": entry.timestamp,
-                        "prev_hash": entry.prev_hash,
-                    },
-                    ensure_ascii=True,
-                    sort_keys=True,
-                )
-            )
-            if recomputed != entry.entry_hash:
-                return {
-                    "valid": False,
-                    "entry_count": len(entries),
-                    "broken_at_seq": entry.seq,
-                    "reason": "entry_hash_mismatch",
-                }
-            prev = entry.entry_hash
-
-        return {"valid": True, "entry_count": len(entries), "broken_at_seq": None}
+        result = self._verify_entries(entries)
+        result["entry_count"] = len(entries)
+        return result
 
     def tail(self, n: int = 10) -> List[Dict[str, Any]]:
         """Return the last n audit entries as dicts."""
@@ -229,6 +201,8 @@ class AuditEmitter:
         self._path.parent.mkdir(parents=True, exist_ok=True)
         with self._path.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(entry.to_dict(), ensure_ascii=True, sort_keys=True) + "\n")
+            fh.flush()
+            os.fsync(fh.fileno())
 
     def _read_all(self) -> List[AuditEntry]:
         if not self._path.exists():
@@ -240,10 +214,28 @@ class AuditEmitter:
                     line = line.strip()
                     if not line:
                         continue
-                    try:
-                        entries.append(AuditEntry.from_dict(json.loads(line)))
-                    except (KeyError, ValueError, json.JSONDecodeError):
-                        continue
+                    entries.append(AuditEntry.from_dict(json.loads(line)))
         except OSError:
             pass
         return entries
+
+    @staticmethod
+    def _verify_entries(entries: List[AuditEntry]) -> Dict[str, Any]:
+        prev = _GENESIS_HASH
+        for expected_seq, entry in enumerate(entries):
+            if entry.seq != expected_seq or entry.prev_hash != prev:
+                return {"valid": False, "broken_at_seq": entry.seq}
+            recomputed = _sha256(json.dumps({
+                "seq": entry.seq,
+                "event": entry.event,
+                "actor": entry.actor,
+                "resource": entry.resource,
+                "outcome": entry.outcome,
+                "metadata": entry.metadata,
+                "timestamp": entry.timestamp,
+                "prev_hash": entry.prev_hash,
+            }, ensure_ascii=True, sort_keys=True))
+            if recomputed != entry.entry_hash:
+                return {"valid": False, "broken_at_seq": entry.seq}
+            prev = entry.entry_hash
+        return {"valid": True, "broken_at_seq": None}
