@@ -1,0 +1,1 @@
+{"actor": "unknown", "entry_hash": "a3fb9bdf081589638a67d3f7561106f943b2c11b32920e2d0f2b77c248332fdf", "event": "jwt_verification_failed", "metadata": {"reason": "JWT has expired."}, "outcome": "DENY", "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000", "resource": "/runtime/ecosystem/execute", "seq": 0, "timestamp": "2026-09-16T07:24:38.035069Z"}

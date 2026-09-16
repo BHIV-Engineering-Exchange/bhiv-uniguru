@@ -27,7 +27,7 @@
       "memory_classification": "transient",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-05T18:40:11.775615Z",
+      "updated_at": "2026-09-16T07:24:51.988856Z",
       "user_id": "ecosystem_runtime"
     },
     "rejected_signals": [
@@ -46,7 +46,7 @@
     ],
     "retrieval_truth_hash": "8586ff0ab96d93b60e56986641ed3752cb804399ba8fbb181d631c6faf15903a",
     "semantic_path": [],
-    "timestamp": "2026-09-05T18:40:11.549903Z",
+    "timestamp": "2026-09-16T07:24:51.782547Z",
     "trace_continuity": {
       "bucket_proof": "mitra_trace_xyz",
       "contract_emission": "mitra_trace_xyz",
@@ -123,7 +123,7 @@
     "valid_entries": 12
   },
   "fallback_to_llm": false,
-  "generated_at": "2026-09-05T18:40:11.549903Z",
+  "generated_at": "2026-09-16T07:24:51.782547Z",
   "interpretation_payload": {
     "answer": "I do not have verified knowledge to answer this question.",
     "artifact_hash": "affcf7ff6bdd12a1d8a3c8e4150872e93360d380d394b197160ca2e79adccc39",
@@ -1106,7 +1106,7 @@
       ],
       "method": "canonical_entity_majority"
     },
-    "generated_at": "2026-09-05T18:40:11.549903Z",
+    "generated_at": "2026-09-16T07:24:51.782547Z",
     "immutable": true,
     "layer": "DETERMINISTIC_RETRIEVAL_TRUTH",
     "mutation_policy": "READ_ONLY_FOR_INTERPRETATION_LAYER",
@@ -2056,14 +2056,14 @@
       "observable": true,
       "replay_integrity": {
         "hash_chain_ok": false,
-        "last_event_hash": "3d2b5b0ba28ade678cc4dbb90e83e41731fa96d00d62200cf58cda9573f8772f",
+        "last_event_hash": "bc8000744762354784d4fb6bc9e95b7bfa5cc520dd86a765d50d8695c579270f",
         "rollback_target": null
       },
       "replayable": true,
       "rollback_safe": true,
       "schema": "UNIGURU_CONSTITUTIONAL_SEMANTIC_MEMORY_RESULT_V1",
-      "state_hash": "2e62a8f5cefaa7baee175278de1be8aa5be3bb4c8332828f98521df90fa94b22",
-      "transient_event_count": 537
+      "state_hash": "333e9fc05b72b46e26977066e315f13be2aa0a7bbea8f347392b690a155bea59",
+      "transient_event_count": 539
     },
     "entity_continuity": {},
     "event": {
@@ -2075,7 +2075,7 @@
       "memory_classification": "transient",
       "trace_id": "mitra_trace_xyz",
       "unresolved_thread_opened": true,
-      "updated_at": "2026-09-05T18:40:11.775615Z",
+      "updated_at": "2026-09-16T07:24:51.988856Z",
       "user_id": "ecosystem_runtime"
     },
     "observable": true,
@@ -2089,18 +2089,16 @@
         "rejected_signal_count": 12,
         "state": "open",
         "trace_id": "mitra_trace_xyz",
-        "updated_at": "2026-09-05T18:40:11.775615Z",
+        "updated_at": "2026-09-16T07:24:51.988856Z",
         "user_id": "ecosystem_runtime",
         "verification_status": "NO_VERIFIED_KNOWLEDGE"
       }
     ],
     "user_continuity": {
       "continuity_score": 1.0,
-      "last_seen": "2026-09-05T18:40:11.775615Z",
-      "queries": 230,
+      "last_seen": "2026-09-16T07:24:51.988856Z",
+      "queries": 267,
       "trace_ids": [
-        "ecosystem_8bfc06bdaa4a",
-        "ecosystem_ff5262118c8c",
         "ecosystem_5f3dfac0dad2",
         "ecosystem_d34df7081195",
         "ecosystem_934a4e270088",
@@ -2148,7 +2146,9 @@
         "ecosystem_3df5a7eaa20e",
         "ecosystem_e9148dc8f9c3",
         "ecosystem_e670d357af03",
-        "ecosystem_3fd9ed924a65"
+        "ecosystem_3fd9ed924a65",
+        "ecosystem_77914c475024",
+        "ecosystem_2edbd34253d7"
       ]
     }
   },
